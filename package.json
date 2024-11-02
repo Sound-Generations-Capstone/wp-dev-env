@@ -1,0 +1,19 @@
+{
+  "name": "wp-dev-env",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "sass --watch sass --watch wp-content/themes/sg24/scss:wp-content/themes/sg24/style.css",
+    "dev": "wp-scripts start --output-path=themes/custom-theme/assets/build/ --hot"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.4.0"
+  }
+}
