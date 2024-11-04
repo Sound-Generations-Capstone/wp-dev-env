@@ -1,0 +1,380 @@
+/*.site-title img {
+	height: 95px;
+	border: 1px solid #ffffff;
+}
+
+//for shrinking the logo in corner
+#text-2, #text-3, #text-4, #text-5 {
+	display: block;
+	margin: 0;
+	width: auto;
+}
+
+//resets width and margins in footer
+#text-5 {
+	display: block;
+	float: right;
+}
+
+//I want the SG info to stay apart to the right
+#text-3, #text-4 {
+	margin-left: 3%;
+}
+
+//needed some space
+img.head-img {
+}
+
+testing*/
+/*for grey social media icons on About page*/
+.followsocialmedia {
+	height: 50px;
+	width: 50px;
+}
+
+#gridfollowsocialmedia {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 50%;
+	margin: 0 auto;
+	justify-items: center;
+}
+
+/*below is for the Get Involved page with the slidey stuff*/
+.donate span, .event span, .volunteer span, .advocate span {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+}
+
+.donate, .donatespan, .event, .eventspan, .volunteer, .volunteerspan, .advocate, .advocate span {
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+}
+
+.donate {
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+	background-image: url("https://soundgenerations.org/wp-content/uploads/donate-stock.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 20px;
+	padding-top: 260px;
+}
+
+.donate span {
+	background-color: grey;
+	opacity: .9;
+}
+
+.event {
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+	background-image: url("https://soundgenerations.org/wp-content/uploads/event-stock.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 260px;
+}
+
+.event span {
+	background-color: #fa4c06;
+	opacity: .9;
+}
+
+.volunteer {
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+	background-image: url("https://soundgenerations.org/wp-content/uploads/volunteer-stock.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 260px;
+}
+
+.volunteer span {
+	background-color: #ff9e19;
+	opacity: .9;
+}
+
+.advocate {
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+	background-image: url("https://soundgenerations.org/wp-content/uploads/advocate-stock.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 260px;
+}
+
+.advocate span {
+	background-color: #880364;
+	opacity: .9;
+}
+
+.donatespan, .eventspan, .volunteerspan, .advocatespan {
+	margin-top: 0;
+	font-size: 24px;
+	text-align: center;
+	margin-top: -20px;
+}
+
+.donate:hover .donatespan, .event:hover .eventspan, .volunteer:hover .volunteerspan, .advocate:hover .advocatespan {
+	margin-top: -11em;
+}
+
+.smallerfont {
+	font-size: 16px;
+}
+
+#grid1x3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+}
+
+#donatebutton {
+	background-color: #ff9e19;
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding: 5px;
+	font-size: 30px;
+	width: 200px;
+	text-align: center;
+	border-radius: 15px;
+}
+
+#donatebutton:hover {
+	background-color: #fd8204;
+}
+
+#eventbutton {
+	background-color: #fa4c06;
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+	padding: 5px;
+	font-size: 18px;
+	width: 150px;
+	text-align: center;
+	border-radius: 15px;
+}
+
+#eventbutton:hover {
+	background-color: #d13138;
+}
+
+#volunteerbutton {
+	background-color: #ff9e19;
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+	padding: 5px;
+	font-size: 18px;
+	width: 150px;
+	text-align: center;
+	border-radius: 15px;
+}
+
+#volunteerbutton:hover {
+	background-color: #fd8204;
+}
+
+#advocatebutton {
+	background-color: #880364;
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+	padding: 5px;
+	font-size: 18px;
+	width: 150px;
+	text-align: center;
+	border-radius: 15px;
+}
+
+#advocatebutton:hover {
+	background-color: #b00061;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*For tablet/mobile on Get Involved slidey stuff*/
+@media only screen and (max-width: 1024px) {
+	.donate span, .event span, .volunteer span, .advocate span {
+		font-size: 14px;
+	}
+	
+	.donate:hover .donatespan, .event:hover .eventspan, .volunteer:hover .volunteerspan, .advocate:hover .advocatespan {
+		margin-top: -20em;
+	}
+	
+	#grid1x3 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-row-gap: 20px;
+	}
+	
+	.donate, .event, .volunteer, .advocate {
+		padding-top: 280px;
+	}
+	
+	#donatebutton {
+		background-color: #ff9e19;
+		text-decoration: none;
+		color: white;
+		display: block;
+		margin: 0 auto;
+		margin-top: 5px;
+		padding: 5px;
+		font-size: 18px;
+		width: 150px;
+	}
+}
+
+/*for Board of Directors section on About page*/
+.BODcontainer {
+	position: relative;
+	min-width: 150px;
+	max-width: 300px;
+}
+
+.image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.BODcontainer:hover .image {
+	opacity: .3;
+}
+
+.BODcontainer:hover .middle {
+	opacity: 1;
+}
+
+.text {
+	background-color: white;
+	color: #5d0e8b;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.text strong {
+	font-size: 18px;
+}
+
+#boardofficers, #boardmembers {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1em;
+}
+
+.center {
+	text-align: center;
+	font-weight: bold;
+}
+
+/*For tablet/mobile*/
+@media only screen and (max-width: 1024px) {
+	#boardofficers, #boardmembers {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/*end of Board of Directors*/
+/*following code for Sound Generations staff on About page*/
+.LSGcontainer {
+	position: relative;
+	min-width: 150px;
+	max-width: 300px;
+}
+
+.image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.LSGcontainer:hover .image {
+	opacity: .3;
+}
+
+.LSGcontainer:hover .middle {
+	opacity: 1;
+}
+
+.text {
+	background-color: white;
+	color: #5d0e8b;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.text strong {
+	font-size: 18px;
+}
+
+#leadershipSGtop {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1em;
+}
+
+#leadershipSGbottom {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 2%;
+}
+
+/*end of Sound Generations staff on About page*/
