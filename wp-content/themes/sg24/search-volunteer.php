@@ -5,36 +5,25 @@
  * 
  * @package Sound_Generations
  */
-get_header(); ?>
 
-<style>
-  .display-flex {
-    display: flex;
-  }
+// Shortcode for displaying volunteer search form
+function volunteer_search_form() {
+  ob_start(); 
+  ?>
+  <form method="post" class="volunteer-search-form display-flex" style="gap: 1rem">
+    <div class="display-flex flex-column">
+      <label for="location">Location</label>
+      <select name="location">
+        <option selected value="">All</option>
+        <?php
+        $map = array(
+          'Renton' => 'Renton',
+          'SeaTac' => 'SeaTac',
+          'Federal Way' => 'Federal Way',
+          'Burien' => 'Burien',
+        );
 
-  .flex-column {
-    flex-direction: column;
-  }
-</style>
-
-<section id="primary" class="content-area">
-  <main id="main" class="site-main" role="main">
-    <h1 class="page-title"><?php the_title(); ?></h1>
-
-    <form method="post" class="display-flex" style="gap: 1rem">
-      <div class="display-flex flex-column">
-        <label for="location">Location</label>
-        <select name="location">
-          <option selected value="">All</option>
-          <?php
-          $map = array(
-            'Renton' => 'Renton',
-            'SeaTac' => 'SeaTac',
-            'Federal Way' => 'Federal Way',
-            'Burien' => 'Burien',
-          );
-
-          $location = '';
+        $location = '';
           if (isset($_POST['location'])) {
             $location = $_POST['location'];
           }
@@ -45,10 +34,11 @@ get_header(); ?>
             $output .= '<option value="' . $value . '"' . $selected . '>' . $key . '</option>';
           }
           echo $output;
-          ?>
-        </select>
-      </div>
-      <div class="display-flex flex-column">
+        ?>
+      </select>
+    </div>
+
+    <div class="display-flex flex-column">
         <label for="kid-friendly">Kid Friendly</label>
         <select name="kid-friendly">
           <option selected value="">Either</option>
@@ -70,13 +60,14 @@ get_header(); ?>
           }
           echo $output;
           ?>
-        </select>
-      </div>
-      <button type="submit">Search</button>
-    </form>
+      </select>
+    </div>
+    <button type="submit">Search</button>
+  </form>
+  <?php
 
-    <?php
-    $location = '';
+  // Handle search results
+  $location = '';
     if (isset($_POST['location'])) {
       $location = 'Location: ' . $_POST['location'];
     }
@@ -105,9 +96,30 @@ get_header(); ?>
     }
 
     echo $output;
-    ?>
-  </main>
-</section>
+
+  return ob_get_clean(); 
+}
+
+add_shortcode('volunteer_search_form', 'volunteer_search_form');
+
+
+get_header(); ?>
+
+
+<!-- Display page content -->
+<div class="page-content">
+  <?php
+  if (have_posts()) :
+    while (have_posts()) : the_post();
+      the_content(); 
+    endwhile;
+  endif;
+  ?>
+</div>
+
+
+
+
 
 <?php
 get_sidebar();
