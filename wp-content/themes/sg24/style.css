@@ -1408,3 +1408,54 @@ margin-right:auto
 .gallery-caption {
 	display:block
 }
+
+
+/* Style for the volunteer search form */
+.volunteer-search-form {
+	background-color: #880364; 
+	padding: 20px;
+	border-radius: 8px;
+  }
+  
+  /* Style for form labels */
+  .volunteer-search-form label {
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+  /* Style for the dropdown select fields */
+  .volunteer-search-form select {
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+  }
+  
+  /* Style for the button */
+  .volunteer-search-form button {
+	padding: 10px 15px;
+	background-color: #fd8204; /* Button background color */
+	color: #fff; /* Button text color */
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-left: auto; 
+  }
+  
+  .volunteer-search-form button:hover {
+	background-color: #b00061;
+  }
+  
+  .display-flex {
+	display: flex;
+	gap: 1rem;
+  }
+  
+  .flex-column {
+	flex-direction: column;
+  }
+  
