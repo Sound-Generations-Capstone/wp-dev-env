@@ -33,60 +33,48 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site">
-       	 	<div class="site-branding">
-<?php
-$logo = '';
-switch ( get_current_blog_id() ) {
-	case 1:
-		$logo = get_template_directory_uri() . '/img/logo-sound-generations-rev2019_150x113.png';
-        $logolink = 'https://www.SoundGenerations.org';
-		break;
-	case 4:
-		$logo = get_template_directory_uri() . '/img/logo-lake-city-seniors.png';
-        $logolink = esc_url( home_url( '/' ) );
-		break;
-	case 6:
-		$logo = get_template_directory_uri() . '/img/logo-sound-generations-rev2019_150x113.png';
-        $logolink = 'https://www.SoundGenerations.org';
-		break;
-	case 7:
-		$logo = get_template_directory_uri() . '/img/logo-ballard-snr-ctr.png';
-        $logolink = 'https://www.SoundGenerations.org';
-		break;
-		
-	default:
-		$logo = get_template_directory_uri() . '/img/logo-sound-generations-rev2019_150x113.png';
-        $logolink = 'https://www.SoundGenerations.org';
-		break;
-}
-?>
-				<a class="site-title" href="<?php echo $logolink; ?>"><?php
-
-echo '<img src="' . $logo . '" alt="Sound Generations logo">'; ?></a>
-            
-			</div><!-- .site-branding -->
+      <div class="site-branding">
+				<?php
+				$logo = '';
+				switch ( get_current_blog_id() ) {
+					case 1:
+						$logo = get_template_directory_uri() . '/img/logo-sound-generations-rev2019_150x113.png';
+								$logolink = 'https://www.SoundGenerations.org';
+						break;
+					case 4:
+						$logo = get_template_directory_uri() . '/img/logo-lake-city-seniors.png';
+								$logolink = esc_url( home_url( '/' ) );
+						break;
+					case 6:
+						$logo = get_template_directory_uri() . '/img/logo-sound-generations-rev2019_150x113.png';
+								$logolink = 'https://www.SoundGenerations.org';
+						break;
+					case 7:
+						$logo = get_template_directory_uri() . '/img/logo-ballard-snr-ctr.png';
+								$logolink = 'https://www.SoundGenerations.org';
+						break;
+						
+					default:
+						$logo = get_template_directory_uri() . '/img/logo-sound-generations-rev2019_150x113.png';
+								$logolink = 'https://www.SoundGenerations.org';
+						break;
+				}
+				?>
+	</div><!-- .site-branding -->
             <div class="utility">
-
-				<?php get_search_form(); ?>
-				<!-- <div id='resize-links'>
-				<ul >
-
-					<li><a href='#'  data-size='62.5%' class='resizer' >A-</a></li>
-					<li><a href='#'  data-size='70%' class='resizer' >A</a></li>
-					<li><a href='#'  data-size='82%' class='resizer' >A+</a></li>
-				</ul>
-				</div>-->
-                <?php dynamic_sidebar( 'sidebar-3' ); ?>
-                
-             </div><!-- .utility -->
-
+              <?php dynamic_sidebar( 'sidebar-3' ); ?>
+            </div><!-- .utility -->
 	</div><!-- .site -->
 			
-            <nav id="site-navigation" class="main-navigation" role="navigation">
+      <nav id="site-navigation" class="main-navigation" role="navigation">
+			
+				<a class="site-title" href="<?php echo $logolink; ?>"><?php
+					echo '<img src="' . $logo . '" alt="Sound Generations logo">'; ?></a>
+					<?php get_search_form(); ?>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
     
-            </header><!-- #masthead -->
+</header><!-- #masthead -->
 
 <div id="page" class="site">
           

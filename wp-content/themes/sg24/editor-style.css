@@ -41,7 +41,7 @@ h4 {
 	font-size: 21px;
 }
 p {
-	margin-bottom: 1.3em;
+	margin-bottom: 1rem;
 }
 dfn, cite, em, i {
 	font-style: italic;
@@ -157,14 +157,15 @@ input[type=submit] {
 .wp-core-ui .button, .wp-block-button__link, a.button, .site-1 a.button {
 	font-weight: bold;
 	background: #5d0e8b;
-	border-color: #5d0e8b;
+	border-color: #fff;
 	border-radius: .25em;
 	color: #fff;
 	font-size: 18px;
 	line-height: 1.2;
 	margin-bottom: .75em;
-	padding: .3333333em 1em;
+	padding: .5em 1rem;
 	text-decoration: none;
+	border-width: .25rem;
 }
 .wp-core-ui .button:hover, wp-block-button__link:hover, a.button:hover, .site-1 a.button:hover {
 	background: #fff;

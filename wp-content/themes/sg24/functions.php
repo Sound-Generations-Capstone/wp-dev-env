@@ -47,10 +47,12 @@ function sg20_setup() {
 	*/
 	add_theme_support( 'jetpack-social-menu' );
 
-	// This theme uses wp_nav_menu() in two locations.
+	// This theme uses wp_nav_menu() in three locations.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'sg20' ),
 		'utility' => esc_html__( 'Utility', 'sg20' ),
+		'global' => esc_html__('Global', 'sg20'),
+		'social' => esc_html__('Social', 'sg20'),
 	) );
 
 	/*
@@ -674,3 +676,70 @@ function ivycat_remove_filters(){
    remove_filter( 'mc_from_date', 'ivycat_set_from', 10, 1 );
    remove_filter( 'mc_to_date', 'ivycat_set_to', 10, 1 );
 }
+
+function megamenu_add_theme_global_navigation_1731485709($themes) {
+    $themes["global_navigation_1731485709"] = array(
+        'title' => 'Global Navigation',
+        'container_background_from' => 'rgba(255, 255, 255, 0)',
+        'container_background_to' => 'rgba(255, 255, 255, 0)',
+        'container_padding_left' => '2rem',
+        'container_padding_right' => '4rem',
+        'arrow_down' => 'dash-f347',
+        'menu_item_background_hover_from' => 'rgb(250, 150, 0)',
+        'menu_item_background_hover_to' => 'rgb(250, 150, 0)',
+        'menu_item_spacing' => '0',
+        'menu_item_link_font_size' => '2rem',
+        'menu_item_link_height' => '4rem',
+        'menu_item_link_color_hover' => 'rgb(34, 34, 34)',
+        'menu_item_link_padding_left' => '2rem',
+        'menu_item_link_padding_right' => '2rem',
+        'menu_item_highlight_current' => 'off',
+        'menu_item_divider' => 'on',
+        'menu_item_divider_color' => 'rgb(255, 255, 255)',
+        'panel_inner_width' => '80%',
+        'panel_header_font_size' => '2rem',
+        'panel_widget_padding_left' => '1rem',
+        'panel_widget_padding_right' => '1rem',
+        'panel_widget_padding_top' => '2rem',
+        'panel_widget_padding_bottom' => '2rem',
+        'panel_font_size' => '14px',
+        'panel_font_color' => '#666',
+        'panel_font_family' => 'inherit',
+        'panel_second_level_font_color' => '#555',
+        'panel_second_level_font_color_hover' => '#555',
+        'panel_second_level_text_transform' => 'uppercase',
+        'panel_second_level_font' => 'inherit',
+        'panel_second_level_font_size' => '2rem',
+        'panel_second_level_font_weight' => 'bold',
+        'panel_second_level_font_weight_hover' => 'bold',
+        'panel_second_level_text_decoration' => 'none',
+        'panel_second_level_text_decoration_hover' => 'underline',
+        'panel_second_level_padding_right' => '1rem',
+        'panel_third_level_font_color' => '#666',
+        'panel_third_level_font_color_hover' => '#666',
+        'panel_third_level_font' => 'inherit',
+        'panel_third_level_font_size' => '2rem',
+        'panel_third_level_text_decoration_hover' => 'underline',
+        'flyout_link_size' => '14px',
+        'flyout_link_color' => '#666',
+        'flyout_link_color_hover' => '#666',
+        'flyout_link_family' => 'inherit',
+        'shadow' => 'on',
+        'toggle_background_from' => '#222',
+        'toggle_background_to' => '#222',
+        'mobile_background_from' => '#222',
+        'mobile_background_to' => '#222',
+        'mobile_menu_item_link_font_size' => '14px',
+        'mobile_menu_item_link_color' => '#ffffff',
+        'mobile_menu_item_link_text_align' => 'left',
+        'mobile_menu_item_link_color_hover' => '#ffffff',
+        'mobile_menu_item_background_hover_from' => '#333',
+        'mobile_menu_item_background_hover_to' => '#333',
+        'custom_css' => '/** Push menu onto new line **/ 
+#{$wrap} { 
+    clear: both; 
+}',
+    );
+    return $themes;
+}
+add_filter("megamenu_themes", "megamenu_add_theme_global_navigation_1731485709");
