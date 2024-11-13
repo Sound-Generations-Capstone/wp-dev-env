@@ -2094,6 +2094,10 @@ object {
   gap: 1rem;
 }
 
+.display-flex.justify-content_center {
+  justify-content: center;
+}
+
 .flex-column {
   flex-direction: column;
 }

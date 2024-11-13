@@ -144,7 +144,7 @@ get_header();
       <!-- /wp:paragraph -->
 
       <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-      <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+      <div class="wp-block-buttons display-flex justify-content_center"><!-- wp:button {"className":"is-style-outline"} -->
         <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="https://go.soundgenerations.org/I6oi">Donate</a></div>
         <!-- /wp:button -->
       </div>
@@ -170,7 +170,7 @@ get_header();
       <!-- /wp:spacer -->
 
       <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-      <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+      <div class="wp-block-buttons display-flex justify-content_center"><!-- wp:button {"className":"is-style-outline"} -->
         <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/?page_id=67">Subscribe to E-News</a></div>
         <!-- /wp:button -->
       </div>
