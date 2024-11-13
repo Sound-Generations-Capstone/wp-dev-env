@@ -1,30 +1,92 @@
-<?php
-/**
- * The template for displaying the footer.
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package Sound_Generations
- */
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:search {"label":"","placeholder":"Search...","width":430,"widthUnit":"px","buttonText":"Search","buttonUseIcon":true,"align":"right","style":{"elements":{"link":{"color":{"text":"#00000070"}}},"color":{"text":"#00000070"}}} /--></div>
+<!-- /wp:group -->
 
-?>
-</div>
-<!-- #content -->
-</div>
-<!-- #page -->
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"stretch"} -->
+  <div class="wp-block-column is-vertically-aligned-stretch"><!-- wp:image {"lightbox":{"enabled":false},"id":16032,"width":"216px","height":"auto","sizeSlug":"full","linkDestination":"custom"} -->
+    <figure class="wp-block-image size-full is-resized"><a href="/?page_id=16001"><img src="/wp-content/uploads/2024/11/logo-sound-generations-rev2019.png" alt="" class="wp-image-16032" style="width:216px;height:auto" /></a></figure>
+    <!-- /wp:image -->
 
-<footer id="colophon" class="site-footer widget-area" role="contentinfo">
-	<div class="site-info">
-		<?php dynamic_sidebar( 'sidebar-2' ); ?>
-		<aside class="cred">
-			<p>&copy; Copyright 2024 Sound Generations. Sound Generations believes that information about products and services that could benefit aging adults or those caring for them should be made available to consumers to help them make informed decisions about their aging journey. Sound Generations shall not discriminate on the basis of age, gender, marital status, familial status, religion, race, color, creed, sex, national origin, sexual orientation, gender identity, political ideology, the presence of any sensory, mental or physical disability or any other basis prohibited by law. <a href="https://soundgenerations.org/about/terms-of-use/">Terms of Use</a></p>
-			<p>*Sponsored ads through any Sound Generations medium including the website does not constitute endorsement, recommendation, or favoring nor does exclusion suggest disapproval. Sound Generations strongly encourages consumers to do their research and review products and services before making any decision that could affect their aging journey.</p>
-		</aside>
-		<p class="alignright"><a class="button" href="https://soundgenerations.org/#page">Back to Top</a></p>
-	</div>
-	<!-- .site-info -->
-</footer>
+    <!-- wp:paragraph {"align":"center"} -->
+    <p class="has-text-align-center"><a href="/?page_id=29" data-type="page" data-id="29">About</a></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph {"align":"center"} -->
+    <p class="has-text-align-center"><a href="/?page_id=1103" data-type="page" data-id="1103">Careers</a></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph {"align":"center"} -->
+    <p class="has-text-align-center"><a href="/?page_id=8833" data-type="page" data-id="8833">News &amp; Events</a></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph {"align":"center"} -->
+    <p class="has-text-align-center"><a href="/?page_id=15961" data-type="page" data-id="15961">Volunteer</a></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph {"align":"center"} -->
+    <p class="has-text-align-center"><a href="http://programs">Our Programs</a></p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:column -->
+
+  <!-- wp:column {"verticalAlignment":"top"} -->
+  <div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+    <h3 class="wp-block-heading has-white-color has-text-color has-link-color">Resources</h3>
+    <!-- /wp:heading -->
+
+    <!-- wp:paragraph -->
+    <p><a href="https://soundgenerations.org/about/leadership-board-of-directors/">Leadership &amp; Board of Directors</a></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p><a href="https://soundgenerations.org/about-us/news-media-center/">News &amp; Media Center</a></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p><a href="https://soundgenerations.org/about-us/terms-of-use/">Terms of Use</a></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p><a href="https://soundgenerations.org/about-us/privacy-policy/">Privacy Policy</a></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p>Site Map</p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:column -->
+
+  <!-- wp:column -->
+  <div class="wp-block-column"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+    <h3 class="wp-block-heading has-white-color has-text-color has-link-color">Sound Generations</h3>
+    <!-- /wp:heading -->
+
+    <!-- wp:paragraph -->
+    <p>Downtown Administrative Offices<br>Lillian Rice Building<br>2208 Second Avenue, Suite 100<br>Seattle, WA 98121-2055</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p>Phone: 206-448-5757<br>Fax: 206-448-5766<br><a href="mailto:info@soundgenerations.org">info@soundgenerations.org</a></p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:column -->
+
+  <!-- wp:column -->
+  <div class="wp-block-column"><!-- wp:paragraph -->
+    <p>Sound Generations is a 501(c)3 non profit.</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p>Our tax ID number is 91-0823767.</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:image {"id":13417,"linkDestination":"custom"} -->
+    <figure class="wp-block-image"><a href="https://www.guidestar.org/profile/91-0823767"><img src="https://soundgenerations.org/wp-content/uploads/MicrosoftTeams-image-5.png" alt="Platinum Transparency 2023" class="wp-image-13417" /></a></figure>
+    <!-- /wp:image -->
+  </div>
+  <!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
 <?php wp_footer(); ?>
-</body></html>
