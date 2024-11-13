@@ -2097,3 +2097,81 @@ object {
 .flex-column {
   flex-direction: column;
 }
+
+.signup-button {
+  padding: 5px 10px;
+  background-color: #880364;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none !important;
+  font-weight: bold;
+cursor: pointer;
+  display: inline-block;
+}
+
+.signup-button:hover {
+  background-color: #fd8204;
+color: #fff;
+}
+
+.posts-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2rem;
+	padding: 1rem;
+}
+
+.post-card {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	overflow: hidden;
+	transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+	transform: translateY(-5px);
+}
+
+.post-card__content {
+	padding: 1.5rem;
+}
+
+.post-card__title {
+	margin: 0 0 1rem;
+	font-size: 1.25rem;
+	line-height: 1.4;
+}
+
+.post-card__title a {
+	color: #333;
+	text-decoration: none;
+}
+
+.post-card__meta {
+	font-size: 0.875rem;
+	color: #666;
+	margin-bottom: 1rem;
+}
+
+.post-card__excerpt {
+	color: #555;
+	font-size: 0.95rem;
+	line-height: 1.6;
+	margin-bottom: 1.5rem;
+}
+
+.post-card__link {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	background: #007bff;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	font-size: 0.875rem;
+	transition: background 0.2s ease;
+}
+
+.post-card__link:hover {
+	background: #0056b3;
+}
