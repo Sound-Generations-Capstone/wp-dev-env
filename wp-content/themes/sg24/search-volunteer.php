@@ -84,12 +84,29 @@ function volunteer_search_form() {
 
     $output = '';
     if ($query->have_posts()) {
-      $output .= '<ul>';
+      $output .= '<div class="posts-grid">';
       while ($query->have_posts()) {
         $query->the_post();
-        $output .= '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+        $excerpt = has_excerpt() ? get_the_excerpt() : wp_trim_words(get_the_content());
+        $date = get_the_date('F j, Y');
+
+        $output .= '
+        <article class="post-card">
+          <div class="post-card__content">
+            <h3 class="post-card__title">
+                <a href="' . get_permalink() . '">' . get_the_title() . '</a>
+            </h3>
+            <div class="post-card__meta">
+                <span class="post-card__date">' . $date . '</span>
+            </div>
+            <div class="post-card__excerpt">
+                ' . $excerpt . '
+            </div>
+            <a href="' . get_permalink() . '" class="post-card__link">Read More</a>
+          </div>
+        </article>';
       }
-      $output .= '</ul>';
+      $output .= '</div>';
       wp_reset_postdata();
     } else {
       $output .= 'No posts found.';
