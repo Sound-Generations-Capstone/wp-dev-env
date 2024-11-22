@@ -56,7 +56,6 @@ class GF_Blocks_Config extends GF_Config {
 				'title'               => $form['title'],
 				'hasConditionalLogic' => GFFormDisplay::has_conditional_logic( $form ),
 				'isLegacyMarkup'      => GFCommon::is_legacy_markup_enabled( $form ),
-				'hasImageChoices'     => GFFormDisplay::has_image_choices( $form ),
 			);
 		}
 

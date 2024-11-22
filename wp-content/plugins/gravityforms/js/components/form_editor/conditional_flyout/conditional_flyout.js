@@ -354,8 +354,7 @@ function isValidFlyoutClick( e ) {
 		'jsConditonalToggle' in e.target.dataset ||
 		'jsAddRule' in e.target.dataset ||
 		'jsDeleteRule' in e.target.dataset ||
-		e.target.classList.contains( 'gform-field__toggle-input' ) ||
-		e.target.closest( '.gform-dialog__mask' ) !== null
+		e.target.classList.contains( 'gform-field__toggle-input' )
 	);
 	return gform.applyFilters( 'gform_conditional_logic_is_valid_flyout_click', isValidFlyoutClick, e );
 }
@@ -389,7 +388,7 @@ function GFConditionalLogic( fieldId, objectType ) {
 	this.objectType = objectType;
 	this.els        = this.gatherElements();
 	this.state      = this.getStateForField( fieldId );
-	this.visible    = document.querySelector( '.editor-sidebar .conditional_logic_flyout_container.anim-in-active' ) ? true : false;
+	this.visible    = false;
 
 	// Prebind event listener callbacks to maintain references
 	this._handleToggleClick    = this.handleToggleClick.bind( this );
@@ -537,7 +536,7 @@ GFConditionalLogic.prototype.renderFieldOptions = function( rule ) {
 			continue;
 		}
 
-		if ( field.inputs && jQuery.inArray( GetInputType( field ), [ 'checkbox', 'email', 'consent' ] ) == -1 && GetInputType( field ) !== 'radio' ) {
+		if ( field.inputs && jQuery.inArray( GetInputType( field ), [ 'checkbox', 'email', 'consent' ] ) == -1 ) {
 			for ( var j = 0; j < field.inputs.length; j++ ) {
 				var input = field.inputs[ j ];
 
@@ -1374,3 +1373,4 @@ GFConditionalLogic.prototype.init = function() {
 
 	this.renderSidebar();
 };
+

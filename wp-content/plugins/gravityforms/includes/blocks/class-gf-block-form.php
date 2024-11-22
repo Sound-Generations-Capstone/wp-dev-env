@@ -214,7 +214,7 @@ class GF_Block_Form extends GF_Block {
 			}
 
 			// Get form output string.
-			$form_string = gravity_form( $form_id, $title, $description, false, $field_values, $ajax, $tabindex, false, rgar( $attributes, 'theme' ), json_encode( $attributes ) );
+			$form_string = gravity_form( $form_id, $title, $description, false, $field_values, $ajax, $tabindex, false );
 
 			// Get output buffer contents.
 			$buffer_contents = ob_get_contents();
@@ -236,7 +236,7 @@ class GF_Block_Form extends GF_Block {
 			$field_values = '';
 		}
 
-		return gravity_form( $form_id, $title, $description, false, $field_values, $ajax, $tabindex, false, rgar( $attributes, 'theme' ), json_encode( $attributes ) );
+		return gravity_form( $form_id, $title, $description, false, $field_values, $ajax, $tabindex, false );
 
 	}
 
