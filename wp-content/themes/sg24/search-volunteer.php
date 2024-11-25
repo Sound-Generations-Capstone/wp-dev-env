@@ -118,7 +118,7 @@ function volunteer_search_form() {
 }
 
 add_shortcode('volunteer_search_form', 'volunteer_search_form');
-
+echo do_shortcode('[volunteer_search_form]');
 
 get_header(); ?>
 
