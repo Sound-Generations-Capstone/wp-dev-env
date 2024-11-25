@@ -2176,6 +2176,63 @@ color: #fff;
 	transition: background 0.2s ease;
 }
 
+.post-card__link:visited {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	background: #007bff;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	font-size: 0.875rem;
+	transition: background 0.2s ease;
+}
+
 .post-card__link:hover {
 	background: #0056b3;
+  color: #fff;
+}
+
+
+.jump-to {
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.jump-to:hover {
+  background: #440a66;
+}
+
+.post-card-container {
+  justify-content: space-between;
+}
+
+.post-card-thumbnail {
+  max-width: 50%;
+}
+
+.vlp-image {
+  max-width: 20%;
+}
+
+.wp-block-visual-link-preview-link {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: .5rem;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.wp-block-visual-link-preview-link:hover {
+  transform: translateY(-5px);
+}
+
+.e-news-signup {
+  margin-top: 2rem;
+}
+
+.external-news a{
+  text-decoration: none;
 }

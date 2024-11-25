@@ -226,6 +226,5 @@ get_header();
 <!-- /wp:columns -->
 
 <?php
-get_sidebar();
 get_footer();
 ?>
