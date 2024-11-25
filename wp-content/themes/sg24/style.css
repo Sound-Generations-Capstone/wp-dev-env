@@ -928,7 +928,6 @@ a:active {
 
 .site-content a {
   font-weight: bold;
-  text-decoration: underline;
 }
 
 .site a[href^="tel"] {
@@ -2192,8 +2191,13 @@ color: #fff;
   color: #fff;
 }
 
+.post-card__link.extra-large {
+  
+}
+
 
 .jump-to {
+  margin-top: 2rem;
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
@@ -2206,7 +2210,9 @@ color: #fff;
 }
 
 .post-card-thumbnail {
-  max-width: 50%;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
 }
 
 .vlp-image {
@@ -2214,14 +2220,14 @@ color: #fff;
 }
 
 .wp-block-visual-link-preview-link {
-  max-width: 80%;
+  max-width: 70%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   padding: 2rem;
   border-radius: .5rem;
   color: white;
-  box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.5);
   transition: transform 0.2s ease;
 }
 
@@ -2231,8 +2237,69 @@ color: #fff;
 
 .e-news-signup {
   margin-top: 2rem;
+  background-color: #880364;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.e-news-signup > h2 {
+  color: white
 }
 
 .external-news a{
   text-decoration: none;
+}
+
+.news-grid {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.featured-news {
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+.featured-news:hover {
+  text-decoration: underline;
+}
+
+.subscribe {
+  transition: background 0.2s ease, transform 0.2s ease;
+  background: transparent;
+  border: solid .35rem;
+  border-radius: .875rem;
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.subscribe-group {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.subscribe:hover {
+  background-color: #5f0045;
+}
+
+.subscribe:hover:visited {
+  background-color: #5f0045;
+}
+
+
+.subscribe:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.fill {
+  max-width: 100%;
 }
