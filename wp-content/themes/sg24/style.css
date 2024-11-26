@@ -2303,3 +2303,14 @@ color: #fff;
 .fill {
   max-width: 100%;
 }
+
+.has-dark-grey-background-color {
+  background-color: #222;
+}
+
+.footer-padding {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 0rem;
+}
