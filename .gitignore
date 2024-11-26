@@ -39,6 +39,9 @@ wp-config.php
 # database
 wp-content/database/.ht.sqlite
 
+# .env
+.env
+
 # All plugins
 #
 # Note: If you wish to whitelist plugins,
