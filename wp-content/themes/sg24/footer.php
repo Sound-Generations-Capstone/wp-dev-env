@@ -52,7 +52,7 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph -->
-    <p>Site Map</p>
+    <p><a href="/sitemap">Site Map</a></p>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:column -->
