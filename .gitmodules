@@ -1,0 +1,3 @@
+[submodule "wp-content/database"]
+	path = wp-content/database
+	url = https://github.com/Sound-Generations-Capstone/database
