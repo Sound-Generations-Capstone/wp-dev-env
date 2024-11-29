@@ -52,7 +52,7 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph -->
-    <p><a href="/sitemap">Site Map</a></p>
+    <p><a href="<?php get_page_by_path('/sitemap')->ID?>">Site Map</a></p>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:column -->
