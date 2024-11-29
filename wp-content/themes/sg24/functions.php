@@ -674,3 +674,20 @@ function ivycat_remove_filters(){
    remove_filter( 'mc_from_date', 'ivycat_set_from', 10, 1 );
    remove_filter( 'mc_to_date', 'ivycat_set_to', 10, 1 );
 }
+
+function create_sitemap() {
+	$page = get_page_by_path('/sitemap');
+	if (!$page) { // sitemap doesn't exist
+		$page_args = [
+			'post_title' => 'Sitemap',
+			'post_status' => 'publish',
+			'post_type' => 'page',
+			'page_template' => 'page-sitemap.php'
+		];
+		wp_insert_post($page_args);
+	} else {
+		// sitemap found, updating
+		update_post_meta($page->ID, '_wp_page_template', 'page-sitemap.php');
+	}
+}
+add_action('init', 'create_sitemap');
