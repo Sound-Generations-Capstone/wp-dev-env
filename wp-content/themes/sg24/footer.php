@@ -9,23 +9,23 @@
     <!-- /wp:image -->
 
     <!-- wp:paragraph {"align":"center"} -->
-    <p class="has-text-align-center has-white-color"><a href="/?page_id=29" data-type="page" data-id="29" class="has-white-color">About</a></p>
+    <p class="has-text-align-center has-white-color"><a href="/about-us" data-type="page" data-id="29" class="has-white-color">About</a></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"align":"center"} -->
-    <p class="has-text-align-center has-white-color"><a href="/?page_id=1103" data-type="page" data-id="1103" class="has-white-color">Careers</a></p>
+    <p class="has-text-align-center has-white-color"><a href="/careers" data-type="page" data-id="1103" class="has-white-color">Careers</a></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"align":"center"} -->
-    <p class="has-text-align-center has-white-color"><a href="/?page_id=8833" data-type="page" data-id="8833" class="has-white-color">News &amp; Events</a></p>
+    <p class="has-text-align-center has-white-color"><a href="/media-center/newsletters-annual-reports" data-type="page" data-id="8833" class="has-white-color">News &amp; Events</a></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"align":"center"} -->
-    <p class="has-text-align-center has-white-color"><a href="/?page_id=15961" data-type="page" data-id="15961" class="has-white-color">Volunteer</a></p>
+    <p class="has-text-align-center has-white-color"><a href="/get-involved/volunteer" data-type="page" data-id="15961" class="has-white-color">Volunteer</a></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"align":"center"} -->
-    <p class="has-text-align-center has-white-color"><a href="http://programs" class="has-white-color">Our Programs</a></p>
+    <p class="has-text-align-center has-white-color"><a href="/our-programs" class="has-white-color">Our Programs</a></p>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:column -->
