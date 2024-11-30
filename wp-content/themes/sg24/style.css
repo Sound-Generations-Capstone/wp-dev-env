@@ -407,12 +407,6 @@ textarea {
 .has-black-color {
   color: #000000;
 }
-.has-white-background-color {
-  background-color: #ffffff;
-}
-.has-white-color {
-  color: #ffffff;
-}
 @media screen and (min-width: 60em) {
   body,
   button,
@@ -1668,7 +1662,6 @@ p#breadcrumbs {
 @media screen and (min-width: 800px) {
   .content-area {
     background: #fff;
-    float: left;
     margin: 0 -29.4814814% 0 0;
     padding: 0 0 0 1.5em;
     width: 100%;
@@ -1678,38 +1671,6 @@ p#breadcrumbs {
     float: none;
     margin: 0 auto;
     padding: 0;
-  }
-  .page-template-default .content-area,
-  .archive .content-area {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+70,efefef+70,efefef+100,efefef+100 */
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(
-      left,
-      #ffffff 0%,
-      #ffffff 70%,
-      #efefef 70%,
-      #efefef 100%,
-      #efefef 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      left,
-      #ffffff 0%,
-      #ffffff 70%,
-      #efefef 70%,
-      #efefef 100%,
-      #efefef 100%
-    ); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(
-      to right,
-      #ffffff 0%,
-      #ffffff 70%,
-      #efefef 70%,
-      #efefef 100%,
-      #efefef 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  }
-  .site-main {
-    margin: 0 30% 0 0;
   }
   .page-template-page-full .site-main {
     margin: 0 auto;
@@ -2308,9 +2269,24 @@ color: #fff;
   background-color: #222;
 }
 
-.footer-padding {
+.footer {
+  color: white;
   padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
   margin-bottom: 0rem;
+}
+.footer a {
+  color: white;
+}
+
+
+.footer a:visited {
+  color: white;
+}
+
+
+.column-link {
+  color: white;
+  font-weight: bold;
 }
