@@ -24,9 +24,9 @@ jobs:
           sudo service apache2 start
           sudo a2ensite wordpress
           sudo service apache2 reload
-      - name: Ping localhost:8881
+      - name: Ping 127.0.0.1:8881
         run: |
-          ping "http://localhost:8881/"
+          ping "http://127.0.0.1:8881/"
 
   deploy:
     runs-on: ubuntu-latest
