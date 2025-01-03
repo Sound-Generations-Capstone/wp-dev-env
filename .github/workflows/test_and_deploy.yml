@@ -8,23 +8,20 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          ref: main
-          repository: Sound-Generations-Capstone/wp-dev-env
-          path: /var/www/html
-          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Checkout database
         uses: actions/checkout@v4
         with:
           ref: main
           repository: Sound-Generations-Capstone/database
-          path: /var/www/html/wp-content/database
+          path: ./wp-content/database
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Enforce www/html
+        run: |
+          sudo ln -s /home/runner/work/wp-dev-env/wp-dev-env /var/www/html
       - name: Setup Wordpress
         run: |
           sudo apt update
           sudo apt install wordpress
-          export PATH="$PATH:/usr/sbin"
           sudo systemctl start apache2.service
 
   deploy:
