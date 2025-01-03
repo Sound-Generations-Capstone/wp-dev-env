@@ -8,12 +8,17 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          ref: main
+          repository: Sound-Generations-Capstone/wp-dev-env
+          path: /var/www/html
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Checkout database
         uses: actions/checkout@v4
         with:
           ref: main
           repository: Sound-Generations-Capstone/database
-          path: ./wp-content/database
+          path: /var/www/html/wp-content/database
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Setup Wordpress
         run: |
@@ -21,13 +26,6 @@ jobs:
           sudo apt install wordpress
           export PATH="$PATH:/usr/sbin"
           sudo systemctl start apache2.service
-          sudo cp ./apache2/sites-available/wordpress.conf /etc/apache2/sites-available/wordpress.conf
-          sudo a2ensite wordpress
-          sudo systemctl reload apache2.service
-      - name: Ping localhost:8881
-        run: |
-          sleep 5
-          curl "http://localhost:8881/"
 
   deploy:
     runs-on: ubuntu-latest
