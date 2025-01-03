@@ -15,14 +15,14 @@ jobs:
           repository: Sound-Generations-Capstone/database
           path: ./wp-content/database
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
-      - name: Enforce WP location
-        run: |
-          sudo ln -s /home/runner/work/wp-dev-env/wp-dev-env /var/lib/wordpress
       - name: Setup Wordpress
         run: |
           sudo apt update
           sudo apt install wordpress
           sudo systemctl start apache2.service
+      - name: Copy repo to wordpress
+        run: |
+          sudo cp -r . /var/lib/wordpress
       - name: Curl index.php
         run: |
           curl http://localhost/index.php
