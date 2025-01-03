@@ -25,6 +25,9 @@ jobs:
           sudo a2enmod rewrite
           sudo a2dissite 000-default
           sudo service apache2 reload
+      - name: Ping localhost:8881
+        run: |
+          ping "http://localhost:8881/"
 
   deploy:
     runs-on: ubuntu-latest
