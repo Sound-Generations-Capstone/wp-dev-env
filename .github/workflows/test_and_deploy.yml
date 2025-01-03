@@ -21,9 +21,8 @@ jobs:
           sudo apt install wordpress
           export PATH="$PATH:/usr/sbin"
           sudo cp ./apache2/sites-available/wordpress.conf /etc/apache2/sites-available/wordpress.conf
-          sudo service apache2 start
           sudo a2ensite wordpress
-          sudo service apache2 reload
+          sudo systemctl reload apache2.service
       - name: Ping localhost:8881
         run: |
           curl "http://localhost:8881/"
