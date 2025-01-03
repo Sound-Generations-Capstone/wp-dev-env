@@ -24,7 +24,7 @@ jobs:
           sudo a2ensite wordpress
           sudo a2enmod rewrite
           sudo a2dissite 000-default
-          sudo service apache2 reload
+          sudo service apache2 start
       - name: Ping localhost:8881
         run: |
           ping "http://localhost:8881/"
