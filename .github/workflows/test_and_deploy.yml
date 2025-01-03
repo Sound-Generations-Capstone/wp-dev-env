@@ -22,7 +22,7 @@ jobs:
           sudo systemctl start apache2.service
       - name: Copy repo to wordpress
         run: |
-          sudo cp -r . /var/lib/wordpress
+          sudo cp -rf ./wp-content/* /var/lib/wordpress/wp-content/
       - name: Curl index.php
         run: |
           curl http://localhost/index.php
