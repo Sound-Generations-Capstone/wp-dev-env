@@ -15,9 +15,16 @@ jobs:
           repository: Sound-Generations-Capstone/database
           path: ./wp-content/database
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
-      - name: list files
+      - name: Setup Wordpress
         run: |
-          tree
+          sudo apt update
+          sudo apt install wordpress
+          export PATH="$PATH:/usr/sbin"
+          sudo cp ./apache2/sites-available/wordpress.conf /etc/apache2/sites-available/wordpress.conf
+          sudo a2ensite wordpress
+          sudo a2enmod rewrite
+          sudo a2dissite 000-default
+          sudo service apache2 reload
 
   deploy:
     runs-on: ubuntu-latest
