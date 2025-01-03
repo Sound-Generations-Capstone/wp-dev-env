@@ -3,8 +3,24 @@ name: deploy via rsync
 on: [push]
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Checkout database
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          repository: Sound-Generations-Capstone/database
+          path: ./wp-content/database
+      - name: list files
+        run: |
+          tree
+      
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Checkout
         uses: actions/checkout@v4
