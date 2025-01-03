@@ -14,7 +14,7 @@ jobs:
           ref: main
           repository: Sound-Generations-Capstone/database
           path: ./wp-content/database
-          token: ${{ secrets.GITHUB_TOKEN }}
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: list files
         run: |
           tree
