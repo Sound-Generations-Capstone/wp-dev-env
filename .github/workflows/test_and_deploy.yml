@@ -23,8 +23,7 @@ jobs:
           sudo cp ./apache2/sites-available/wordpress.conf /etc/apache2/sites-available/wordpress.conf
           sudo service apache2 start
           sudo a2ensite wordpress
-          sudo a2enmod rewrite
-          sudo service apache2 restart
+          sudo service apache2 reload
       - name: Ping localhost:8881
         run: |
           ping "http://localhost:8881/"
