@@ -22,7 +22,7 @@ jobs:
           export PATH="$PATH:/usr/sbin"
           sudo cp ./apache2/sites-available/wordpress.conf /etc/apache2/sites-available/wordpress.conf
           sudo a2ensite wordpress
-          sudo systemctl reload apache2.service
+          sudo systemctl start apache2.service
       - name: Ping localhost:8881
         run: |
           curl "http://localhost:8881/"
