@@ -15,17 +15,15 @@ jobs:
           repository: Sound-Generations-Capstone/database
           path: ./wp-content/database
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
-      - name: Setup Wordpress
-        run: |
-          sudo apt update
-          sudo apt install wordpress
-          sudo systemctl start apache2.service
-      - name: Copy repo to wordpress
-        run: |
-          sudo cp -rf ./wp-content/* /var/lib/wordpress/wp-content/
-      - name: Curl index.php
-        run: |
-          curl http://localhost/index.php
+      - name: Deploy to Test Server
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.TEST_HOST }}
+          REMOTE_USER: ${{ secrets.TEST_USER }}
+          REMOTE_PORT: ${{ secrets.TEST_PORT }}
+          SOURCE: "wp-content/"
+          TARGET: "/code/wp-content/"
 
   deploy:
     runs-on: ubuntu-latest
