@@ -24,6 +24,17 @@ jobs:
           REMOTE_PORT: ${{ secrets.TEST_PORT }}
           SOURCE: "wp-content/"
           TARGET: "/code/wp-content/"
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'latest'
+          cache: 'npm'
+      - name: Node - install dependencies
+        run: npm install
+      - name: Node - start http proxy
+        run: npx http-server -P https://dev-test-sg-capstone.pantheonsite.io -p 8881 &
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
 
   deploy:
     runs-on: ubuntu-latest
