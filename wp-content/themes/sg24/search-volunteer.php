@@ -84,7 +84,7 @@ function volunteer_search_form() {
 
     $output = '';
     if ($query->have_posts()) {
-      $output .= '<div class="posts-grid">';
+      $output .= '<div class="card-grid">';
       while ($query->have_posts()) {
         $query->the_post();
         $excerpt = has_excerpt() ? get_the_excerpt() : wp_trim_words(get_the_content());

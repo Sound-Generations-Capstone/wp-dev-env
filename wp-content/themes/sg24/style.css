@@ -2078,7 +2078,7 @@ cursor: pointer;
 color: #fff;
 }
 
-.posts-grid {
+.card-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 2rem;
@@ -2289,4 +2289,8 @@ color: #fff;
 .column-link {
   color: white;
   font-weight: bold;
+}
+
+.services-grid {
+  margin: 4rem;
 }
