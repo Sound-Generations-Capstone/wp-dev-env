@@ -12,9 +12,12 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Grab database from Pantheon
         run: |
-          export SSH_PRIVATE_KEY=${{ secrets.SSH_PRIVATE_KEY }}
           scp -P ${{ secrets.REMOTE_PORT }} ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/code/wp-content/database/.ht.sqlite wp-content/database/.ht.sqlite
       - name: Deploy to Pantheon
         uses: easingthemes/ssh-deploy@main
