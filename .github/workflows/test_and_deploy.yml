@@ -12,10 +12,14 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+      - name: Setup known_hosts for SSH
+        run: |
+          ssh-keyscan -p ${{ secrets.REMOTE_PORT }} -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
       - name: Install SSH key
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ~/.ssh/known_hosts
       - name: Grab database from Pantheon
         run: |
           scp -P ${{ secrets.REMOTE_PORT }} ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/code/wp-content/database/.ht.sqlite wp-content/database/.ht.sqlite
