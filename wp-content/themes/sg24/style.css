@@ -2229,7 +2229,7 @@ color: #fff;
 }
 
 .subscribe {
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
   background: transparent;
   border: solid .35rem;
   border-radius: .875rem;

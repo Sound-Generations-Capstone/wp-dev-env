@@ -15,8 +15,7 @@ get_header();
       <h1 class="has-white-color">Assistance Services Hub</h1>
       <p>We provide assistance services for older adults, adults with disabilities, and individuals who love and care for them. We also offer free to low-cost solutions for those seeking to utilize their community resources.</p>
   </header> 
-  <body>
-    <main class="services">
+  <main class="services">
         <a class="pathways service-card" href="<?php echo get_permalink(get_page_by_path('assistance-services/pathways-information-assistance'))?>" data-testid="pathways-link">
           <img src="wp-content/uploads/2025/01/Pathways-IApng.png" alt=""/><br/>
           Pathways and Information Assistance
@@ -42,5 +41,4 @@ get_header();
             Geriatric Regional Assessment Team
         </a>
     </main>
-  </body>
 <?php get_footer(); ?>
