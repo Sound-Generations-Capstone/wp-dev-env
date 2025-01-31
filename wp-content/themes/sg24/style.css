@@ -1212,6 +1212,15 @@ li:hover .menu-item {
   text-align: center;
 }
 
+.main-navigation ul {
+  margin: 0 auto !important;
+  width: max-content !important;
+}
+
+.main-navigation ul li {
+  position: relative;
+}
+
 .menu-toggle {
   font-size: 2.1rem;
 }

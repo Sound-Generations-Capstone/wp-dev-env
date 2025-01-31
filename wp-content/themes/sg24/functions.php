@@ -692,8 +692,12 @@ function create_sitemap() {
 }
 add_action('init', 'create_sitemap');
 
-function set_media_center_template() {
+add_action('init', function() {
 	$page = get_page_by_path('/media-center');
 	update_post_meta($page->ID, '_wp_page_template', 'page-news-center.php');
-}
-add_action('init', 'set_media_center_template');
+});
+
+add_action('init', function() {
+	$page = get_page_by_path('/health-wellness');
+	update_post_meta($page->ID, '_wp_page_template', 'page-health-and-wellness.php');
+});
