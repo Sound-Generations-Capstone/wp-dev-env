@@ -2289,7 +2289,7 @@ color: #fff;
   font-weight: bold;
 }
 
-.services {
+.card-container {
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
@@ -2302,6 +2302,24 @@ color: #fff;
   padding-right: 3rem;
   padding-left: 3rem;
 }
+
+.outline-link {
+  color: white;
+  padding: 2rem;
+  outline: white solid 0.25rem;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.icon {
+  display: inline;
+  margin-right: 2rem;
+  position: relative;
+  top: 1.25rem;
+}
+
+/* Assistance Services Redesign */
 
 .service-card {
   display: block;
@@ -2376,5 +2394,167 @@ color: #fff;
   color: white;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+/* Caregiver Support Redesign */
+
+.caregiver-support-menu {
+  flex-flow: nowrap;
+}
+
+.caregiver-card {
+  background-color: #5d0e8b;
+  margin: 2rem;
+  padding: 3rem;
+  width: 50%;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  min-height: 100%;
+  font-weight: 500;
+}
+
+.caregiver-card img {
+  aspect-ratio: 1/1;
+  max-height: 50%;
+}
+
+.caregiver-card p {
+  padding-bottom: 2rem;
+}
+
+.community-outreach {
+  display: flex;
+  margin: 2rem 2rem 4rem 2rem;
+  padding-left: 3rem;
+  color: white;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.community-outreach-info {
+  padding: 3rem;
+  border-radius: 10px;
+  width: 65%;
+  background-color: #5d0e8b;
+}
+
+/* .community-outreach ul {
+  display: block;
+}
+
+.community-outreach p {
+  display: block;
+} */
+
+.presentation-image {
+  max-width: 30%;
+  border-radius: 10px;
+  margin-right: 3rem;
+  object-fit: cover;
+}
+
+.caregiver-resources a {
+  background-color: #880364;
+}
+
+.small-cards {
+ display: grid;
+ max-width: 90%;
+ margin-top: 2rem;
+ gap: 1rem;
+ grid-template-columns: repeat(3, 1fr); 
+}
+
+.small-cards a {
+  display: flex;
+  margin: 2rem;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.large-cards {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+
+.call-caregiver-support {
+  display: flex;
+  flex-direction: column;
+}
+
+.large-card {
+  display: flex;
+  justify-content: stretch;
+  padding: 3rem;
+  border-radius: 10px;
+  max-width: 40%;
+  align-items: center;
+}
+
+.large-card a {
+  padding: 4rem;
+  margin: 2rem;
+  width: 100%;
+  font-size: 3rem;
+}
+
+.article-header {
+  text-align: center;
+}
+
+.section-header {
+  text-align: center;
+}
+
+@media screen and (max-width: 945px) {
+  .small-cards { 
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  .caregiver-support-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .caregiver-card {
+    width: 100%;
+  }
+
+  .community-outreach {
+    flex-direction: column-reverse;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .community-outreach-info {
+    width: 80%;
+  }
+
+  .presentation-image {
+    max-width: 100%;
+  }
+
+  .large-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    width: 100%;
+  }
+
+  .large-card {
+    margin: 2rem;
+    max-width: 90%;
+  }
+
 }
 
