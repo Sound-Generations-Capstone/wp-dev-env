@@ -13,7 +13,7 @@ function volunteer_search_form() {
   <form method="post" class="volunteer-search-form display-flex" style="gap: 1rem">
     <div class="display-flex flex-column">
       <label for="location">Location</label>
-      <select name="location">
+      <select name="location" data-testid="select-location">
         <option selected value="">All</option>
         <?php
         $map = array(
@@ -40,7 +40,7 @@ function volunteer_search_form() {
 
     <div class="display-flex flex-column">
         <label for="kid-friendly">Kid Friendly</label>
-        <select name="kid-friendly">
+        <select name="kid-friendly" data-testid="select-kid-friendly">
           <option selected value="">Either</option>
           <?php
           $map = array(
@@ -62,7 +62,7 @@ function volunteer_search_form() {
           ?>
       </select>
     </div>
-    <button type="submit">Search</button>
+    <button type="submit" data-testid="volunteer-search-submit">Search</button>
   </form>
   <?php
 

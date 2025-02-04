@@ -31,7 +31,7 @@ get_header();
             <h3 class="post-card__title">
                 <a href="' . get_permalink() . '">' . esc_html(get_the_title()) . '</a>
             </h3>
-            <a href="' . get_permalink() . '" class="post-card__link extra-large">Read More</a>
+            <a href="' . get_permalink() . '" class="post-card__link extra-large" data-testid="news-card-read-more">Read More</a>
           </div>
         </article>';
       }
@@ -39,11 +39,6 @@ get_header();
     } else {
       $output .= 'No news found. Come back later!';
     }
-    // Pagination
-    /* if ($query_attributes['paged']) {
-      $output .= next_posts_link( __( 'Older Entries', 'textdomain' ), $newsletters_query->max_num_pages );
-	    $output .= previous_posts_link( __( 'Newer Entries', 'textdomain' ) );
-    }*/
     wp_reset_postdata();
     echo $output;
     return ob_get_clean();
@@ -64,7 +59,7 @@ get_header();
   <!-- Gravity forms button here-->
   <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
   <div class="wp-block-buttons subscribe-group"><!-- wp:button {"backgroundColor":"orangedrk","width":50} -->
-  <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="has-background subscribe" href="http://eepurl.com/dIh9Xf">Subscribe</a></div>
+  <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="has-background subscribe" href="http://eepurl.com/dIh9Xf" data-testid="subscribe-enews">Subscribe</a></div>
   <!-- /wp:button --></div>
   <!-- /wp:buttons -->
 </div>

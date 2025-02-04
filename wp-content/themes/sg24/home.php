@@ -13,7 +13,7 @@ get_header();
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:cover {"url":"/wp-content/uploads/2024/11/iStock-1298301367-1024x681.jpeg","id":15972,"dimRatio":80,"customOverlayColor":"#aa0061","isUserOverlayColor":true,"focalPoint":{"x":1,"y":0},"contentPosition":"center left","align":"full","style":{"color":{"duotone":"unset"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"normal"} -->
-  <div class="wp-block-cover alignfull has-custom-content-position is-position-center-left has-white-color has-text-color has-link-color has-normal-font-size"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-80 has-background-dim" style="background-color:#aa0061"></span><img class="wp-block-cover__image-background wp-image-15972" alt="" src="/wp-content/uploads/2024/11/iStock-1298301367-1024x681.jpeg" style="object-position:100% 0%" data-object-fit="cover" data-object-position="100% 0%" />
+  <div class="wp-block-cover alignfull has-custom-content-position is-position-center-left has-white-color has-text-color has-link-color has-normal-font-size"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-80 has-background-dim" style="background-color:#aa0061"></span><img class="wp-block-cover__image-background wp-image-15972" alt="" src="/wp-content/uploads/2024/11/iStock-1298301367-1024x681.jpeg" style="object-position:100% 0%" data-object-fit="cover" data-object-position="100% 0%" data-testid="welcome-button-container"/>
     <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"huge"} -->
       <p class="has-text-align-left has-white-color has-text-color has-link-color has-huge-font-size"><strong>Your Partner in Positive Aging</strong></p>
       <!-- /wp:paragraph -->
@@ -28,11 +28,11 @@ get_header();
 
       <!-- wp:buttons {"align":"wide","layout":{"type":"flex","justifyContent":"left"}} -->
       <div class="wp-block-buttons alignwide"><!-- wp:button {"textColor":"white","className":"is-style-outline hover-white-purple","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"color":{"background":"#ffffff00"}}} -->
-        <div class="wp-block-button is-style-outline hover-white-purple"><a class="wp-block-button__link has-white-color has-text-color has-background has-link-color wp-element-button" href="/?page_id=196" style="background-color:#ffffff00">Volunteer With Us</a></div>
+        <div class="wp-block-button is-style-outline hover-white-purple"><a class="wp-block-button__link has-white-color has-text-color has-background has-link-color wp-element-button" href="/?page_id=196" style="background-color:#ffffff00" data-testid="volunteer-button">Volunteer With Us</a></div>
         <!-- /wp:button -->
 
         <!-- wp:button {"textColor":"white","className":"is-style-outline hover-white-purple","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"color":{"background":"#ffffff00"}}} -->
-        <div class="wp-block-button is-style-outline hover-white-purple"><a class="wp-block-button__link has-white-color has-text-color has-background has-link-color wp-element-button" href="/?page_id=21" style="background-color:#ffffff00">Explore Our Programs</a></div>
+        <div class="wp-block-button is-style-outline hover-white-purple"><a class="wp-block-button__link has-white-color has-text-color has-background has-link-color wp-element-button" href="/?page_id=21" style="background-color:#ffffff00" data-testid="explore-button">Explore Our Programs</a></div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->
@@ -83,12 +83,12 @@ get_header();
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull"><!-- wp:columns {"align":"full"} -->
+<div class="wp-block-group alignfull" data-testid="popular-services"><!-- wp:columns {"align":"full"} -->
   <div class="wp-block-columns alignfull"><!-- wp:column {"verticalAlignment":"stretch"} -->
     <div class="wp-block-column is-vertically-aligned-stretch"><!-- wp:cover {"url":"/wp-content/uploads/2024/11/Hyde-Shuttle-Central-Area-SC-2019-2-1.jpg","id":15985,"alt":"Image of a Hyde Shuttle bus waiting outside of a Sound Generations building.","dimRatio":50,"focalPoint":{"x":1,"y":0},"minHeight":315,"minHeightUnit":"px","contentPosition":"bottom center","align":"full"} -->
       <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:315px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-15985" alt="Image of a Hyde Shuttle bus waiting outside of a Sound Generations building." src="/wp-content/uploads/2024/11/Hyde-Shuttle-Central-Area-SC-2019-2-1.jpg" style="object-position:100% 0%" data-object-fit="cover" data-object-position="100% 0%" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"large"} -->
-          <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size "><a class="column-link" href="/?page_id=12312" data-type="page" data-id="12312"><strong>Transportation Assistance</strong></a></p>
+          <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size "><a class="column-link" href="/?page_id=12312" data-type="page" data-id="12312" data-testid="transportation"><strong>Transportation Assistance</strong></a></p>
           <!-- /wp:paragraph -->
         </div>
       </div>
@@ -100,7 +100,7 @@ get_header();
     <div class="wp-block-column is-vertically-aligned-stretch"><!-- wp:cover {"url":"/wp-content/uploads/2024/11/2019-Fai-Delivering-Meals-On-Wheels-During-Slush-credit-Crosscut-News-edited.jpg","id":15989,"dimRatio":50,"minHeight":315,"minHeightUnit":"px","contentPosition":"bottom center","align":"full"} -->
       <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:315px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-15989" alt="" src="/wp-content/uploads/2024/11/2019-Fai-Delivering-Meals-On-Wheels-During-Slush-credit-Crosscut-News-edited.jpg" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"large"} -->
-          <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size"><a class="column-link" href="/?page_id=189" data-type="page" data-id="189"><strong>Food Security Support</strong></a></p>
+          <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size"><a class="column-link" href="/?page_id=189" data-type="page" data-id="189" data-testid="food-security"><strong>Food Security Support</strong></a></p>
           <!-- /wp:paragraph -->
         </div>
       </div>
@@ -112,7 +112,7 @@ get_header();
     <div class="wp-block-column is-vertically-aligned-stretch"><!-- wp:cover {"url":"/wp-content/uploads/2024/11/Enhance-Fitness-2019-13_small-1024x683.jpg","id":15990,"dimRatio":50,"minHeight":315,"minHeightUnit":"px","contentPosition":"bottom center","align":"full"} -->
       <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:315px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-15990" alt="" src="/wp-content/uploads/2024/11/Enhance-Fitness-2019-13_small-1024x683.jpg" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"large"} -->
-          <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size"><a class="column-link" href="/?page_id=23" data-type="page" data-id="23"><strong>Health &amp; Wellness</strong></a></p>
+          <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size"><a class="column-link" href="/?page_id=23" data-type="page" data-id="23" data-testid="health"><strong>Health &amp; Wellness</strong></a></p>
           <!-- /wp:paragraph -->
         </div>
       </div>
@@ -145,7 +145,7 @@ get_header();
 
       <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
       <div class="wp-block-buttons display-flex justify-content_center"><!-- wp:button {"className":"is-style-outline"} -->
-        <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="https://go.soundgenerations.org/I6oi">Donate</a></div>
+        <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="https://go.soundgenerations.org/I6oi" data-testid="donate">Donate</a></div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->
@@ -171,7 +171,7 @@ get_header();
 
       <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
       <div class="wp-block-buttons display-flex justify-content_center"><!-- wp:button {"className":"is-style-outline"} -->
-        <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/?page_id=67">Subscribe to E-News</a></div>
+        <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/?page_id=67" data-testid="subscribe-enews">Subscribe to E-News</a></div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->
@@ -181,6 +181,9 @@ get_header();
   <!-- /wp:columns -->
 </div>
 <!-- /wp:group -->
+
+
+<!-- TODO: switch to dynamic post fetching as is done with the news center  -->
 
 <!-- wp:heading {"textAlign":"center","level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|black"}}}},"textColor":"black"} -->
 <h1 class="wp-block-heading has-text-align-center has-black-color has-text-color has-link-color">What's Happening</h1>
