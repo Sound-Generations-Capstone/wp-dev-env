@@ -24,6 +24,7 @@ jobs:
           known_hosts: ~/.ssh/known_hosts
       - name: Grab database from Pantheon
         run: |
+          touch ./wp-content/database/.ht.sqlite
           scp -P ${{ secrets.REMOTE_PORT }} ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/code/wp-content/database/.ht.sqlite ./wp-content/database/.ht.sqlite
       - name: Deploy to Test Pantheon
         uses: easingthemes/ssh-deploy@main
