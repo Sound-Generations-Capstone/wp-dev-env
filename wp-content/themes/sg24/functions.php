@@ -697,3 +697,15 @@ function set_media_center_template() {
 	update_post_meta($page->ID, '_wp_page_template', 'page-news-center.php');
 }
 add_action('init', 'set_media_center_template');
+
+function set_assistance_services_template() {
+	$page = get_page_by_path('/assistance-services');
+	update_post_meta($page->ID, '_wp_page_template', 'page-assistance-services.php');
+}
+add_action('init', 'set_assistance_services_template');
+
+function set_caregiver_support_template() {
+	$page = get_page_by_path('/our-programs/caregiver-support');
+	update_post_meta($page->ID, '_wp_page_template', 'page-caregiver-support.php');
+}
+add_action('init', 'set_caregiver_support_template');
