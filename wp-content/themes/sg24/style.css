@@ -975,14 +975,10 @@ a[href$=".pdf"]:before {
   outline: thin dotted;
 }
 
-/**/
+/* donate button */
 #mega-menu-wrap-primary
   #mega-menu-primary
-  > li#mega-menu-item-6559
-  > a.mega-menu-link,
-#mega-menu-wrap-primary
-  #mega-menu-primary
-  > li#mega-menu-item-223
+  > li:last-child
   > a.mega-menu-link {
   background: #fd8204 url("img/bg-donate-button-32x28.png") no-repeat 2px center;
   background-size: 24px 21px;
@@ -996,27 +992,15 @@ a[href$=".pdf"]:before {
 
 #mega-menu-wrap-primary
   #mega-menu-primary
-  > li#mega-menu-item-6559
+  > li:last-child
   > a.mega-menu-link:hover,
 #mega-menu-wrap-primary
   #mega-menu-primary
-  > li#mega-menu-item-6559
+  > li:last-child
   > a.mega-menu-link:active,
 #mega-menu-wrap-primary
   #mega-menu-primary
-  > li#mega-menu-item-6559
-  > a.mega-menu-link:focus,
-#mega-menu-wrap-primary
-  #mega-menu-primary
-  > li#mega-menu-item-223
-  > a.mega-menu-link:hover,
-#mega-menu-wrap-primary
-  #mega-menu-primary
-  > li#mega-menu-item-223
-  > a.mega-menu-link:active,
-#mega-menu-wrap-primary
-  #mega-menu-primary
-  > li#mega-menu-item-223
+  > li:last-child
   > a.mega-menu-link:focus {
   background: #222 url("img/bg-donate-button-32x28.png") no-repeat 2px center;
   background-size: 24px 21px;
@@ -1055,7 +1039,7 @@ li:hover .menu-item {
 #global-search-form {
   display: flex;
   justify-content: right;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
   color: #000;
   font-size: 2rem;
 }
@@ -1091,6 +1075,47 @@ li:hover .menu-item {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.utility #translate_search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+@media screen and (max-width: 60em) {
+  .utility #translate_search {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+}
+
+ul#menu-utility {
+  display: flex;
+}
+ul#menu-utility li {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  /* padding-bottom: 16px; */
+}
+ul#menu-utility li a {
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  ul#menu-utility {
+    flex-direction: column;
+  }
+}
+
+/* 60em = logo moves */
+@media (min-width: 768px) and (max-width: 60em) {
+  ul#menu-utility {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 60em) {
@@ -1212,9 +1237,15 @@ li:hover .menu-item {
   text-align: center;
 }
 
-.main-navigation ul {
+.main-navigation ul { /*  */
   margin: 0 auto !important;
   width: max-content !important;
+}
+
+@media (max-width: 768px) {
+  .main-navigation ul {
+    width: 100% !important;
+  }
 }
 
 .main-navigation ul li {

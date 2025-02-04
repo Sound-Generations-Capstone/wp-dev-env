@@ -44,7 +44,7 @@
 						$logo = get_template_directory_uri() . '/img/logo-sound-generations-rev2019_150x113.png';
 						$logolink = 'https://www.SoundGenerations.org';
 						break;
-					case 4:	
+					case 4:
 						$logo = get_template_directory_uri() . '/img/logo-lake-city-seniors.png';
 						$logolink = esc_url(home_url('/'));
 						break;
@@ -69,8 +69,21 @@
 
 			</div><!-- .site-branding -->
 			<div class="utility">
+				<section id="translate_search">
+					<div id="google_translate_element"></div>
+					<script type="text/javascript">
+						function googleTranslateElementInit() {
+							new google.translate.TranslateElement({
+								pageLanguage: 'en'
+							}, 'google_translate_element');
+						}
+					</script>
+					<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+					<?php get_search_form(); ?>
+				</section>
+
 				<?php wp_nav_menu(array('theme_location' => 'utility')) ?>
-				<?php get_search_form(); ?>
+
 				<!-- <div id='resize-links'>
 				<ul >
 
@@ -95,5 +108,5 @@
 
 		<div id="content" class="site-content">
 			<?php if (function_exists('yoast_breadcrumb')) {
-				yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
+				// yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
 			} ?>
