@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - testing
   workflow_dispatch:
 
 jobs:
@@ -32,9 +33,7 @@ jobs:
         with:
           node-version: "latest"
           cache: "npm"
-      - name: Node - install dependencies
-        run: npm install
-      - name: Node - start localhost:8881 proxy
-        run: npx http-server -P https://dev-sg-capstone.pantheonsite.io -p 8881 &
       - name: Cypress run
         uses: cypress-io/github-action@v6
+        env:
+          SITE_URL: "https://dev-sg-capstone.pantheonsite.io/"

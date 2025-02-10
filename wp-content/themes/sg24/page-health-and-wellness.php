@@ -31,9 +31,9 @@ get_header();
     <p>Each of our Senior Center sites throughout King County host a wide variety of fun, social ways to stay active such as dance classes like hula and tango, workshops for improving balance and adaptive yoga for people with disabilities.</p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:media-text {"mediaId":8,"mediaLink":"http://localhost:8881/?attachment_id=8","mediaType":"image"} -->
+    <!-- wp:media-text {"mediaId":8,"mediaLink":"/?attachment_id=8","mediaType":"image"} -->
     <div class="wp-block-media-text is-stacked-on-mobile">
-      <figure class="wp-block-media-text__media"><img src="http://localhost:8881/wp-content/uploads/2025/01/benefits-of-group-exercise-for-seniors.webp" alt="" class="wp-image-8 size-full" /></figure>
+      <figure class="wp-block-media-text__media"><img src="/wp-content/uploads/2025/01/benefits-of-group-exercise-for-seniors.webp" alt="" class="wp-image-8 size-full" /></figure>
       <div class="wp-block-media-text__content"><!-- wp:paragraph {"placeholder":"Content…"} -->
         <p>EnhanceFitness and other fun classes (dance, yoga, etc.) that support strength, balance, and flexibility.</p>
         <!-- /wp:paragraph -->
@@ -60,7 +60,7 @@ get_header();
 
     <!-- wp:media-text {"mediaId":9,"mediaType":"image"} -->
     <div class="wp-block-media-text is-stacked-on-mobile">
-      <figure class="wp-block-media-text__media"><img src="http://localhost:8881/wp-content/uploads/2025/01/image.png" alt="" class="wp-image-9 size-full" /></figure>
+      <figure class="wp-block-media-text__media"><img src="/wp-content/uploads/2025/01/image.png" alt="" class="wp-image-9 size-full" /></figure>
       <div class="wp-block-media-text__content"><!-- wp:paragraph {"placeholder":"Content…"} -->
         <p>Classes like A Matter of Balance that help you stay independent and reduce fall risk.</p>
         <!-- /wp:paragraph -->
@@ -87,7 +87,7 @@ get_header();
 
     <!-- wp:media-text {"mediaId":10,"mediaType":"image"} -->
     <div class="wp-block-media-text is-stacked-on-mobile">
-      <figure class="wp-block-media-text__media"><img src="http://localhost:8881/wp-content/uploads/2025/01/image-1.png" alt="" class="wp-image-10 size-full" /></figure>
+      <figure class="wp-block-media-text__media"><img src="/wp-content/uploads/2025/01/image-1.png" alt="" class="wp-image-10 size-full" /></figure>
       <div class="wp-block-media-text__content"><!-- wp:paragraph {"placeholder":"Content…"} -->
         <p>Personalized health coaching (EnhanceWellness) and mental health support (PEARLS).</p>
         <!-- /wp:paragraph -->

@@ -2,7 +2,8 @@
 
 describe('header content', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:8881/')
+    const url = Cypress.env('SITE_URL') || 'http://localhost:8881/';
+    cy.visit(url)
   })
 
   specify('', () => {

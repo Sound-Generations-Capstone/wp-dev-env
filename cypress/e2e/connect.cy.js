@@ -1,5 +1,6 @@
-describe("connecting to localhost works on GH actions", () => {
-  it("localhost:8881", () => {
-    cy.visit("http://localhost:8881/");
+describe("connecting to site works", () => {
+  it("with env variable", () => {
+    const url = Cypress.env('SITE_URL') || 'http://localhost:8881/';
+    cy.visit(url);
   });
 });
