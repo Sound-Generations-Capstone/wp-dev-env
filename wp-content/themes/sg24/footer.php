@@ -36,6 +36,10 @@
     <!-- /wp:heading -->
 
     <!-- wp:paragraph -->
+    <p><a href="/our-programs/" class="has-white-color" data-testid="footer-our-programs">Our Programs</a></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
     <p><a href="/about/leadership-board-of-directors/" class="has-white-color" data-testid="footer-leadership">Leadership &amp; Board of Directors</a></p>
     <!-- /wp:paragraph -->
 
