@@ -36,7 +36,5 @@ jobs:
         run: npm install
       - name: Node - start localhost:8881 proxy
         run: npx http-server -P https://dev-sg-capstone.pantheonsite.io -p 8881 &
-      - name: Node - start localhost:8882 proxy
-        run: npx http-server -P https://dev-sg-capstone.pantheonsite.io -p 8882 &
       - name: Cypress run
         uses: cypress-io/github-action@v6
