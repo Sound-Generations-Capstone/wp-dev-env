@@ -2,7 +2,7 @@
 
 describe('Homepage content', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:8882/')
+    cy.visit('http://localhost:8881/')
   })
 
   specify('Welcome section has buttons to volunteer and explore programs', () => {
