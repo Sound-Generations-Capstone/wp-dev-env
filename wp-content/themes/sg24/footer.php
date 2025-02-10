@@ -74,6 +74,9 @@
 
   <!-- wp:column -->
   <div class="wp-block-column has-white-color"><!-- wp:paragraph -->
+    <h3 class="wp-block-heading has-white-color has-text-color has-link-color">Social Media</h3>
+    <?php wp_nav_menu(array('menu' => 'Social Media')) ?>
+
     <p>Sound Generations is a 501(c)3 non profit.</p>
     <!-- /wp:paragraph -->
 

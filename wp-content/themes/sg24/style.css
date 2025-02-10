@@ -336,6 +336,7 @@ textarea {
   font-size: 1.8rem;
   line-height: 1.5;
 }
+
 .has-small-font-size {
   font-size: 16px;
 }
@@ -359,54 +360,71 @@ textarea {
 .has-background {
   color: #fff;
 }
+
 .has-purpledrk-background-color {
   background-color: #5d0e8b;
 }
+
 .has-purpledrk-color {
   color: #5d0e8b;
 }
+
 .has-purple-background-color {
   background-color: #880364;
 }
+
 .has-purple-color {
   color: #880364;
 }
+
 .has-purplelt-background-color {
   background-color: #b00061;
 }
+
 .has-purplelt-color {
   color: #b00061;
 }
+
 .has-orangedrk-background-color {
   background-color: #fa4c06;
 }
+
 .has-orangedrk-color {
   color: #fa4c06;
 }
+
 .has-orange-background-color {
   background-color: #fd8204;
 }
+
 .has-orange-color {
   color: #fd8204;
 }
+
 .has-orangelt-background-color {
   background-color: #ff9e19;
 }
+
 .has-orangelt-color {
   color: #ff9e19;
 }
+
 .has-red-background-color {
   background-color: #d13138;
 }
+
 .has-red-color {
   color: #d13138;
 }
+
 .has-black-background-color {
   background-color: #000000;
 }
+
 .has-black-color {
   color: #000000;
 }
+
 @media screen and (min-width: 60em) {
   body,
   button,
@@ -416,10 +434,12 @@ textarea {
   .main-navigation ul ul a {
     font-family: "Avenir LT W01_45 Book1475508", sans-serif;
   }
+
   .fa,
   .fas {
     font-family: "Font Awesome 5 Pro";
   }
+
   .site-header .widget_nav_menu,
   .main-navigation ul a,
   h1,
@@ -435,6 +455,7 @@ textarea {
     font-family: "Avenir LT W01_95 Black1475556", sans-serif;
   }
 }
+
 h1,
 .single-event h1 {
   clear: both;
@@ -503,15 +524,18 @@ h3 {
     margin: 0 auto;
     text-align: left;
   }
+
   .site-name {
     float: left;
     font-size: 4.8rem;
   }
+
   .site-description {
     float: left;
     text-align: left;
   }
 }
+
 p {
   margin-bottom: 1.3em;
 }
@@ -642,6 +666,7 @@ big {
     color: #fff;
   }
 }
+
 html {
   box-sizing: border-box;
 }
@@ -662,6 +687,7 @@ body.page-template-page-full {
     background: #fff;
   }
 }
+
 p {
   margin-top: 0;
 }
@@ -781,6 +807,7 @@ input[type="submit"] {
     bottom: 1.5em;
   }
 }
+
 #givetuesday:hover,
 #givetuesday:focus,
 #givetuesday:active {
@@ -890,12 +917,14 @@ textarea {
   .site-header .search-form {
     float: right;
   }
+
   a[href$="#page"] {
     position: fixed;
     bottom: 0;
     right: 0;
   }
 }
+
 a {
   color: #000;
 }
@@ -948,11 +977,13 @@ a:active {
     font-family: "Avenir LT W01_95 Black1475556", sans-serif;
     font-weight: normal;
   }
+
   .entry-meta a,
   .entry-footer a {
     font-family: "Avenir LT W01_45 Book1475508", sans-serif;
   }
 }
+
 a[href$=".pdf"]:before {
   content: "\f1c1";
   font-family: "Font Awesome 5 Pro";
@@ -976,10 +1007,7 @@ a[href$=".pdf"]:before {
 }
 
 /* donate button */
-#mega-menu-wrap-primary
-  #mega-menu-primary
-  > li:last-child
-  > a.mega-menu-link {
+#mega-menu-wrap-primary #mega-menu-primary > li:last-child > a.mega-menu-link {
   background: #fd8204 url("img/bg-donate-button-32x28.png") no-repeat 2px center;
   background-size: 24px 21px;
   border: 3px solid #fd8204;
@@ -1093,12 +1121,14 @@ li:hover .menu-item {
 ul#menu-utility {
   display: flex;
 }
+
 ul#menu-utility li {
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 16px;
+  /* padding-top: 16px; */
   /* padding-bottom: 16px; */
 }
+
 ul#menu-utility li a {
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1123,12 +1153,14 @@ ul#menu-utility li a {
     color: #fff;
     text-align: right;
   }
+
   .menu-utility-container {
     clear: right;
     float: right;
     margin: 0;
   }
 }
+
 .site-header .widget_nav_menu a {
   color: #fff;
   padding: 0.25em 1em;
@@ -1139,6 +1171,10 @@ ul#menu-utility li a {
 .site-header .widget_nav_menu a:hover,
 .site-header .widget_nav_menu a:focus {
   text-decoration: underline;
+}
+
+.menu-social-media-container {
+
 }
 
 .menu-social-media-container li,
@@ -1158,31 +1194,36 @@ ul#menu-utility li a {
   overflow: hidden;
 }
 
-.menu-social-media-container a[href^="https://www.youtube.com"], .menu-social-media-social-menu-container a[href^="https://www.youtube.com"]
+.menu-social-media-container a[href^="https://www.youtube.com"],
+.menu-social-media-social-menu-container a[href^="https://www.youtube.com"]
 {
   background: url("img/bg-youtube-icon-color-56px.png") no-repeat;
   background-size: 28px 28px;
 }
 
-.menu-social-media-container a[href^="https://twitter.com"], .menu-social-media-social-menu-container a[href^="https://twitter.com"]
+.menu-social-media-container a[href^="https://twitter.com"],
+.menu-social-media-social-menu-container a[href^="https://twitter.com"]
 {
   background: url("img/bg-twitter-icon-color-56px.png") no-repeat;
   background-size: 28px 28px;
 }
 
-.menu-social-media-container a[href^="https://www.instagram.com"], .menu-social-media-social-menu-container a[href^="https://www.instagram.com"]
+.menu-social-media-container a[href^="https://www.instagram.com"],
+.menu-social-media-social-menu-container a[href^="https://www.instagram.com"]
 {
   background: url("img/bg-instagram-icon-color-56px.png") no-repeat;
   background-size: 28px 28px;
 }
 
-.menu-social-media-container a[href^="https://www.facebook.com"], .menu-social-media-social-menu-container a[href^="https://www.facebook.com"]
+.menu-social-media-container a[href^="https://www.facebook.com"],
+.menu-social-media-social-menu-container a[href^="https://www.facebook.com"]
 {
   background: url("img/bg-facebook-icon-color-56px.png") no-repeat;
   background-size: 28px 28px;
 }
 
-.menu-social-media-container a[href^="https://www.linkedin.com"], .menu-social-media-social-menu-container a[href^="https://www.linkedin.com"]
+.menu-social-media-container a[href^="https://www.linkedin.com"],
+.menu-social-media-social-menu-container a[href^="https://www.linkedin.com"]
 {
   background: url("img/bg-linkedin-icon-color-56px.png") no-repeat;
   background-size: 28px 28px;
@@ -1224,12 +1265,14 @@ ul#menu-utility li a {
     float: right;
     margin: 0.25em 0 0 0.5em;
   }
+
   .site-header .widget_nav_menu li {
     float: right;
     line-height: 1.5;
     list-style: none;
   }
 }
+
 .menu-toggle,
 .main-navigation.toggled ul {
   display: none;
@@ -1237,7 +1280,8 @@ ul#menu-utility li a {
   text-align: center;
 }
 
-.main-navigation ul { /*  */
+.main-navigation ul {
+  /*  */
   margin: 0 auto !important;
   width: max-content !important;
 }
@@ -1260,6 +1304,7 @@ ul#menu-utility li a {
   .menu-toggle {
     display: none;
   }
+
   /*
   .main-navigation {
   background:#222;
@@ -1363,6 +1408,7 @@ ul#menu-utility li a {
   }
   */
 }
+
 p#breadcrumbs {
   font-size: 1.6rem;
   margin: 0.5rem 1.5rem 0 1.5rem;
@@ -2109,93 +2155,91 @@ object {
   border-radius: 5px;
   text-decoration: none !important;
   font-weight: bold;
-cursor: pointer;
+  cursor: pointer;
   display: inline-block;
 }
 
 .signup-button:hover {
   background-color: #fd8204;
-color: #fff;
+  color: #fff;
 }
 
 .posts-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	gap: 2rem;
-	padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .post-card {
-	background: #fff;
-	border-radius: 8px;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-	overflow: hidden;
-	transition: transform 0.2s ease;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
 }
 
 .post-card:hover {
-	transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .post-card__content {
-	padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .post-card__title {
-	margin: 0 0 1rem;
-	font-size: 1.25rem;
-	line-height: 1.4;
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
 
 .post-card__title a {
-	color: #333;
-	text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
 .post-card__meta {
-	font-size: 0.875rem;
-	color: #666;
-	margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
 }
 
 .post-card__excerpt {
-	color: #555;
-	font-size: 0.95rem;
-	line-height: 1.6;
-	margin-bottom: 1.5rem;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 .post-card__link {
-	display: inline-block;
-	padding: 0.5rem 1rem;
-	background: #007bff;
-	color: #fff;
-	text-decoration: none;
-	border-radius: 4px;
-	font-size: 0.875rem;
-	transition: background 0.2s ease;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  transition: background 0.2s ease;
 }
 
 .post-card__link:visited {
-	display: inline-block;
-	padding: 0.5rem 1rem;
-	background: #007bff;
-	color: #fff;
-	text-decoration: none;
-	border-radius: 4px;
-	font-size: 0.875rem;
-	transition: background 0.2s ease;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  transition: background 0.2s ease;
 }
 
 .post-card__link:hover {
-	background: #0056b3;
+  background: #0056b3;
   color: #fff;
 }
 
 .post-card__link.extra-large {
-  
 }
-
 
 .jump-to {
   margin-top: 2rem;
@@ -2226,9 +2270,9 @@ color: #fff;
   margin-right: auto;
   margin-bottom: 4rem;
   padding: 2rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: white;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,0.5);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
   transition: transform 0.2s ease;
 }
 
@@ -2248,10 +2292,10 @@ color: #fff;
 }
 
 .e-news-signup > h2 {
-  color: white
+  color: white;
 }
 
-.external-news a{
+.external-news a {
   text-decoration: none;
 }
 
@@ -2272,8 +2316,8 @@ color: #fff;
 .subscribe {
   transition: background 0.2s ease, transform 0.2s ease;
   background: transparent;
-  border: solid .35rem;
-  border-radius: .875rem;
+  border: solid 0.35rem;
+  border-radius: 0.875rem;
   color: white;
   text-decoration: none;
   padding: 1.5rem;
@@ -2294,7 +2338,6 @@ color: #fff;
 .subscribe:hover:visited {
   background-color: #5f0045;
 }
-
 
 .subscribe:visited {
   color: white;
@@ -2320,13 +2363,18 @@ color: #fff;
   color: white;
 }
 
-
 .footer a:visited {
   color: white;
 }
 
-
 .column-link {
   color: white;
   font-weight: bold;
+}
+
+.footer .menu-social-media-container>ul {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0.22222222em;
+  margin-left: -0.5em;
 }
