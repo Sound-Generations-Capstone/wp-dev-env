@@ -2419,7 +2419,7 @@ color: #fff;
 
 .caregiver-card a:hover {
   background-color: #f9edf9;
-
+  transition: background-color 0.2s ease;
 }
 
 .caregiver-card img {
@@ -2448,13 +2448,10 @@ color: #fff;
   background-color: #5d0e8b;
 }
 
-/* .community-outreach ul {
-  display: block;
+.community-outreach-info a:hover {
+  background-color: #f9edf9;
+  transition: background-color 0.2s ease;
 }
-
-.community-outreach p {
-  display: block;
-} */
 
 .presentation-image {
   max-width: 38%;
@@ -2509,6 +2506,17 @@ color: #fff;
   cursor: pointer;
 }
 
+.veteran-caregiver-resources .large-card a:hover {
+  outline: black solid;
+  box-shadow: white -1rem 1rem 0rem;
+  background-color: #f9edf9;
+  text-decoration: none;
+  color: #5d0e8b;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
 .veteran-caregiver-resources .small-cards .icon {
   display: inline;
   position: relative;
@@ -2517,10 +2525,10 @@ color: #fff;
   flex-shrink: 0;
 }
 
-.veteran-caregiver-resources .large-card a:hover {
+.veteran-caregiver-resources .small-cards a:hover {
   outline: black solid;
   box-shadow: white 2rem;
-  background-color: #f4d7e3ff;
+  background-color: #f9edf9;
   text-decoration: none;
   color: #5d0e8b;
   transition: background-color 0.2s ease;
@@ -2531,7 +2539,8 @@ color: #fff;
   display: flex;
   flex-flow: row wrap;
   margin-top: 2rem;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: stretch;
   border-radius: 10px;
 }
 
@@ -2545,7 +2554,9 @@ color: #fff;
   justify-content: stretch;
   padding: 3rem;
   border-radius: 10px;
-  max-width: 45%;
+  max-width: 40%;
+  margin-left: 2rem;
+  margin-right: 2rem;
   align-items: center;
 }
 
