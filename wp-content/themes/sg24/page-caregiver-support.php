@@ -63,7 +63,7 @@ get_header();
             LGBTQ+ caregiving
           </li>
         </ul>
-        <a class="outline-link" href="<?php echo esc_url("mailto:caregiver@soundgenerations.org")?>">
+        <a class="outline-link aligncenter" href="<?php echo esc_url("mailto:caregiver@soundgenerations.org")?>">
           Email us to schedule a presentation
         </a>
       </section>
@@ -106,10 +106,10 @@ get_header();
       </section>
       
     <section class="small-cards">
-      <a href="<?php echo esc_url(get_permalink(get_page_by_path('assistance-services/caregiver-support/respite-services')))?>" class="outline-link">
+      <a href="<?php echo esc_url(get_permalink(get_page_by_path('our-programs/caregiver-support/respite-services')))?>" class="outline-link">
         Learn about Respite Services
       </a>
-      <a href="<?php echo esc_url(get_permalink(get_page_by_path('assistance-services/caregiver-support/support-groups-workshops-caregivers/')))?>" class="outline-link">
+      <a href="<?php echo esc_url(get_permalink(get_page_by_path('our-programs/caregiver-support/support-groups-workshops-caregivers/')))?>" class="outline-link">
         Find our support groups and workshops
       </a>
       <a href="<?php echo esc_url(get_permalink(get_page_by_path('tag/the-heart-of-caregiving')))?>" class="outline-link">
@@ -126,24 +126,26 @@ get_header();
       </a>
     </section>
   </article>
-  <h2 class="has-black-color article-header" >
+  <h2 class="has-black-color article-header">
     Resources for Veteran Caregivers
   </h2>
-  <article id="veteran-caregiver-support" class="veteran-caregiver-resources">
-    <section class="large-cards">
-      <a href="<?php echo esc_url("tel:+12063855050")?>" class="outline-link has-purpledrk-background-color ">
-        <svg  xmlns="http://www.w3.org/2000/svg"  width="48"  height="48"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
-            <title>Call</title>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-          </svg>Veteran Caregiver Support
-      </a>
-      <a href="<?php echo esc_url("mailto:reynaldc@soundgenerations.org")?>" class="outline-link has-purpledrk-background-color ">
+  <article id="veteran-caregiver-support" class="veteran-caregiver-resources large-cards">
+    <section class="large-card has-purpledrk-background-color">
+      <a href="<?php echo esc_url("mailto:reynaldc@soundgenerations.org")?>" class="outline-link has-purpledrk-background-color">
         <svg  xmlns="http://www.w3.org/2000/svg"  width="48"  height="48"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <title>Email</title>
             <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" />
         </svg>Veteran Caregiver Support
       </a>
     </section>
+      <section class="large-card has-purpledrk-background-color">
+        <a href="<?php echo esc_url("tel:+12063855050")?>" class="outline-link ">
+          <svg  xmlns="http://www.w3.org/2000/svg"  width="48"  height="48"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
+              <title>Call</title>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            </svg>Veteran Caregiver Support
+        </a>
+      </section>
     <section class="small-cards">
       <a href="<?php echo esc_url("https://www.caregiver.va.gov/")?>" class="outline-link has-purpledrk-background-color">
         US Department of Veteran Affairs Caregiver Support 
@@ -157,8 +159,8 @@ get_header();
       </a>
       <a href="<?php echo esc_url("tel:+18002738255")?>" class="outline-link has-purpledrk-background-color">
         <svg  xmlns="http://www.w3.org/2000/svg"  width="48"  height="48"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
-            <title>Call</title>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+              <title>Call</title>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
           </svg>
         Veteran Crisis Line (press 1 after dialing)
       </a>

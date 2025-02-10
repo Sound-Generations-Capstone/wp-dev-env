@@ -2310,6 +2310,7 @@ color: #fff;
   border-radius: 15px;
   text-align: center;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .icon {
@@ -2317,6 +2318,7 @@ color: #fff;
   margin-right: 2rem;
   position: relative;
   top: 1.25rem;
+  flex-shrink: 0;
 }
 
 /* Assistance Services Redesign */
@@ -2415,6 +2417,11 @@ color: #fff;
   font-weight: 500;
 }
 
+.caregiver-card a:hover {
+  background-color: #f9edf9;
+
+}
+
 .caregiver-card img {
   aspect-ratio: 1/1;
   max-height: 50%;
@@ -2450,14 +2457,30 @@ color: #fff;
 } */
 
 .presentation-image {
-  max-width: 30%;
+  max-width: 38%;
   border-radius: 10px;
   margin-right: 3rem;
+  margin-left: 3rem;
   object-fit: cover;
+}
+
+.caregiver-resources .large-card a {
+  background-color: #880364;
 }
 
 .caregiver-resources a {
   background-color: #880364;
+}
+
+.caregiver-resources .large-card a:hover {
+  outline: black solid;
+  box-shadow: white -1rem 1rem 0rem;
+  background-color: #f4d7e3ff;
+  text-decoration: none;
+  color: #880364;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .small-cards {
@@ -2474,6 +2497,34 @@ color: #fff;
   padding: 4rem;
   justify-content: center;
   align-items: center;
+}
+
+.caregiver-resources .small-cards a:hover {
+  outline: black solid;
+  box-shadow: white 2rem;
+  background-color: #f4d7e3ff;
+  text-decoration: none;
+  color: #880364;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.veteran-caregiver-resources .small-cards .icon {
+  display: inline;
+  position: relative;
+  margin-right: 1rem;
+  top: -0.5rem;
+  flex-shrink: 0;
+}
+
+.veteran-caregiver-resources .large-card a:hover {
+  outline: black solid;
+  box-shadow: white 2rem;
+  background-color: #f4d7e3ff;
+  text-decoration: none;
+  color: #5d0e8b;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
 }
 
 .large-cards {
@@ -2494,7 +2545,7 @@ color: #fff;
   justify-content: stretch;
   padding: 3rem;
   border-radius: 10px;
-  max-width: 40%;
+  max-width: 45%;
   align-items: center;
 }
 
@@ -2520,7 +2571,11 @@ color: #fff;
 
   .caregiver-support-menu {
     flex-direction: column;
-    width: 100%;
+    width: 90%;
+    padding-right: 0;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .caregiver-card {
@@ -2529,26 +2584,31 @@ color: #fff;
 
   .community-outreach {
     flex-direction: column-reverse;
-    max-width: 80%;
-    margin: 0 auto;
+    margin: 2rem;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
   }
 
   .community-outreach-info {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .presentation-image {
     max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
   }
 
   .large-cards {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 2rem;
     padding: 0rem;
-    width: 100%;
+    width: 90%;
+    justify-content: center;
   }
 
   .large-card {
