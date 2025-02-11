@@ -6,136 +6,94 @@
  * @package Sound_Generations
  */
 
-// Shortcode for displaying volunteer search form
-function volunteer_search_form() {
-  ob_start(); 
-  ?>
-  <form method="post" class="volunteer-search-form display-flex" style="gap: 1rem">
-    <div class="display-flex flex-column">
-      <label for="location">Location</label>
-      <select name="location" data-testid="select-location">
-        <option selected value="">All</option>
-        <?php
-        $map = array(
-          'Renton' => 'Renton',
-          'SeaTac' => 'SeaTac',
-          'Federal Way' => 'Federal Way',
-          'Burien' => 'Burien',
-        );
+function volunteer_search_form()
+{
+  ob_start();
+?>
+  <form method="get" action="">
+    <label>Filters:</label>
+    <input type="text" id="filter-input" placeholder="Type and press space to add filters">
+    <div id="filter-tags"></div>
+    <input type="hidden" name="filters" id="filters" value="">
 
-        $location = '';
-          if (isset($_POST['location'])) {
-            $location = $_POST['location'];
-          }
-
-          $output = '';
-          foreach ($map as $key => $value) {
-            $selected = ($key == $location) ? ' selected' : '';
-            $output .= '<option value="' . $value . '"' . $selected . '>' . $key . '</option>';
-          }
-          echo $output;
-        ?>
-      </select>
-    </div>
-
-    <div class="display-flex flex-column">
-        <label for="kid-friendly">Kid Friendly</label>
-        <select name="kid-friendly" data-testid="select-kid-friendly">
-          <option selected value="">Either</option>
-          <?php
-          $map = array(
-            'Yes' => 'Yes',
-            'No' => 'No',
-          );
-
-          $kid_friendly = '';
-          if (isset($_POST['kid-friendly'])) {
-            $kid_friendly = $_POST['kid-friendly'];
-          }
-
-          $output = '';
-          foreach ($map as $key => $value) {
-            $selected = ($key == $kid_friendly) ? ' selected' : '';
-            $output .= '<option value="' . $value . '"' . $selected . '>' . $key . '</option>';
-          }
-          echo $output;
-          ?>
-      </select>
-    </div>
-    <button type="submit" data-testid="volunteer-search-submit">Search</button>
+    <button type="submit">Filter</button>
   </form>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      let input = document.getElementById("filter-input");
+      let filters = document.getElementById("filters");
+      let tagsContainer = document.getElementById("filter-tags");
+      let selectedFilters = [];
+
+      input.addEventListener("keydown", function(event) {
+        if (event.key === " ") {
+          event.preventDefault();
+          let value = input.value.trim();
+          if (value && !selectedFilters.includes(value)) {
+            selectedFilters.push(value);
+            filters.value = selectedFilters.join(",");
+            let tag = document.createElement("span");
+            tag.textContent = value + " ✖";
+            tag.style.marginRight = "5px";
+            tag.style.cursor = "pointer";
+            tag.addEventListener("click", function() {
+              selectedFilters = selectedFilters.filter(f => f !== value);
+              filters.value = selectedFilters.join(",");
+              tag.remove();
+            });
+            tagsContainer.appendChild(tag);
+            input.value = "";
+          }
+        }
+      });
+    });
+  </script>
+
   <?php
+  // Prepare search query
+  $args = array(
+    'post_type'      => 'post',
+    'posts_per_page' => -1,
+    'category_name'  => 'volunteer-opportunities',
+    's'              => '',
+  );
 
-  // Handle search results
-  $location = '';
-    if (isset($_POST['location'])) {
-      $location = 'Location: ' . $_POST['location'];
+  if (isset($_GET['filters'])) {
+    $args['s'] = implode(' ', explode(',', $_GET['filters'])); // split by , -> then join
+  }
+
+  $query = new WP_Query($args);
+
+  if ($query->have_posts()) {
+    echo "<ul>";
+    while ($query->have_posts()) {
+      $query->the_post();
+  ?>
+      <li>
+        <strong>Program:</strong> <?php the_title(); ?><br>
+        <strong>Details:</strong> <?php the_content(); ?>
+      </li>
+      <hr>
+<?php
     }
+    echo "</ul>";
+  } else {
+    echo "<p>No volunteer opportunities match your criteria.</p>";
+  }
+  wp_reset_postdata();
 
-    $kid_friendly = '';
-    if (isset($_POST['kid-friendly'])) {
-      $kid_friendly = 'Kid Friendly: ' . $_POST['kid-friendly'];
-    }
-
-    $query = new WP_Query(array(
-      'category_name' => 'volunteer-opportunities',
-      's' => $location . ' ' . $kid_friendly
-    ));
-
-    $output = '';
-    if ($query->have_posts()) {
-      $output .= '<div class="posts-grid">';
-      while ($query->have_posts()) {
-        $query->the_post();
-        $excerpt = has_excerpt() ? get_the_excerpt() : wp_trim_words(get_the_content());
-        $date = get_the_date('F j, Y');
-
-        $output .= '
-        <article class="post-card">
-          <div class="post-card__content">
-            <h3 class="post-card__title">
-                <a href="' . get_permalink() . '">' . get_the_title() . '</a>
-            </h3>
-            <div class="post-card__meta">
-                <span class="post-card__date">' . $date . '</span>
-            </div>
-            <div class="post-card__excerpt">
-                ' . $excerpt . '
-            </div>
-            <a href="' . get_permalink() . '" class="post-card__link">Read More</a>
-          </div>
-        </article>';
-      }
-      $output .= '</div>';
-      wp_reset_postdata();
-    } else {
-      $output .= 'No posts found.';
-    }
-
-    echo $output;
-
-  return ob_get_clean(); 
+  return ob_get_clean();
 }
 
 add_shortcode('volunteer_search_form', 'volunteer_search_form');
 
 get_header(); ?>
 
-
 <!-- Display page content -->
 <div class="page-content">
-  <?php
-  if (have_posts()) :
-    while (have_posts()) : the_post();
-      the_content(); 
-    endwhile;
-  endif;
-  ?>
+  <?php echo do_shortcode("[volunteer_search_form]") ?>
 </div>
-
-
-
-
 
 <?php
 get_sidebar();
