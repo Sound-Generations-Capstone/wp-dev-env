@@ -39,7 +39,7 @@ get_header();
         <!-- /wp:paragraph -->
 
         <!-- wp:paragraph -->
-        <p><a href="https://soundgenerations.org/health-wellness/fitness/">Learn more about EnhanceFitness and other fitness programs.</a></p>
+        <p><a href="/health-wellness/fitness/">Learn more about EnhanceFitness and other fitness programs.</a></p>
         <!-- /wp:paragraph -->
       </div>
     </div>
@@ -66,7 +66,7 @@ get_header();
         <!-- /wp:paragraph -->
 
         <!-- wp:paragraph -->
-        <p><a href="https://soundgenerations.org/health-wellness/fall-prevention/">Learn about EnhanceFitness and A Matter of Balance.</a></p>
+        <p><a href="/health-wellness/fall-prevention/">Learn about EnhanceFitness and A Matter of Balance.</a></p>
         <!-- /wp:paragraph -->
       </div>
     </div>
@@ -93,7 +93,7 @@ get_header();
         <!-- /wp:paragraph -->
 
         <!-- wp:paragraph -->
-        <p><a href="https://soundgenerations.org/health-wellness/health-management/">Learn about EnhanceWellness and PEARLS.</a></p>
+        <p><a href="/health-wellness/health-management/">Learn about EnhanceWellness and PEARLS.</a></p>
         <!-- /wp:paragraph -->
       </div>
     </div>

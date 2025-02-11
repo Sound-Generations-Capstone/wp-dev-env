@@ -82,6 +82,8 @@
 					<?php get_search_form(); ?>
 				</section>
 
+				<?php wp_nav_menu(array('menu' => 'Social Media')) ?>
+				
 				<?php wp_nav_menu(array('theme_location' => 'utility')) ?>
 
 				<!-- <div id='resize-links'>
