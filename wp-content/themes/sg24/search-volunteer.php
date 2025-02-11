@@ -6,42 +6,50 @@
  * @package Sound_Generations
  */
 
-function generate_dropdown($name, $options, $selected_value)
-{
-  echo '<select name="' . esc_attr($name) . '">';
-  echo '<option value="">Any</option>';
-  foreach ($options as $option) {
-    echo '<option value="' . esc_attr($option) . '" ' . selected($selected_value, $option, false) . '>' . esc_html($option) . '</option>';
-  }
-  echo '</select>';
-}
-
 function volunteer_search_form()
 {
   ob_start();
-
-  // Define dropdown options (customize as needed)
-  $locations = ['Renton', 'Seattle', 'Bellevue', 'Tacoma'];
-  $durations = ['Ongoing', 'On-going', 'Short-term', 'Long-term', 'One-time'];
-  $schedules = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-
-  // Get selected values
-  $selected_location = isset($_GET['location']) ? sanitize_text_field($_GET['location']) : '';
-  $selected_duration = isset($_GET['duration']) ? sanitize_text_field($_GET['duration']) : '';
-  $selected_schedule = isset($_GET['schedule']) ? sanitize_text_field($_GET['schedule']) : '';
 ?>
   <form method="get" action="">
-    <label>Location:</label>
-    <?php generate_dropdown('location', $locations, $selected_location) ?>
-
-    <label>Duration:</label>
-    <?php generate_dropdown('duration', $durations, $selected_duration) ?>
-
-    <label>Schedule:</label>
-    <?php generate_dropdown('schedule', $schedules, $selected_schedule) ?>
+    <label>Filters:</label>
+    <input type="text" id="filter-input" placeholder="Type and press space to add filters">
+    <div id="filter-tags"></div>
+    <input type="hidden" name="filters" id="filters" value="">
 
     <button type="submit">Filter</button>
   </form>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      let input = document.getElementById("filter-input");
+      let filters = document.getElementById("filters");
+      let tagsContainer = document.getElementById("filter-tags");
+      let selectedFilters = [];
+
+      input.addEventListener("keydown", function(event) {
+        if (event.key === " ") {
+          event.preventDefault();
+          let value = input.value.trim();
+          if (value && !selectedFilters.includes(value)) {
+            selectedFilters.push(value);
+            filters.value = selectedFilters.join(",");
+            let tag = document.createElement("span");
+            tag.textContent = value + " ✖";
+            tag.style.marginRight = "5px";
+            tag.style.cursor = "pointer";
+            tag.addEventListener("click", function() {
+              selectedFilters = selectedFilters.filter(f => f !== value);
+              filters.value = selectedFilters.join(",");
+              tag.remove();
+            });
+            tagsContainer.appendChild(tag);
+            input.value = "";
+          }
+        }
+      });
+    });
+  </script>
+
   <?php
   // Prepare search query
   $args = array(
@@ -51,20 +59,8 @@ function volunteer_search_form()
     's'              => '',
   );
 
-  // Build search string from selected filters
-  $search_terms = [];
-  if ($selected_location) {
-    $search_terms[] = 'Location: ' . $selected_location;
-  }
-  if ($selected_duration) {
-    $search_terms[] = 'Duration: ' . $selected_duration;
-  }
-  if ($selected_schedule) {
-    $search_terms[] = 'Schedule: ' . $selected_schedule;
-  }
-
-  if (!empty($search_terms)) {
-    $args['s'] = implode(' ', $search_terms); // Search within post content
+  if (isset($_GET['filters'])) {
+    $args['s'] = implode(' ', explode(',', $_GET['filters'])); // split by , -> then join
   }
 
   $query = new WP_Query($args);
@@ -96,13 +92,7 @@ get_header(); ?>
 
 <!-- Display page content -->
 <div class="page-content">
-  <?php
-  if (have_posts()) :
-    while (have_posts()) : the_post();
-      the_content();
-    endwhile;
-  endif;
-  ?>
+  <?php echo do_shortcode("[volunteer_search_form]") ?>
 </div>
 
 <?php
