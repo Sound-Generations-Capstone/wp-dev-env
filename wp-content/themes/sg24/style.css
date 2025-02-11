@@ -18,6 +18,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
+@import url("css/search-volunteering.css");
+
 .has-purpledrk-background-color {
   background-color: #5d0e8b;
 }

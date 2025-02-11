@@ -10,8 +10,8 @@ function volunteer_search_form()
 {
   ob_start();
 ?>
-  <form method="get" action="" class="display-flex">
-    <fieldset style="width:100%">
+  <form method="get" action="" id="search-volunteer-form">
+    <fieldset>
       <legend>Filters</legend>
       <div id="filter-tags"></div>
       <div>
@@ -21,7 +21,7 @@ function volunteer_search_form()
     </fieldset>
 
     <input type="hidden" name="filters" id="filters" value="">
-    <button type="submit" style="height:fit-content;margin-top:auto;margin-bottom:auto">Search</button>
+    <button type="submit">Search</button>
   </form>
 
   <script>

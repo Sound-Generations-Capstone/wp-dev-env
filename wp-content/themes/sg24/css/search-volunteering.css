@@ -1,0 +1,12 @@
+#search-volunteer-form {
+  display: flex;
+}
+
+#search-volunteer-form fieldset {
+  width: 100%;
+}
+
+#search-volunteer-form button[type="submit"] {
+  margin-top: auto;
+  margin-bottom: auto;
+}
