@@ -186,7 +186,7 @@ get_header();
 <!-- TODO: switch to dynamic post fetching as is done with the news center  -->
 
 <!-- wp:heading {"textAlign":"center","level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|black"}}}},"textColor":"black"} -->
-<h1 class="wp-block-heading has-text-align-center has-black-color has-text-color has-link-color">What's Happening</h1>
+<h1 class="wp-block-heading has-text-align-center has-black-color has-text-color has-link-color">Latest News</h1>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"full"} -->
