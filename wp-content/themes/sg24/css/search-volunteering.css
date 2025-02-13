@@ -10,3 +10,34 @@
   margin-top: auto;
   margin-bottom: auto;
 }
+
+#search-volunteer-results details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+}
+
+#search-volunteer-results summary {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+  outline: none;
+}
+
+#search-volunteer-results summary:hover {
+  color: #0073aa;
+}
+
+#search-volunteer-results summary::before {
+  content: "▶️";
+}
+
+#search-volunteer-results details[open] {
+  background-color: #eef6ff;
+}
+
+#search-volunteer-results details[open] summary::before {
+  content: '🔽';
+}
