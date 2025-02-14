@@ -36,19 +36,23 @@
     <!-- /wp:heading -->
 
     <!-- wp:paragraph -->
-    <p><a href="https://soundgenerations.org/about/leadership-board-of-directors/" class="has-white-color" data-testid="footer-leadership">Leadership &amp; Board of Directors</a></p>
+    <p><a href="/our-programs/" class="has-white-color" data-testid="footer-our-programs">Our Programs</a></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph -->
-    <p><a href="https://soundgenerations.org/about-us/news-media-center/" class="has-white-color" data-testid="footer-media-center">News &amp; Media Center</a></p>
+    <p><a href="/about/leadership-board-of-directors/" class="has-white-color" data-testid="footer-leadership">Leadership &amp; Board of Directors</a></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph -->
-    <p><a href="https://soundgenerations.org/about-us/terms-of-use/" class="has-white-color" data-testid="footer-terms-of-use">Terms of Use</a></p>
+    <p><a href="/about-us/news-media-center/" class="has-white-color" data-testid="footer-media-center">News &amp; Media Center</a></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph -->
-    <p><a href="https://soundgenerations.org/about-us/privacy-policy/" class="has-white-color" data-testid="footer-privacy">Privacy Policy</a></p>
+    <p><a href="/about-us/terms-of-use/" class="has-white-color" data-testid="footer-terms-of-use">Terms of Use</a></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p><a href="/about-us/privacy-policy/" class="has-white-color" data-testid="footer-privacy">Privacy Policy</a></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph -->
@@ -74,6 +78,9 @@
 
   <!-- wp:column -->
   <div class="wp-block-column has-white-color"><!-- wp:paragraph -->
+    <h3 class="wp-block-heading has-white-color has-text-color has-link-color">Social Media</h3>
+    <?php wp_nav_menu(array('menu' => 'Social Media')) ?>
+
     <p>Sound Generations is a 501(c)3 non profit.</p>
     <!-- /wp:paragraph -->
 
@@ -82,7 +89,7 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:image {"id":13417,"linkDestination":"custom"} -->
-    <figure class="wp-block-image"><a href="https://www.guidestar.org/profile/91-0823767" data-testid="footer-guidestar-profile"><img src="https://soundgenerations.org/wp-content/uploads/MicrosoftTeams-image-5.png" alt="Platinum Transparency 2023" class="wp-image-13417" /></a></figure>
+    <figure class="wp-block-image"><a href="https://www.guidestar.org/profile/91-0823767" data-testid="footer-guidestar-profile"><img src="/wp-content/uploads/MicrosoftTeams-image-5.png" alt="Platinum Transparency 2023" class="wp-image-13417" /></a></figure>
     <!-- /wp:image -->
   </div>
   <!-- /wp:column -->

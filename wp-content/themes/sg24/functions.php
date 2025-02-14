@@ -692,20 +692,22 @@ function create_sitemap() {
 }
 add_action('init', 'create_sitemap');
 
-function set_media_center_template() {
+add_action('init', function() {
 	$page = get_page_by_path('/media-center');
 	update_post_meta($page->ID, '_wp_page_template', 'page-news-center.php');
-}
-add_action('init', 'set_media_center_template');
+});
 
-function set_assistance_services_template() {
+add_action('init', function() {
+	$page = get_page_by_path('/health-wellness');
+	update_post_meta($page->ID, '_wp_page_template', 'page-health-and-wellness.php');
+});
+
+add_action('init', 'set_assistance_services_template', function() {
 	$page = get_page_by_path('/assistance-services');
 	update_post_meta($page->ID, '_wp_page_template', 'page-assistance-services.php');
-}
-add_action('init', 'set_assistance_services_template');
+});
 
-function set_caregiver_support_template() {
+add_action('init', function() {
 	$page = get_page_by_path('/our-programs/caregiver-support');
 	update_post_meta($page->ID, '_wp_page_template', 'page-caregiver-support.php');
-}
-add_action('init', 'set_caregiver_support_template');
+});
