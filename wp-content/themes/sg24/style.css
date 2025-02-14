@@ -645,6 +645,7 @@ big {
 
 #resize-links a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 #resize-links a.active {
@@ -1176,7 +1177,6 @@ ul#menu-utility li a {
 }
 
 .menu-social-media-container {
-
 }
 
 .menu-social-media-container li,
@@ -1493,7 +1493,6 @@ p#breadcrumbs {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .alignfull {
   margin: 2rem;
@@ -2375,7 +2374,7 @@ object {
   font-weight: bold;
 }
 
-.footer .menu-social-media-container>ul {
+.footer .menu-social-media-container > ul {
   display: flex;
   padding-left: 0;
   margin-bottom: 0.22222222em;

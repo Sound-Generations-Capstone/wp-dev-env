@@ -88,9 +88,9 @@
 
 				<div id='resize-links'>
 					<ul>
-						<li><a href='#' onclick="decreaseFontSize()">A-</a></li>
-						<li><a href='#' onclick="resetFontSize()">A</a></li>
-						<li><a href='#' onclick="increaseFontSize()">A+</a></li>
+						<li><a onclick="decreaseFontSize()">A-</a></li>
+						<li><a onclick="resetFontSize()">A</a></li>
+						<li><a onclick="increaseFontSize()">A+</a></li>
 					</ul>
 					<script type="text/javascript">
 						let defaultSize = parseFloat(localStorage.getItem('fontSize')) || 62.5;
