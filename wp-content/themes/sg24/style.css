@@ -334,29 +334,29 @@ select,
 textarea {
   color: #000;
   font-family: arial, sans-serif;
-  font-size: 18px;
   font-size: 1.8rem;
   line-height: 1.5;
 }
 
 .has-small-font-size {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .has-normal-font-size {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .has-medium-font-size {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .has-large-font-size {
   font-size: 35px;
+  font-size: 3.5rem;
 }
 
 .has-huge-font-size {
-  font-size: 35px;
+  font-size: 3.5rem;
 }
 
 .has-background {
@@ -582,7 +582,6 @@ kbd,
 tt,
 var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 18px;
   font-size: 1.8rem;
 }
 
@@ -1457,7 +1456,6 @@ p#breadcrumbs {
   clip: auto !important;
   color: #000;
   display: block;
-  font-size: 18px;
   font-size: 1.8rem;
   font-weight: bold;
   height: auto;
