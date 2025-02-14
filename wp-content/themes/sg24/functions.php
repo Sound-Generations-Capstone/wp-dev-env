@@ -701,3 +701,13 @@ add_action('init', function() {
 	$page = get_page_by_path('/health-wellness');
 	update_post_meta($page->ID, '_wp_page_template', 'page-health-and-wellness.php');
 });
+
+add_action('init', function() {
+	$page = get_page_by_path('/assistance-services');
+	update_post_meta($page->ID, '_wp_page_template', 'page-assistance-services.php');
+});
+
+add_action('init', function() {
+	$page = get_page_by_path('/our-programs/caregiver-support');
+	update_post_meta($page->ID, '_wp_page_template', 'page-caregiver-support.php');
+});
