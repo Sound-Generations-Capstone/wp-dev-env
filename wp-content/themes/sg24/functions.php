@@ -702,7 +702,7 @@ add_action('init', function() {
 	update_post_meta($page->ID, '_wp_page_template', 'page-health-and-wellness.php');
 });
 
-add_action('init', 'set_assistance_services_template', function() {
+add_action('init', function() {
 	$page = get_page_by_path('/assistance-services');
 	update_post_meta($page->ID, '_wp_page_template', 'page-assistance-services.php');
 });
