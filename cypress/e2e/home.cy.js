@@ -2,7 +2,7 @@
 
 describe('Homepage content', () => {
   beforeEach(() => {
-    const url = Cypress.env('SITE_URL') || 'http://localhost:8881/';
+    const url = Cypress.env('SITE_URL');
     cy.visit(url)
   })
 

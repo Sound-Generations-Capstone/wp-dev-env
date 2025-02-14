@@ -79,7 +79,7 @@ get_header();
 <!-- /wp:media-text -->
 
 <!-- wp:heading {"textAlign":"center","level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|black"}}}},"textColor":"black"} -->
-<h1 class="wp-block-heading has-text-align-center has-black-color has-text-color has-link-color"><strong>Popular Services</strong></h1>
+<h1 class="wp-block-heading has-text-align-center has-black-color has-text-color has-link-color"><strong>In-Demand Services</strong></h1>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
