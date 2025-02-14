@@ -30,14 +30,16 @@
   color: #0073aa;
 }
 
-#search-volunteer-results summary::before {
-  content: "▶️";
-}
-
 #search-volunteer-results details[open] {
   background-color: #eef6ff;
 }
 
-#search-volunteer-results details[open] summary::before {
-  content: '🔽';
+@media (min-width: 60em) {
+  #search-volunteer-results summary::before {
+    content: "▶️";
+  }
+
+  #search-volunteer-results details[open] summary::before {
+    content: "🔽";
+  }
 }
