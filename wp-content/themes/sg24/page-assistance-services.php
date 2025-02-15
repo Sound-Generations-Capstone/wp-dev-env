@@ -17,33 +17,28 @@ get_header();
   </header> 
   <main class="card-container">
         <a class="pathways service-card" href="<?php echo get_permalink(get_page_by_path('assistance-services/pathways-information-assistance'))?>" data-testid="pathways-link">
-            <?php $pathways_information_image_data = wp_get_attachment_image_src(16065) ?>;
-            <img src=<?php echo $pathways_information_image_data[0]; ?> alt=""/><br/>
+            <img src="wp-content/themes/sg24/img/Pathways-IA.png" alt=""/><br/>
             Pathways and Information Assistance
         </a>
         <a class="caregiver-support service-card strong" href="<?php echo get_permalink(get_page_by_path('our-programs/caregiver-support'))?>" data-testid="caregiver-support-link">
-            <?php $caregiver_support_image_data = wp_get_attachment_image_src(16061) ?>;
-            <img src=<?php echo $caregiver_support_image_data[0]; ?> alt=""/><br/>
+           
+            <img src="wp-content/themes/sg24/img/Caregiver-Support-Icon_grey-655x655.png" alt=""/><br/>
             Caregiver Support
         </a>
         <a class="legal service-card" href="<?php echo get_permalink(get_page_by_path('our-programs/senior-rights-assistance/'))?>" data-testid="legal-assistance-link">
-            <?php $senior_rights_assistance_image_data = wp_get_attachment_image_src(16066) ?>;
-            <img src=<?php echo $senior_rights_assistance_image_data[0]; ?> alt=""/><br/>
+            <img src="wp-content/themes/sg24/img/SRA-icon-655x655.png" alt=""/><br/>
             Legal Assistance
         </a>
         <a class="minor-home-repair service-card" href="<?php echo get_permalink(get_page_by_path('assistance-services/minor-home-repair'))?>" data-testid="minor-home-repair-link">
-            <?php $home_repair_image_data = wp_get_attachment_image_src(16064) ?>;
-            <img src=<?php echo $home_repair_image_data[0]; ?> alt=""/><br/>
+            <img src="wp-content/themes/sg24/img/Minor-Home-Repair-Icon-BW-654x655.png" alt=""/><br/>
              Minor Home Repair
         </a>
       <a class="elder-education service-card" href="<?php echo get_permalink(get_page_by_path('/eldereducationinstitute'))?>" data-testid="elder-education-institute-link">
-            <?php $elder_education_image_data = wp_get_attachment_image_src(16062) ?>;
-            <img src=<?php echo $elder_education_image_data[0]; ?> alt=""/><br/>
+            <img src="wp-content/themes/sg24/img/elder-education-institute-655x655.png" alt=""/><br/>
             Elder Education Institute
         </a>
         <a class="grat service-card" href="<?php echo get_permalink(get_page_by_path('our-programs/grat'))?>" data-testid="grat-link">
-            <?php $grat_image_data = wp_get_attachment_image_src(16063) ?>;
-            <img src=<?php echo $grat_image_data[0]; ?> alt=""/> <br/>
+            <img src="wp-content/themes/sg24/img/GRAT-648x655.png" alt=""/> <br/>
             Geriatric Regional Assessment Team
         </a>
     </main>

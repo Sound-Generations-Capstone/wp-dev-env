@@ -23,7 +23,7 @@ get_header();
   <article class="card-container caregiver-support-menu">
     <section class="caregiver-card">
       <?php $caregiver_support_image_data = wp_get_attachment_image_src(16067) ?>;
-      <img src=<?php echo $caregiver_support_image_data[0]; ?> alt="Caregiver and care recipient sitting next to each other on a sofa."/>
+      <img src="wp-content/themes/sg24/img/caregiver-support.png" alt="Caregiver and care recipient sitting next to each other on a sofa."/>
       <p>
         Whether you do the grocery shopping for your parents, run errands for a neighbor, or are caring for a spouse with a chronic condition, we are here for you. 
       </p>
@@ -33,7 +33,7 @@ get_header();
     </section>
     <section class="caregiver-card">
       <?php $veteran_caregiver_support_image_data = wp_get_attachment_image_src(16069) ?>;
-      <img src=<?php echo $veteran_caregiver_support_image_data[0]; ?> alt="Veteran care recipient and caregiver look upon a body of water standing side by side."/>
+      <img src="wp-content/themes/sg24/img/veteran-caregiver-support.png" alt="Veteran care recipient and caregiver look upon a body of water standing side by side."/>
       <p>
         The Veteran Caregiver Support Program focuses on the specific needs of the veteran community in King County.
       </p>
@@ -70,7 +70,7 @@ get_header();
         </a>
       </section>
       <?php $presentation_image_data = wp_get_attachment_image_src(16068) ?>;
-      <img class="presentation-image" src=<?php echo $presentation_image_data[0]; ?>/>
+      <img class="presentation-image" src="wp-content/themes/sg24/img/presentation-example-placeholder.jpg">/>
     </article>
     <h2 class="has-black-color article-header">
       Resources for All Caregivers
