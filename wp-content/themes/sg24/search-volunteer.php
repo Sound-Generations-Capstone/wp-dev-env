@@ -106,18 +106,17 @@ function volunteer_search_form()
   $query = new WP_Query($args);
 
   if ($query->have_posts()) {
-    echo "<ul>";
+    echo "<div id='search-volunteer-results'>";
     while ($query->have_posts()) {
       $query->the_post();
   ?>
-      <li>
-        <strong>Program:</strong> <?php the_title(); ?><br>
-        <strong>Details:</strong> <?php the_content(); ?>
-      </li>
-      <hr>
+      <details>
+        <summary> <?php the_title(); ?> </summary>
+        <?php the_content(); ?>
+      </details>
 <?php
     }
-    echo "</ul>";
+    echo '</div';
   } else {
     echo "<p>No volunteer opportunities match your criteria.</p>";
   }
@@ -132,7 +131,13 @@ get_header(); ?>
 
 <!-- Display page content -->
 <div class="page-content">
-  <?php echo do_shortcode("[volunteer_search_form]") ?>
+  <?php
+  if (have_posts()) :
+    while (have_posts()) : the_post();
+      the_content(); 
+    endwhile;
+  endif;
+  ?>
 </div>
 
 <?php
