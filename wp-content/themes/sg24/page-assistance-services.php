@@ -17,27 +17,28 @@ get_header();
   </header> 
   <main class="card-container">
         <a class="pathways service-card" href="<?php echo get_permalink(get_page_by_path('assistance-services/pathways-information-assistance'))?>" data-testid="pathways-link">
-          <img src="wp-content/uploads/2025/01/Pathways-IApng.png" alt=""/><br/>
-          Pathways and Information Assistance
+            <img src="wp-content/themes/sg24/img/Pathways-IA.png" alt=""/><br/>
+            Pathways and Information Assistance
         </a>
         <a class="caregiver-support service-card strong" href="<?php echo get_permalink(get_page_by_path('our-programs/caregiver-support'))?>" data-testid="caregiver-support-link">
-            <img src="wp-content/uploads/2025/01/Caregiver-Support-Icon_grey-655x655.png" alt=""/><br/>
+           
+            <img src="wp-content/themes/sg24/img/Caregiver-Support-Icon_grey-655x655.png" alt=""/><br/>
             Caregiver Support
         </a>
         <a class="legal service-card" href="<?php echo get_permalink(get_page_by_path('our-programs/senior-rights-assistance/'))?>" data-testid="legal-assistance-link">
-            <img src="wp-content/uploads/2025/01/SRA-icon-655x655.png" alt=""/><br/>
+            <img src="wp-content/themes/sg24/img/SRA-icon-655x655.png" alt=""/><br/>
             Legal Assistance
         </a>
         <a class="minor-home-repair service-card" href="<?php echo get_permalink(get_page_by_path('assistance-services/minor-home-repair'))?>" data-testid="minor-home-repair-link">
-            <img src="wp-content/uploads/2025/01/Minor-Home-Repair-Icon-BW-654x655.png" alt=""/><br/>
+            <img src="wp-content/themes/sg24/img/Minor-Home-Repair-Icon-BW-654x655.png" alt=""/><br/>
              Minor Home Repair
         </a>
       <a class="elder-education service-card" href="<?php echo get_permalink(get_page_by_path('/eldereducationinstitute'))?>" data-testid="elder-education-institute-link">
-            <img src="wp-content/uploads/2025/01/elder-education-institute-655x655.png" alt=""/><br/>
+            <img src="wp-content/themes/sg24/img/elder-education-institute-655x655.png" alt=""/><br/>
             Elder Education Institute
         </a>
         <a class="grat service-card" href="<?php echo get_permalink(get_page_by_path('our-programs/grat'))?>" data-testid="grat-link">
-            <img src="wp-content/uploads/2025/01/GRAT-648x655.png" alt=""/> <br/>
+            <img src="wp-content/themes/sg24/img/GRAT-648x655.png" alt=""/> <br/>
             Geriatric Regional Assessment Team
         </a>
     </main>
