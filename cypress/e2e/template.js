@@ -1,5 +1,10 @@
 /// <reference types="cypress" />
 
 describe("", () => {
-  it("", () => {});
+  beforeEach(() => {
+    const url = Cypress.env("SITE_URL");
+    cy.visit(url);
+  });
+
+  specify("", () => {});
 });
