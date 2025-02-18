@@ -32,4 +32,18 @@ describe("Header content", () => {
     button.should("have.css", "font-weight", "700");
     button.should("have.css", "border", "3px solid rgb(253, 130, 4)");
   });
+
+  specify("5 header tabs", () => {
+    let menu = cy.get("#mega-menu-wrap-primary #mega-menu-primary");
+    menu
+      .should("exist")
+      .find("> li")
+      .then(($lis) => {
+        // Get text content of each li
+        const items = $lis.map((i, el) => Cypress.$(el).text().trim()).get();
+
+        // Verify the expected items
+        expect(items).have.lengthOf(7);
+      });
+  });
 });
