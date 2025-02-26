@@ -28,19 +28,12 @@ wp-config.php
 
 # Uploads
 /wp-content/uploads/
-!wp-content/uploads/2024
 
 # Log files
 *.log
 
 # htaccess
 /.htaccess
-
-# database
-wp-content/database
-
-# .env
-.env
 
 # All plugins
 #
@@ -184,3 +177,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Our .gitignore
+!wp-content/uploads/2024
+
+# database
+wp-content/database
+!wp-content/database/pantheon_db.zip
+
+# .env
+.env
