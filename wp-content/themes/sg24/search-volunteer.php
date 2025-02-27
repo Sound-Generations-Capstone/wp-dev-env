@@ -10,43 +10,83 @@ function volunteer_search_form()
 {
   ob_start();
 ?>
-  <form method="get" action="">
-    <label>Filters:</label>
-    <input type="text" id="filter-input" placeholder="Type and press space to add filters">
-    <div id="filter-tags"></div>
-    <input type="hidden" name="filters" id="filters" value="">
+  <form method="get" action="" id="search-volunteer-form">
+    <fieldset>
+      <legend>Filters</legend>
+      <div id="filter-tags"></div>
+      <div>
+        <input type="text" id="filter-input">
+        <button type="button" onclick="addFilter()">Add</button>
+      </div>
+    </fieldset>
 
-    <button type="submit">Filter</button>
+    <input type="hidden" name="filters" id="filters" value="">
+    <button type="submit">Search</button>
   </form>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      let input = document.getElementById("filter-input");
-      let filters = document.getElementById("filters");
-      let tagsContainer = document.getElementById("filter-tags");
-      let selectedFilters = [];
+    const getInputEl = () => document.getElementById("filter-input");
+    const getTagsContainer = () => document.getElementById("filter-tags");
+    const getFiltersEl = () => document.getElementById("filters");
 
-      input.addEventListener("keydown", function(event) {
-        if (event.key === " ") {
-          event.preventDefault();
-          let value = input.value.trim();
-          if (value && !selectedFilters.includes(value)) {
-            selectedFilters.push(value);
-            filters.value = selectedFilters.join(",");
-            let tag = document.createElement("span");
-            tag.textContent = value + " ✖";
-            tag.style.marginRight = "5px";
-            tag.style.cursor = "pointer";
-            tag.addEventListener("click", function() {
-              selectedFilters = selectedFilters.filter(f => f !== value);
-              filters.value = selectedFilters.join(",");
-              tag.remove();
-            });
-            tagsContainer.appendChild(tag);
-            input.value = "";
-          }
-        }
+    function getSelectedFilters() {
+      let spans = Array.from(getTagsContainer().getElementsByTagName("span"));
+      return spans.map((span) => {
+        return span.textContent.replace(" ✖", "");
       });
+    }
+
+    function setSelectedFiltersStr(value) {
+      getFiltersEl().value = value;
+    }
+
+    function addToSelectedFiltersStr(filter) {
+      let selectedFilters = getSelectedFilters();
+      selectedFilters.push(filter);
+      setSelectedFiltersStr(selectedFilters.join(","));
+    }
+
+    function removeFromSelectedFiltersStr(filter) {
+      let selectedFilters = getSelectedFilters();
+      selectedFilters = selectedFilters.filter(filters => filters != filter);
+      setSelectedFiltersStr(selectedFilters.join(","));
+    }
+
+    function createSpan(value) {
+      let tag = document.createElement("span");
+      tag.textContent = value + " ✖";
+      tag.style.marginRight = "5px";
+      tag.style.cursor = "pointer";
+      tag.style.borderStyle = "dotted";
+      tag.addEventListener("click", function() {
+        tag.remove();
+        removeFromSelectedFiltersStr(value);
+      });
+      return tag;
+    }
+
+    function addFilter() {
+      let value = getInputEl().value.trim();
+      let selectedFilters = getSelectedFilters();
+
+      if (value && !selectedFilters.includes(value)) {
+        addToSelectedFiltersStr(value);
+        let span = createSpan(value);
+        getTagsContainer().appendChild(span);
+        getInputEl().value = "";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      let searchParams = new URLSearchParams(window.location.search);
+      let filters = searchParams.get("filters");
+      if (filters) {
+        setSelectedFiltersStr(filters);
+        filters.split(",").forEach((filter) => {
+          let span = createSpan(filter);
+          getTagsContainer().appendChild(span);
+        });
+      }
     });
   </script>
 
@@ -66,18 +106,17 @@ function volunteer_search_form()
   $query = new WP_Query($args);
 
   if ($query->have_posts()) {
-    echo "<ul>";
+    echo "<div id='search-volunteer-results'>";
     while ($query->have_posts()) {
       $query->the_post();
   ?>
-      <li>
-        <strong>Program:</strong> <?php the_title(); ?><br>
-        <strong>Details:</strong> <?php the_content(); ?>
-      </li>
-      <hr>
+      <details>
+        <summary> <?php the_title(); ?> </summary>
+        <?php the_content(); ?>
+      </details>
 <?php
     }
-    echo "</ul>";
+    echo '</div';
   } else {
     echo "<p>No volunteer opportunities match your criteria.</p>";
   }
@@ -92,7 +131,13 @@ get_header(); ?>
 
 <!-- Display page content -->
 <div class="page-content">
-  <?php echo do_shortcode("[volunteer_search_form]") ?>
+  <?php
+  if (have_posts()) :
+    while (have_posts()) : the_post();
+      the_content(); 
+    endwhile;
+  endif;
+  ?>
 </div>
 
 <?php

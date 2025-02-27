@@ -83,17 +83,38 @@
 				</section>
 
 				<?php wp_nav_menu(array('menu' => 'Social Media')) ?>
-				
+
 				<?php wp_nav_menu(array('theme_location' => 'utility')) ?>
 
-				<!-- <div id='resize-links'>
-				<ul >
+				<div id='resize-links'>
+					<ul>
+						<li><a onclick="decreaseFontSize()">A-</a></li>
+						<li><a onclick="resetFontSize()">A</a></li>
+						<li><a onclick="increaseFontSize()">A+</a></li>
+					</ul>
+					<script type="text/javascript">
+						let defaultSize = parseFloat(localStorage.getItem('fontSize')) || 62.5;
+						document.documentElement.style.fontSize = `${defaultSize}%`;
 
-					<li><a href='#'  data-size='62.5%' class='resizer' >A-</a></li>
-					<li><a href='#'  data-size='70%' class='resizer' >A</a></li>
-					<li><a href='#'  data-size='82%' class='resizer' >A+</a></li>
-				</ul>
-				</div>-->
+						function setFontSize(size) {
+							defaultSize = size; // keep
+							document.documentElement.style.fontSize = `${size}%`;
+							localStorage.setItem('fontSize', size.toString());
+						}
+
+						function resetFontSize() {
+							setFontSize(62.5);
+						}
+
+						function decreaseFontSize() {
+							setFontSize(defaultSize - 2.0);
+						}
+
+						function increaseFontSize() {
+							setFontSize(defaultSize + 2.0);
+						}
+					</script>
+				</div>
 				<?php dynamic_sidebar('sidebar-3'); ?>
 
 			</div><!-- .utility -->

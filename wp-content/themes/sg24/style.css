@@ -18,6 +18,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
+@import url("css/search-volunteering.css");
+
 .has-purpledrk-background-color {
   background-color: #5d0e8b;
 }
@@ -332,29 +334,29 @@ select,
 textarea {
   color: #000;
   font-family: arial, sans-serif;
-  font-size: 18px;
   font-size: 1.8rem;
   line-height: 1.5;
 }
 
 .has-small-font-size {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .has-normal-font-size {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .has-medium-font-size {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .has-large-font-size {
   font-size: 35px;
+  font-size: 3.5rem;
 }
 
 .has-huge-font-size {
-  font-size: 35px;
+  font-size: 3.5rem;
 }
 
 .has-background {
@@ -580,7 +582,6 @@ kbd,
 tt,
 var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 18px;
   font-size: 1.8rem;
 }
 
@@ -643,6 +644,7 @@ big {
 
 #resize-links a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 #resize-links a.active {
@@ -766,7 +768,7 @@ input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
   border-color: #fff;
-  border-radius: 0.25em;
+  border-radius: 10px;
   background: #222;
   color: #fff;
   font-size: 1.8rem;
@@ -781,7 +783,7 @@ input[type="submit"] {
   font-weight: bold;
   background: #5d0e8b;
   border-color: #fff;
-  border-radius: 0.5rem;
+  border-radius: 10px;
   color: #fff;
   font-size: 18px;
   text-decoration: none;
@@ -823,7 +825,7 @@ input[type="submit"] {
 
 .hover-white-purple:hover {
   background-color: #aa0061;
-  border-radius: 0.5rem;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -930,13 +932,13 @@ a {
 }
 
 a:visited {
-  color: #000;
+  color: #ffffff73;
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: #880364;
+  color: black;
   text-decoration: none;
 }
 
@@ -950,7 +952,7 @@ a:active {
 }
 
 .site-content a {
-  font-weight: bold;
+  /* font-weight: normal; */
 }
 
 .site a[href^="tel"] {
@@ -975,7 +977,6 @@ a:active {
 @media screen and (min-width: 60em) {
   .site-content a {
     font-family: "Avenir LT W01_95 Black1475556", sans-serif;
-    font-weight: normal;
   }
 
   .entry-meta a,
@@ -1011,7 +1012,7 @@ a[href$=".pdf"]:before {
   background: #fd8204 url("img/bg-donate-button-32x28.png") no-repeat 2px center;
   background-size: 24px 21px;
   border: 3px solid #fd8204;
-  border-radius: 0.25em;
+  border-radius: 10px;
   color: #fff;
   font-weight: bold;
   padding-left: 30px;
@@ -1074,7 +1075,7 @@ li:hover .menu-item {
 
 #search-input {
   line-height: 1.2;
-  border-radius: 2rem;
+  border-radius: 10px;
   padding: 1rem;
   background-image: url("img/search_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png");
   background-size: 3.5rem;
@@ -1174,7 +1175,6 @@ ul#menu-utility li a {
 }
 
 .menu-social-media-container {
-
 }
 
 .menu-social-media-container li,
@@ -1450,12 +1450,11 @@ p#breadcrumbs {
 
 .screen-reader-text:focus {
   background-color: #f1f1f1;
-  border-radius: 3px;
+  border-radius: 10px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
   color: #000;
   display: block;
-  font-size: 18px;
   font-size: 1.8rem;
   font-weight: bold;
   height: auto;
@@ -2152,7 +2151,7 @@ object {
   padding: 5px 10px;
   background-color: #880364;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   text-decoration: none !important;
   font-weight: bold;
   cursor: pointer;
@@ -2164,16 +2163,16 @@ object {
   color: #fff;
 }
 
-.posts-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 1rem;
+.card-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2rem;
+	padding: 1rem;
 }
 
 .post-card {
   background: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s ease;
@@ -2217,7 +2216,7 @@ object {
   background: #007bff;
   color: #fff;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 10px;
   font-size: 0.875rem;
   transition: background 0.2s ease;
 }
@@ -2228,7 +2227,7 @@ object {
   background: #007bff;
   color: #fff;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 10px;
   font-size: 0.875rem;
   transition: background 0.2s ease;
 }
@@ -2314,7 +2313,7 @@ object {
 }
 
 .subscribe {
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
   background: transparent;
   border: solid 0.35rem;
   border-radius: 0.875rem;
@@ -2341,7 +2340,6 @@ object {
 
 .subscribe:visited {
   color: white;
-  text-decoration: none;
 }
 
 .fill {
@@ -2372,9 +2370,350 @@ object {
   font-weight: bold;
 }
 
-.footer .menu-social-media-container>ul {
+.footer .menu-social-media-container > ul {
   display: flex;
   padding-left: 0;
   margin-bottom: 0.22222222em;
   margin-left: -0.5em;
 }
+
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  align-items: stretch;
+  justify-content: center;
+  color: white;
+  height: 50%;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.outline-link {
+  color: white;
+  padding: 2rem;
+  outline: white solid 0.25rem;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.icon {
+  display: inline;
+  margin-right: 2rem;
+  position: relative;
+  top: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* Assistance Services Redesign */
+
+.service-card {
+  display: block;
+  background-color: #b00061;
+  margin: 2rem;
+  padding: 3rem;
+  width: 30%;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  min-height: 100%;
+  font-weight: bold;
+}
+
+.service-card a {
+  font-weight: bold;
+}
+
+.service-card a:hover {
+  color: #5d0e8b;
+}
+
+.service-card a:visited {
+  color: #ffffffd2;
+}
+
+.service-card a:active {
+  font-weight: bold;
+  color: black;
+}
+
+.service-card img {
+  aspect-ratio: 1/1;
+  max-width: 50%;
+  min-width: 40%;
+}
+
+.service-card:hover {
+  outline: black solid;
+  background-color: #b3006226;
+  text-decoration: none;
+  color: #b00061;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .service-card {
+    width: 100%;
+  }
+
+  .service-card img {
+    aspect-ratio: 1/1;
+    max-width: 40%;
+  }
+}
+
+
+
+.banner h1 {
+  font-size: 4rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Caregiver Support Redesign */
+
+.caregiver-support-menu {
+  flex-flow: nowrap;
+}
+
+.caregiver-card {
+  background-color: #5d0e8b;
+  margin: 2rem;
+  padding: 3rem;
+  width: 50%;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  min-height: 100%;
+  font-weight: 500;
+}
+
+.caregiver-card a:hover {
+  background-color: #f9edf9;
+  transition: background-color 0.2s ease;
+}
+
+.caregiver-card img {
+  aspect-ratio: 1/1;
+  max-height: 50%;
+}
+
+.caregiver-card p {
+  padding-bottom: 2rem;
+}
+
+.community-outreach {
+  display: flex;
+  margin: 2rem 2rem 4rem 2rem;
+  padding-left: 3rem;
+  color: white;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.community-outreach-info {
+  padding: 3rem;
+  border-radius: 10px;
+  width: 65%;
+  background-color: #5d0e8b;
+}
+
+.community-outreach-info a:hover {
+  background-color: #f9edf9;
+  transition: background-color 0.2s ease;
+}
+
+.presentation-image {
+  max-width: 38%;
+  border-radius: 10px;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  object-fit: cover;
+}
+
+.caregiver-resources .large-card a {
+  background-color: #880364;
+}
+
+.caregiver-resources a {
+  background-color: #880364;
+}
+
+.caregiver-resources .large-card a:hover {
+  outline: black solid;
+  box-shadow: white -1rem 1rem 0rem;
+  background-color: #f4d7e3ff;
+  text-decoration: none;
+  color: #880364;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.small-cards {
+ display: grid;
+ max-width: 90%;
+ margin-top: 2rem;
+ gap: 1rem;
+ grid-template-columns: repeat(3, 1fr); 
+}
+
+.small-cards a {
+  display: flex;
+  margin: 2rem;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.caregiver-resources .small-cards a:hover {
+  outline: black solid;
+  box-shadow: white 2rem;
+  background-color: #f4d7e3ff;
+  text-decoration: none;
+  color: #880364;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.veteran-caregiver-resources .large-card a:hover {
+  outline: black solid;
+  box-shadow: white -1rem 1rem 0rem;
+  background-color: #f9edf9;
+  text-decoration: none;
+  color: #5d0e8b;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.veteran-caregiver-resources .small-cards .icon {
+  display: inline;
+  position: relative;
+  margin-right: 1rem;
+  top: -0.5rem;
+  flex-shrink: 0;
+}
+
+.veteran-caregiver-resources .small-cards a:hover {
+  outline: black solid;
+  box-shadow: white 2rem;
+  background-color: #f9edf9;
+  text-decoration: none;
+  color: #5d0e8b;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.large-cards {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  border-radius: 10px;
+}
+
+.call-caregiver-support {
+  display: flex;
+  flex-direction: column;
+}
+
+.large-card {
+  display: flex;
+  justify-content: stretch;
+  padding: 3rem;
+  border-radius: 10px;
+  max-width: 40%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  align-items: center;
+}
+
+.large-card a {
+  padding: 4rem;
+  margin: 2rem;
+  width: 100%;
+  font-size: 3rem;
+}
+
+.article-header {
+  text-align: center;
+}
+
+.section-header {
+  text-align: center;
+}
+
+@media screen and (max-width: 945px) {
+  .small-cards { 
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  .caregiver-support-menu {
+    flex-direction: column;
+    width: 90%;
+    padding-right: 0;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .caregiver-card {
+    width: 100%;
+  }
+
+  .community-outreach {
+    flex-direction: column-reverse;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  .community-outreach-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .presentation-image {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .large-cards {
+    flex-direction: column;
+    margin: 2rem;
+    padding: 0rem;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .large-card {
+    margin: 2rem;
+    max-width: 90%;
+  }
+
+}
+

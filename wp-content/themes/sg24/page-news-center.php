@@ -20,7 +20,7 @@ get_header();
     'paged' => $query_attributes['paged']
     ));
 
-    $output = '<div class="posts-grid news-grid">';
+    $output = '<div class="card-grid news-grid">';
     if ($newsletters_query->have_posts()) {
       while($newsletters_query->have_posts()) {
         $newsletters_query->the_post();
