@@ -19,7 +19,7 @@ jobs:
           php-version: '8.4'
           tools: wp-cli
       - name: Start WP server
-        run: wp server --port=8881
+        run: wp server --port=8881 &
       - name: Decompress DB
         run: |
           cd wp-content/database
