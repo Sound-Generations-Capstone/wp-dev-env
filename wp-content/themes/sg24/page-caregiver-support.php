@@ -113,7 +113,11 @@ get_header();
       <a href="<?php echo esc_url(get_permalink(get_page_by_path('our-programs/caregiver-support/support-groups-workshops-caregivers/')))?>" data-testid="support-groups" class="outline-link">
         Find our support groups and workshops
       </a>
-      <a href="<?php echo esc_url("") ?>" class="outline-link" data-testid="caregiver-stories">
+      <?php 
+        $caregiver_story_tag = get_term_by('name', 'The Heart of Caregiving', 'post_tag');
+        $caregiver_story_url = get_term_link($caregiver_story_tag);
+      ?>
+      <a href="<?php echo esc_url($caregiver_story_url) ?>" class="outline-link" data-testid="caregiver-stories">
         Read caregiver stories and insights
       </a>
       <a href="<?php echo esc_url("https://www.alz.org/help-support/resources/helpline")?>" class="outline-link" data-testid="alzheimers-association">
