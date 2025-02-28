@@ -1,0 +1,49 @@
+name: deploy via rsync
+
+on:
+  push:
+    branches:
+      - main
+      - testing
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Setup PHP with WP CLI
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          tools: wp-cli
+      - name: Start WP server
+        run: wp server --port=8881 &
+      - name: Decompress DB
+        run: |
+          cd wp-content/database
+          unzip pantheon_db.zip
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: "latest"
+          cache: "npm"
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+          SOURCE: "wp-content/"
+          TARGET: "/code/wp-content/"
