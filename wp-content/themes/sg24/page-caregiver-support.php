@@ -123,7 +123,7 @@ get_header();
       <a href="<?php echo esc_url("https://www.alz.org/help-support/resources/helpline")?>" class="outline-link" data-testid="alzheimers-association">
         Alzheimer’s Association Hotline
       </a>
-      <a href="<?php echo esc_url("https://soundgenerations.org/wp-content/uploads/sageusa-how-to-prepare-for-lgbt-caregiving-guide-with-aarp.pdf")?>" class="outline-link" data-testid="lbgtq-care">
+      <a href="<?php echo esc_url("https://soundgenerations.org/wp-content/uploads/sageusa-how-to-prepare-for-lgbt-caregiving-guide-with-aarp.pdf")?>" class="outline-link" data-testid="lgbtq-care">
         View our LGBTQ+ caregiver guide
       </a>
       <a href="<?php echo esc_url(get_permalink(get_page_by_path('our-programs/caregiver-support/caregiver-self-assessment/')))?>" class="outline-link" data-testid="self-assessment">
@@ -169,8 +169,8 @@ get_header();
           </svg>
         Veteran Crisis Line (press 1 after dialing)
       </a>
-      <a href="<?php echo esc_url("tel:+18552603274")?>" class="outline-link has-purpledrk-background-color">
-        <svg  xmlns="http://www.w3.org/2000/svg"  width="48"  height="48"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone" data-testid="toll-free-va-department-caregiver-support">
+      <a href="<?php echo esc_url("tel:+18552603274")?>" class="outline-link has-purpledrk-background-color" data-testid="toll-free-va-department-caregiver-support">
+        <svg  xmlns="http://www.w3.org/2000/svg"  width="48"  height="48"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
             <title>Call</title>
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
         </svg>

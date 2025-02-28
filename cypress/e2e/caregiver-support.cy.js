@@ -49,10 +49,9 @@ describe('Caregiver support page content', () => {
 
     cy.get("[data-testid=alzheimers-association]")
     .should('have.attr', 'href').and('contain', 'alz.org');
-    
 
-    cy.get("[data-testid=lgbtq-care]").click();
-    cy.url().should('contain', 'lgbtq-caregiving-guide');
+    cy.get("[data-testid=lgbtq-care]").should('have.attr', 'href')
+    .and('contain', 'lgbt-caregiving-guide');
 
     cy.get("[data-testid=self-assessment]").click();
     cy.url().should('contain', 'caregiver-self-assessment')
