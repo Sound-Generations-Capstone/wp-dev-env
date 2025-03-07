@@ -63,9 +63,9 @@
 						break;
 				}
 				?>
-				<a class="site-title" href="<?php echo $logolink; ?>"><?php
+				<a class="site-title" aria-label="Sound Generations logo" href="<?php echo $logolink; ?>"><?php
 
-																															echo '<img src="' . $logo . '" alt="Sound Generations logo">'; ?></a>
+																																																	echo '<img src="' . $logo . '" alt="Sound Generations logo">'; ?></a>
 
 			</div><!-- .site-branding -->
 			<div class="utility">
@@ -88,9 +88,21 @@
 
 				<div id='resize-links'>
 					<ul>
-						<li><a onclick="decreaseFontSize()">A-</a></li>
-						<li><a onclick="resetFontSize()">A</a></li>
-						<li><a onclick="increaseFontSize()">A+</a></li>
+						<li>
+							<a onclick="decreaseFontSize()" tabindex=0 aria-label="decrease font size">
+								A-
+							</a>
+						</li>
+						<li>
+							<a onclick="resetFontSize()" tabindex=0 aria-label="reset font size">
+								A
+							</a>
+						</li>
+						<li>
+							<a onclick="increaseFontSize()" tabindex=0 aria-label="increase font size">
+								A+
+							</a>
+						</li>
 					</ul>
 					<script type="text/javascript">
 						let defaultSize = parseFloat(localStorage.getItem('fontSize')) || 62.5;

@@ -32,7 +32,7 @@
 
   <!-- wp:column {"verticalAlignment":"top"} -->
   <div class="wp-block-column is-vertically-aligned-top has-white-color"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-    <h3 class="wp-block-heading has-white-color has-text-color has-link-color">Resources</h3>
+    <strong class="wp-block-heading has-white-color has-text-color has-link-color">Resources</strong>
     <!-- /wp:heading -->
 
     <!-- wp:paragraph -->
@@ -63,7 +63,7 @@
 
   <!-- wp:column -->
   <div class="wp-block-column"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-    <h3 class="wp-block-heading has-white-color has-text-color has-link-color">Sound Generations</h3>
+    <strong class="wp-block-heading has-white-color has-text-color has-link-color">Sound Generations</strong>
     <!-- /wp:heading -->
 
     <!-- wp:paragraph -->
@@ -78,7 +78,7 @@
 
   <!-- wp:column -->
   <div class="wp-block-column has-white-color"><!-- wp:paragraph -->
-    <h3 class="wp-block-heading has-white-color has-text-color has-link-color">Social Media</h3>
+    <strong class="wp-block-heading has-white-color has-text-color has-link-color">Social Media</strong>
     <?php wp_nav_menu(array('menu' => 'Social Media')) ?>
 
     <p>Sound Generations is a 501(c)3 non profit.</p>

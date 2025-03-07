@@ -13,7 +13,7 @@ get_header();
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:cover {"url":"/wp-content/uploads/2024/11/iStock-1298301367-1024x681.jpeg","id":15972,"dimRatio":80,"customOverlayColor":"#aa0061","isUserOverlayColor":true,"focalPoint":{"x":1,"y":0},"contentPosition":"center left","align":"full","style":{"color":{"duotone":"unset"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"normal"} -->
-  <div class="wp-block-cover alignfull has-custom-content-position is-position-center-left has-white-color has-text-color has-link-color has-normal-font-size"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-80 has-background-dim" style="background-color:#aa0061"></span><img class="wp-block-cover__image-background wp-image-15972" alt="" src="/wp-content/uploads/2024/11/iStock-1298301367-1024x681.jpeg" style="object-position:100% 0%" data-object-fit="cover" data-object-position="100% 0%" data-testid="welcome-button-container"/>
+  <div class="wp-block-cover alignfull has-custom-content-position is-position-center-left has-white-color has-text-color has-link-color has-normal-font-size"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-80 has-background-dim" style="background-color:#aa0061"></span><img class="wp-block-cover__image-background wp-image-15972" alt="" src="/wp-content/uploads/2024/11/iStock-1298301367-1024x681.jpeg" style="object-position:100% 0%" data-object-fit="cover" data-object-position="100% 0%" data-testid="welcome-button-container" />
     <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"huge"} -->
       <p class="has-text-align-left has-white-color has-text-color has-link-color has-huge-font-size"><strong>Your Partner in Positive Aging</strong></p>
       <!-- /wp:paragraph -->
@@ -153,7 +153,7 @@ get_header();
     <!-- /wp:column -->
 
     <!-- wp:column {"width":"50%","backgroundColor":"orangedrk"} -->
-    <div class="wp-block-column has-orangedrk-background-color has-background" style="flex-basis:50%"><!-- wp:spacer {"height":"var:preset|spacing|60"} -->
+    <div class="wp-block-column has-orangedrk-background-color-darker33 has-background" style="flex-basis:50%;"><!-- wp:spacer {"height":"var:preset|spacing|60"} -->
       <div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
@@ -162,7 +162,7 @@ get_header();
       <!-- /wp:heading -->
 
       <!-- wp:paragraph {"align":"center"} -->
-      <p class="has-text-align-center">Sign up for our monthly newsletter to get the latest news, volunteer opportunities, tips and other ways to get involved with Sound Generations.</p>
+      <p class="has-text-align-center" style="color:#fff;font-weight:bold;">Sign up for our monthly newsletter to get the latest news, volunteer opportunities, tips and other ways to get involved with Sound Generations.</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:spacer {"height":"0px"} -->
@@ -193,7 +193,7 @@ get_header();
 <div class="wp-block-columns alignfull"><!-- wp:column -->
   <div class="wp-block-column"><!-- wp:gallery {"linkTo":"none","align":"full"} -->
     <figure class="wp-block-gallery alignfull has-nested-images columns-default is-cropped"><!-- wp:image {"lightbox":{"enabled":false},"id":16020,"linkDestination":"custom","align":"full","className":"is-style-default","style":{"color":{}}} -->
-      <figure class="wp-block-image alignfull is-style-default"><a href="/?p=15125"><img src="/wp-content/uploads/2024/11/PRIDE_6-2024.jpeg" alt="" class="wp-image-16020" /></a>
+      <figure class="wp-block-image alignfull is-style-default"><a href="/?p=15125" aria-label="Celebrating Pride Month: Empowering and Supporting LGBTQ+ Older Adults"><img src="/wp-content/uploads/2024/11/PRIDE_6-2024.jpeg" alt="Celebrating Pride Month: Empowering and Supporting LGBTQ+ Older Adults" class="wp-image-16020" /></a>
         <figcaption class="wp-element-caption"><strong>Celebrating Pride Month: Empowering and Supporting LGBTQ+ Older Adults</strong></figcaption>
       </figure>
       <!-- /wp:image -->
@@ -205,7 +205,7 @@ get_header();
   <!-- wp:column -->
   <div class="wp-block-column"><!-- wp:gallery {"linkTo":"none","align":"full"} -->
     <figure class="wp-block-gallery alignfull has-nested-images columns-default is-cropped"><!-- wp:image {"lightbox":{"enabled":false},"id":16021,"linkDestination":"custom","align":"full","style":{"color":{}}} -->
-      <figure class="wp-block-image alignfull"><a href="/?p=16028"><img src="/wp-content/uploads/2024/11/03-2024-womens-history-2.jpeg" alt="" class="wp-image-16021" /></a>
+      <figure class="wp-block-image alignfull"><a href="/?p=16028" aria-label="Empowering Women: Celebrating Contributions and Dedication"><img src="/wp-content/uploads/2024/11/03-2024-womens-history-2.jpeg" alt="Empowering Women: Celebrating Contributions and Dedication" class="wp-image-16021" /></a>
         <figcaption class="wp-element-caption"><strong>Empowering Women: Celebrating Contributions and Dedication</strong></figcaption>
       </figure>
       <!-- /wp:image -->
@@ -217,7 +217,7 @@ get_header();
   <!-- wp:column -->
   <div class="wp-block-column"><!-- wp:gallery {"linkTo":"none","align":"full"} -->
     <figure class="wp-block-gallery alignfull has-nested-images columns-default is-cropped"><!-- wp:image {"lightbox":{"enabled":false},"id":16022,"linkDestination":"custom","align":"full","style":{"color":{}}} -->
-      <figure class="wp-block-image alignfull"><a href="/?p=14487"><img src="/wp-content/uploads/2024/11/FebEnews_ActsofKindness.webp" alt="" class="wp-image-16022" /></a>
+      <figure class="wp-block-image alignfull"><a href="/?p=14487" aria-label="Month of Random Acts of Kindness: Extend Kindness to Older Neighbors"><img src="/wp-content/uploads/2024/11/FebEnews_ActsofKindness.webp" alt="Month of Random Acts of Kindness: Extend Kindness to Older Neighbors" class="wp-image-16022" /></a>
         <figcaption class="wp-element-caption"><strong>Month of Random Acts of Kindness: Extend Kindness to Older Neighbors</strong></figcaption>
       </figure>
       <!-- /wp:image -->

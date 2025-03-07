@@ -2384,11 +2384,14 @@ object {
   align-items: stretch;
   justify-content: center;
   color: white;
-  height: 50%;
   padding-top: 1rem;
   padding-bottom: 3rem;
   padding-right: 3rem;
   padding-left: 3rem;
+}
+
+.card-container img {
+  margin-bottom: 2rem;
 }
 
 .outline-link {
