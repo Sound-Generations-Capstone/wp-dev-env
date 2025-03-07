@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Volunteer Search
+ * Template Name: Volunteer Page
  * 
  * @package Sound_Generations
  */
@@ -37,12 +37,9 @@ get_header(); ?>
   <h2 class="wp-block-heading" id="volunteerSearch">Search All Volunteer Opportunities</h2>
   <!-- /wp:heading -->
 
-  <form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
-    <input type="hidden" class="search-field" placeholder="Search Opportunities..." value="<?php echo get_search_query(); ?>" name="s" />
-    <input type="hidden" name="category_name" value="volunteer-opportunities" />
-    <button type="submit">Search Page</button>
-  </form>
-  <br />
+  <a href="/?s=&category_name=volunteer-opportunities">
+    <button class=" signup-button">Search Volunteer Opportunities</button>
+  </a>
 
   <!-- wp:heading -->
   <h2 class="wp-block-heading">Volunteer with Sound Generations Programs &amp; Services</h2>

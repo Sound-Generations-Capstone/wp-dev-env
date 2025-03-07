@@ -12,12 +12,23 @@ get_header(); ?>
 
 <section id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-
 		<?php
 		if (have_posts()) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'sg20'), '<span>' . get_search_query() . '</span>'); ?></h1>
+				<?php if (!empty($_GET['category_name'])) : ?>
+					<h1 class="page-title">Search Volunteer Opportunities</h1>
+					<form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
+						<fieldset style="display:inline;width:80%">
+							<legend>Filter Results</legend>
+							<input type="search" class="search-field" value="<?php echo get_search_query(); ?>" name="s" style="width:100%" />
+						</fieldset>
+						<input type="hidden" name="category_name" value="volunteer-opportunities" />
+						<button type="submit">Search</button>
+					</form>
+				<?php else : ?>
+					<h1 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'sg20'), '<span>' . get_search_query() . '</span>'); ?></h1>
+				<?php endif; ?>
 			</header><!-- .page-header -->
 
 		<?php
