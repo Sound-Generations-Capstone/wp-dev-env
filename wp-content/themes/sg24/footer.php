@@ -5,7 +5,7 @@
 <!-- wp:columns -->
 <div class="wp-block-columns has-dark-grey-background-color has-white-color footer"><!-- wp:column {"verticalAlignment":"stretch"} -->
   <div class="wp-block-column is-vertically-aligned-stretch"><!-- wp:image {"lightbox":{"enabled":false},"id":16032,"width":"216px","height":"auto","sizeSlug":"full","linkDestination":"custom"} -->
-    <figure class="wp-block-image size-full is-resized"><a href="/?page_id=16001"><img src="/wp-content/uploads/2024/11/logo-sound-generations-rev2019.png" alt="" class="wp-image-16032" style="width:216px;height:auto" /></a></figure>
+    <a href="https://www.SoundGenerations.org"><img src="/wp-content/uploads/2024/11/logo-sound-generations-rev2019.png" class="wp-image-16032 wp-block-image size-full is-resized" style="width:216px;height:auto" alt="Sound Generations"/></a>
     <!-- /wp:image -->
 
     <!-- wp:paragraph {"align":"center"} -->
