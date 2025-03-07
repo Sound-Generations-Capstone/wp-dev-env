@@ -16,7 +16,7 @@ get_header();
       <p>We provide assistance services for older adults, adults with disabilities, and individuals who love and care for them. We also offer free to low-cost solutions for those seeking to utilize their community resources.</p>
   </header> 
   <main class="card-container">
-        <a class="pathways service-card" href="<?php echo get_permalink(get_page_by_path('assistance-services/pathways-information-assistance'))?>" data-testid="pathways-link">
+        <a class="pathways service-card" href="<?php echo get_permalink(get_page_by_path('our-programs/pathways-information-assistance'))?>" data-testid="pathways-link">
             <?php $pathways_information_image_data = wp_get_attachment_image_src(16065) ?>
             <img src="<?php echo get_template_directory_uri() . '/img/Pathways-IA.png'?>" alt=""/><br/>
             Pathways and Information Assistance
