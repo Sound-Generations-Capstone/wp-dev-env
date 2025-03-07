@@ -124,7 +124,7 @@ get_header();
         Alzheimer’s Association Hotline
       </a>
       <a href="<?php echo esc_url("https://soundgenerations.org/wp-content/uploads/sageusa-how-to-prepare-for-lgbt-caregiving-guide-with-aarp.pdf")?>" class="outline-link" data-testid="lgbtq-care">
-        View our LGBTQ+ caregiver guide
+        View our LGBTQ+ caregiver guide (PDF)
       </a>
       <a href="<?php echo esc_url(get_permalink(get_page_by_path('our-programs/caregiver-support/caregiver-self-assessment/')))?>" class="outline-link" data-testid="self-assessment">
         View caregiver self-assessment information
@@ -134,7 +134,7 @@ get_header();
   <h2 class="has-black-color article-header">
     Resources for Veteran Caregivers
   </h2>
-  <article id="veteran-caregiver-support" class="veteran-caregiver-resources large-cards">
+  <article id="veteran-caregivers" class="veteran-caregiver-resources large-cards">
     <section class="large-card has-purpledrk-background-color">
       <a href="<?php echo esc_url("mailto:reynaldc@soundgenerations.org")?>" class="outline-link has-purpledrk-background-color" data-testid="email-veteran-caregiver-support">
         <svg  xmlns="http://www.w3.org/2000/svg"  width="48"  height="48"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>

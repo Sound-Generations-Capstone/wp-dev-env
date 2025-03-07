@@ -26,10 +26,9 @@ get_header();
         $newsletters_query->the_post();
         $output .= '
         <article class="post-card display-flex flex-column justify-content_center">
-          <a href="' . get_permalink() . '" class="has-text-align-center fill"><img src='. esc_html(get_the_post_thumbnail_url(get_the_ID(), array(100, 100))) .' class="post-card-thumbnail"/></a>
           <div class="post-card__content justify-content_center has-text-align-center">
             <h3 class="post-card__title">
-                <a href="' . get_permalink() . '">' . esc_html(get_the_title()) . '</a>
+               ' . esc_html(get_the_title()) . '
             </h3>
             <a href="' . get_permalink() . '" class="post-card__link extra-large" data-testid="news-card-read-more">Read More</a>
           </div>
@@ -45,7 +44,6 @@ get_header();
   }
 
   add_shortcode('recent_bonus_news', 'recent_bonus_news');
-  echo do_shortcode('[recent_bonus_news posts_per_page=3]');
 ?>
 
 <div class="display-flex justify-content_center">
@@ -73,7 +71,7 @@ get_header();
 <!-- /wp:visual-link-preview/link -->
 
 <h2 id="more-news" class="has-text-align-center"><strong>More News</strong></h2>
-<?php echo do_shortcode('[recent_bonus_news posts_per_page=9 offset=3 paged=true more=true]'); ?>
+<?php echo do_shortcode('[recent_bonus_news posts_per_page=9 offset=0 paged=true more=true]'); ?>
 <?php
 get_footer();
 ?>

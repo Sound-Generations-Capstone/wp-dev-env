@@ -937,7 +937,7 @@ a {
 }
 
 a:visited {
-  color: #ffffff73;
+  color: purple;
 }
 
 a:hover,
@@ -2382,11 +2382,14 @@ object {
   align-items: stretch;
   justify-content: center;
   color: white;
-  height: 50%;
   padding-top: 1rem;
   padding-bottom: 3rem;
   padding-right: 3rem;
   padding-left: 3rem;
+}
+
+.card-container img {
+  margin-bottom: 2rem;
 }
 
 .outline-link {
@@ -2505,10 +2508,19 @@ object {
   font-weight: 500;
 }
 
-.caregiver-card a:hover,
-.caregiver-card a:focus {
+.caregiver-card .outline-link:hover,
+.caregiver-card .outline-link:focus {
   background-color: #f9edf9;
   transition: background-color 0.2s ease;
+  color: #5d0e8b;
+}
+
+.caregiver-card .outline-link:visited {
+  color: #ffffffd2;
+}
+
+.caregiver-card .outline-link:visited:hover {
+  color: #5d0e8b;
 }
 
 .caregiver-card img {
@@ -2585,6 +2597,14 @@ object {
   padding: 4rem;
   justify-content: center;
   align-items: center;
+}
+
+.small-cards a:visited {
+  color: #ffffffd2;
+}
+
+.small-cards a:visited {
+  color: #ffffffd2;
 }
 
 .caregiver-resources .small-cards a:hover,
