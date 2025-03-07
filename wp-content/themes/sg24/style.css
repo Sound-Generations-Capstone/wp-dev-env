@@ -48,6 +48,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   background-color: #fa4c06;
 }
 
+.has-orangedrk-background-color-darker33 {
+  background-color: #A32C05;
+}
+
 .has-orangedrk-color {
   color: #fa4c06;
 }
@@ -428,6 +432,7 @@ textarea {
 }
 
 @media screen and (min-width: 60em) {
+
   body,
   button,
   input,
@@ -739,8 +744,8 @@ ol {
   padding-left: 0;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
@@ -1008,7 +1013,7 @@ a[href$=".pdf"]:before {
 }
 
 /* donate button */
-#mega-menu-wrap-primary #mega-menu-primary > li:last-child > a.mega-menu-link {
+#mega-menu-wrap-primary #mega-menu-primary>li:last-child>a.mega-menu-link {
   background: #fd8204 url("img/bg-donate-button-32x28.png") no-repeat 2px center;
   background-size: 24px 21px;
   border: 3px solid #fd8204;
@@ -1019,18 +1024,9 @@ a[href$=".pdf"]:before {
   text-transform: uppercase;
 }
 
-#mega-menu-wrap-primary
-  #mega-menu-primary
-  > li:last-child
-  > a.mega-menu-link:hover,
-#mega-menu-wrap-primary
-  #mega-menu-primary
-  > li:last-child
-  > a.mega-menu-link:active,
-#mega-menu-wrap-primary
-  #mega-menu-primary
-  > li:last-child
-  > a.mega-menu-link:focus {
+#mega-menu-wrap-primary #mega-menu-primary>li:last-child>a.mega-menu-link:hover,
+#mega-menu-wrap-primary #mega-menu-primary>li:last-child>a.mega-menu-link:active,
+#mega-menu-wrap-primary #mega-menu-primary>li:last-child>a.mega-menu-link:focus {
   background: #222 url("img/bg-donate-button-32x28.png") no-repeat 2px center;
   background-size: 24px 21px;
   color: #fd8204;
@@ -1112,6 +1108,16 @@ li:hover .menu-item {
   justify-content: end;
 }
 
+.goog-te-gadget {
+  color: #fff !important;
+  /* Powered By */
+}
+
+.goog-te-gadget a {
+  color: #fff !important;
+  /* Translate */
+}
+
 @media screen and (max-width: 60em) {
   .utility #translate_search {
     flex-direction: column-reverse;
@@ -1174,8 +1180,7 @@ ul#menu-utility li a {
   text-decoration: underline;
 }
 
-.menu-social-media-container {
-}
+.menu-social-media-container {}
 
 .menu-social-media-container li,
 .menu-social-media-social-menu-container li {
@@ -1195,36 +1200,31 @@ ul#menu-utility li a {
 }
 
 .menu-social-media-container a[href^="https://www.youtube.com"],
-.menu-social-media-social-menu-container a[href^="https://www.youtube.com"]
-{
+.menu-social-media-social-menu-container a[href^="https://www.youtube.com"] {
   background: url("img/bg-youtube-icon-color-56px.png") no-repeat;
   background-size: 28px 28px;
 }
 
 .menu-social-media-container a[href^="https://twitter.com"],
-.menu-social-media-social-menu-container a[href^="https://twitter.com"]
-{
+.menu-social-media-social-menu-container a[href^="https://twitter.com"] {
   background: url("img/bg-twitter-icon-color-56px.png") no-repeat;
   background-size: 28px 28px;
 }
 
 .menu-social-media-container a[href^="https://www.instagram.com"],
-.menu-social-media-social-menu-container a[href^="https://www.instagram.com"]
-{
+.menu-social-media-social-menu-container a[href^="https://www.instagram.com"] {
   background: url("img/bg-instagram-icon-color-56px.png") no-repeat;
   background-size: 28px 28px;
 }
 
 .menu-social-media-container a[href^="https://www.facebook.com"],
-.menu-social-media-social-menu-container a[href^="https://www.facebook.com"]
-{
+.menu-social-media-social-menu-container a[href^="https://www.facebook.com"] {
   background: url("img/bg-facebook-icon-color-56px.png") no-repeat;
   background-size: 28px 28px;
 }
 
 .menu-social-media-container a[href^="https://www.linkedin.com"],
-.menu-social-media-social-menu-container a[href^="https://www.linkedin.com"]
-{
+.menu-social-media-social-menu-container a[href^="https://www.linkedin.com"] {
   background: url("img/bg-linkedin-icon-color-56px.png") no-repeat;
   background-size: 28px 28px;
 }
@@ -1235,23 +1235,19 @@ ul#menu-utility li a {
   padding: 0.25em;
 }
 
-.jetpack-social-navigation a[href^="https://www.facebook.com"]
-{
+.jetpack-social-navigation a[href^="https://www.facebook.com"] {
   color: rgb(24, 119, 242);
 }
 
-.jetpack-social-navigation a[href^="https://twitter.com"]
-{
+.jetpack-social-navigation a[href^="https://twitter.com"] {
   color: rgb(56, 161, 243);
 }
 
-.jetpack-social-navigation a[href^="https://www.youtube.com"]
-{
+.jetpack-social-navigation a[href^="https://www.youtube.com"] {
   color: rgb(237, 56, 51);
 }
 
-.jetpack-social-navigation a[href^="https://www.instagram.com"]
-{
+.jetpack-social-navigation a[href^="https://www.instagram.com"] {
   color: rgb(225, 48, 108);
 }
 
@@ -1579,103 +1575,84 @@ p#breadcrumbs {
   .site-cta .widget {
     padding: 0 2.1rem 0 0;
   }
+
   .site-cta .widget:nth-of-type(1) {
     background: #fff;
-    background: -moz-linear-gradient(
-      to left,
-      #fd8204 0%,
-      #fd8204 34%,
-      #fff 34%,
-      #fff 100%
-    );
-    background: -webkit-linear-gradient(
-      left,
-      #fd8204 0%,
-      #fd8204 34%,
-      #fff 34%,
-      #fff 100%
-    );
-    background: linear-gradient(
-      left,
-      #fd8204 0%,
-      #fd8204 34%,
-      #fff 34%,
-      #fff 100%
-    );
+    background: -moz-linear-gradient(to left,
+        #fd8204 0%,
+        #fd8204 34%,
+        #fff 34%,
+        #fff 100%);
+    background: -webkit-linear-gradient(left,
+        #fd8204 0%,
+        #fd8204 34%,
+        #fff 34%,
+        #fff 100%);
+    background: linear-gradient(left,
+        #fd8204 0%,
+        #fd8204 34%,
+        #fff 34%,
+        #fff 100%);
   }
+
   .site-cta .widget:nth-of-type(2) {
     background: #fff;
-    background: -moz-linear-gradient(
-      left,
-      #fa4c06 0%,
-      #fa4c06 34%,
-      #fff 34%,
-      #fff 100%
-    );
-    background: -webkit-linear-gradient(
-      left,
-      #fa4c06 0%,
-      #fa4c06 34%,
-      #fff 34%,
-      #fff 100%
-    );
-    background: linear-gradient(
-      left,
-      #fa4c06 0%,
-      #fa4c06 34%,
-      #fff 34%,
-      #fff 100%
-    );
+    background: -moz-linear-gradient(left,
+        #fa4c06 0%,
+        #fa4c06 34%,
+        #fff 34%,
+        #fff 100%);
+    background: -webkit-linear-gradient(left,
+        #fa4c06 0%,
+        #fa4c06 34%,
+        #fff 34%,
+        #fff 100%);
+    background: linear-gradient(left,
+        #fa4c06 0%,
+        #fa4c06 34%,
+        #fff 34%,
+        #fff 100%);
   }
+
   .site-cta .widget:nth-of-type(3) {
     background: #fff;
-    background: -moz-linear-gradient(
-      left,
-      #d13138 0%,
-      #d13138 34%,
-      #fff 34%,
-      #fff 100%
-    );
-    background: -webkit-linear-gradient(
-      left,
-      #d13138 0%,
-      #d13138 34%,
-      #fff 34%,
-      #fff 100%
-    );
-    background: linear-gradient(
-      left,
-      #d13138 0%,
-      #d13138 34%,
-      #fff 34%,
-      #fff 100%
-    );
+    background: -moz-linear-gradient(left,
+        #d13138 0%,
+        #d13138 34%,
+        #fff 34%,
+        #fff 100%);
+    background: -webkit-linear-gradient(left,
+        #d13138 0%,
+        #d13138 34%,
+        #fff 34%,
+        #fff 100%);
+    background: linear-gradient(left,
+        #d13138 0%,
+        #d13138 34%,
+        #fff 34%,
+        #fff 100%);
   }
+
   .site-cta .widget:nth-of-type(4) {
     background: #fff;
-    background: -moz-linear-gradient(
-      left,
-      #880364 0%,
-      #880364 34%,
-      #fff 34%,
-      #fff 100%
-    );
-    background: -webkit-linear-gradient(
-      left,
-      #880364 0%,
-      #880364 34%,
-      #fff 34%,
-      #fff 100%
-    );
-    background: linear-gradient(
-      left,
-      #880364 0%,
-      #880364 34%,
-      #fff 34%,
-      #fff 100%
-    );
+    background: -moz-linear-gradient(left,
+        #880364 0%,
+        #880364 34%,
+        #fff 34%,
+        #fff 100%);
+    background: -webkit-linear-gradient(left,
+        #880364 0%,
+        #880364 34%,
+        #fff 34%,
+        #fff 100%);
+    background: linear-gradient(left,
+        #880364 0%,
+        #880364 34%,
+        #fff 34%,
+        #fff 100%);
   }
 }
+
 .site {
   margin: 0 auto;
   max-width: 192rem;
@@ -1721,10 +1698,12 @@ p#breadcrumbs {
     float: left;
     line-height: 0;
   }
+
   .site-info {
     display: flex;
     flex-wrap: wrap;
   }
+
   .site-footer .cred {
     clear: both;
     display: block;
@@ -1735,6 +1714,7 @@ p#breadcrumbs {
     width: auto;
   }
 }
+
 .site-footer {
   padding: 1.5em 0.5em 0 0.5em;
 }
@@ -1751,40 +1731,48 @@ p#breadcrumbs {
     padding: 0 0 0 1.5em;
     width: 100%;
   }
+
   .page-template-page-full .content-area,
   .error404 .content-area {
     float: none;
     margin: 0 auto;
     padding: 0;
   }
+
   .page-template-page-full .site-main {
     margin: 0 auto;
     max-width: 144rem;
   }
+
   .page-template-page-one-column .site-main {
     margin: 0 19.2780337%;
     /* margin equals one half .site-main)
     margin: 0 auto;
     max-width: 880px; */
   }
+
   #secondary .widget:last-child {
     border: none;
     margin-bottom: 0;
   }
+
   .site-content .widget-area {
     float: right;
     overflow: hidden;
   }
+
   .site-footer {
     clear: both;
     width: 100%;
   }
+
   .site-footer .widget {
     float: left;
     margin: 0 auto 1.5em auto;
     width: auto;
   }
 }
+
 .sticky {
   display: block;
 }
@@ -2121,8 +2109,10 @@ object {
 /* Style for the button */
 .volunteer-search-form button {
   padding: 10px 15px;
-  background-color: #fd8204; /* Button background color */
-  color: #fff; /* Button text color */
+  background-color: #fd8204;
+  /* Button background color */
+  color: #fff;
+  /* Button text color */
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -2130,7 +2120,8 @@ object {
   margin-left: auto;
 }
 
-.volunteer-search-form button:hover {
+.volunteer-search-form button:hover,
+.volunteer-search-form button:focus {
   background-color: #b00061;
 }
 
@@ -2158,16 +2149,17 @@ object {
   display: inline-block;
 }
 
-.signup-button:hover {
+.signup-button:hover,
+.signup-button:focus {
   background-color: #fd8204;
   color: #fff;
 }
 
 .card-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	gap: 2rem;
-	padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .post-card {
@@ -2178,7 +2170,8 @@ object {
   transition: transform 0.2s ease;
 }
 
-.post-card:hover {
+.post-card:hover,
+.post-card:focus {
   transform: translateY(-5px);
 }
 
@@ -2237,15 +2230,15 @@ object {
   color: #fff;
 }
 
-.post-card__link.extra-large {
-}
+.post-card__link.extra-large {}
 
 .jump-to {
   margin-top: 2rem;
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.jump-to:hover {
+.jump-to:hover,
+.jump-to:focus {
   background: #440a66;
 }
 
@@ -2275,7 +2268,8 @@ object {
   transition: transform 0.2s ease;
 }
 
-.wp-block-visual-link-preview-link:hover {
+.wp-block-visual-link-preview-link:hover,
+.wp-block-visual-link-preview-link:focus {
   transform: translateY(-5px);
 }
 
@@ -2290,7 +2284,7 @@ object {
   margin-bottom: 2rem;
 }
 
-.e-news-signup > h2 {
+.e-news-signup>h2 {
   color: white;
 }
 
@@ -2308,7 +2302,8 @@ object {
   text-decoration: none;
 }
 
-.featured-news:hover {
+.featured-news:hover,
+.featured-news:focus {
   text-decoration: underline;
 }
 
@@ -2330,11 +2325,13 @@ object {
   width: 100%;
 }
 
-.subscribe:hover {
+.subscribe:hover,
+.subscribe:focus {
   background-color: #5f0045;
 }
 
-.subscribe:hover:visited {
+.subscribe:hover:visited,
+.subscribe:focus:visited {
   background-color: #5f0045;
 }
 
@@ -2357,6 +2354,7 @@ object {
   padding-right: 2rem;
   margin-bottom: 0rem;
 }
+
 .footer a {
   color: white;
 }
@@ -2370,7 +2368,7 @@ object {
   font-weight: bold;
 }
 
-.footer .menu-social-media-container > ul {
+.footer .menu-social-media-container>ul {
   display: flex;
   padding-left: 0;
   margin-bottom: 0.22222222em;
@@ -2432,7 +2430,8 @@ object {
   font-weight: bold;
 }
 
-.service-card a:hover {
+.service-card a:hover,
+.service-card a:focus {
   color: #5d0e8b;
 }
 
@@ -2451,7 +2450,8 @@ object {
   min-width: 40%;
 }
 
-.service-card:hover {
+.service-card:hover,
+.service-card:focus {
   outline: black solid;
   background-color: #b3006226;
   text-decoration: none;
@@ -2508,7 +2508,8 @@ object {
   font-weight: 500;
 }
 
-.caregiver-card .outline-link:hover {
+.caregiver-card .outline-link:hover,
+.caregiver-card .outline-link:focus {
   background-color: #f9edf9;
   transition: background-color 0.2s ease;
   color: #5d0e8b;
@@ -2548,7 +2549,8 @@ object {
   background-color: #5d0e8b;
 }
 
-.community-outreach-info a:hover {
+.community-outreach-info a:hover,
+.community-outreach-info a:focus {
   background-color: #f9edf9;
   transition: background-color 0.2s ease;
 }
@@ -2569,7 +2571,8 @@ object {
   background-color: #880364;
 }
 
-.caregiver-resources .large-card a:hover {
+.caregiver-resources .large-card a:hover,
+.caregiver-resources .large-card a:focus {
   outline: black solid;
   box-shadow: white -1rem 1rem 0rem;
   background-color: #f4d7e3ff;
@@ -2581,11 +2584,11 @@ object {
 }
 
 .small-cards {
- display: grid;
- max-width: 90%;
- margin-top: 2rem;
- gap: 1rem;
- grid-template-columns: repeat(3, 1fr); 
+  display: grid;
+  max-width: 90%;
+  margin-top: 2rem;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .small-cards a {
@@ -2600,7 +2603,12 @@ object {
   color: #ffffffd2;
 }
 
-.caregiver-resources .small-cards a:hover {
+.small-cards a:visited {
+  color: #ffffffd2;
+}
+
+.caregiver-resources .small-cards a:hover,
+.caregiver-resources .small-cards a:focus {
   outline: black solid;
   box-shadow: white 2rem;
   background-color: #f4d7e3ff;
@@ -2610,7 +2618,8 @@ object {
   cursor: pointer;
 }
 
-.veteran-caregiver-resources .large-card a:hover {
+.veteran-caregiver-resources .large-card a:hover,
+.veteran-caregiver-resources .large-card a:focus {
   outline: black solid;
   box-shadow: white -1rem 1rem 0rem;
   background-color: #f9edf9;
@@ -2629,7 +2638,8 @@ object {
   flex-shrink: 0;
 }
 
-.veteran-caregiver-resources .small-cards a:hover {
+.veteran-caregiver-resources .small-cards a:hover,
+.veteran-caregiver-resources .small-cards a:focus {
   outline: black solid;
   box-shadow: white 2rem;
   background-color: #f9edf9;
@@ -2680,8 +2690,8 @@ object {
 }
 
 @media screen and (max-width: 945px) {
-  .small-cards { 
-    grid-template-columns: repeat(1, 1fr); 
+  .small-cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .caregiver-support-menu {
@@ -2732,4 +2742,3 @@ object {
   }
 
 }
-
