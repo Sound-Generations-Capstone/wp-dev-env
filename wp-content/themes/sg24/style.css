@@ -932,7 +932,7 @@ a {
 }
 
 a:visited {
-  color: #ffffff73;
+  color: purple;
 }
 
 a:hover,
@@ -2505,9 +2505,18 @@ object {
   font-weight: 500;
 }
 
-.caregiver-card a:hover {
+.caregiver-card .outline-link:hover {
   background-color: #f9edf9;
   transition: background-color 0.2s ease;
+  color: #5d0e8b;
+}
+
+.caregiver-card .outline-link:visited {
+  color: #ffffffd2;
+}
+
+.caregiver-card .outline-link:visited:hover {
+  color: #5d0e8b;
 }
 
 .caregiver-card img {
@@ -2582,6 +2591,10 @@ object {
   padding: 4rem;
   justify-content: center;
   align-items: center;
+}
+
+.small-cards a:visited {
+  color: #ffffffd2;
 }
 
 .caregiver-resources .small-cards a:hover {
