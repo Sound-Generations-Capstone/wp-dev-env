@@ -13,7 +13,7 @@ describe("Assistance services content", () => {
       cy.get("[class=\"pathways service-card\"]");
 
       cy.get("[data-testid=pathways-link]").click();
-      cy.url().should("include", "assistance-services");
+      cy.url().should("include", "pathways-information-assistance");
       cy.go("back");
 
     }
