@@ -63,9 +63,9 @@
 						break;
 				}
 				?>
-				<a class="site-title" href="<?php echo $logolink; ?>"><?php
+				<a class="site-title" aria-label="Sound Generations logo" href="<?php echo $logolink; ?>"><?php
 
-																															echo '<img src="' . $logo . '" alt="Sound Generations logo">'; ?></a>
+																																																	echo '<img src="' . $logo . '" alt="Sound Generations logo">'; ?></a>
 
 			</div><!-- .site-branding -->
 			<div class="utility">

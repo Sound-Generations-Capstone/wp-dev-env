@@ -193,7 +193,7 @@ get_header();
 <div class="wp-block-columns alignfull"><!-- wp:column -->
   <div class="wp-block-column"><!-- wp:gallery {"linkTo":"none","align":"full"} -->
     <figure class="wp-block-gallery alignfull has-nested-images columns-default is-cropped"><!-- wp:image {"lightbox":{"enabled":false},"id":16020,"linkDestination":"custom","align":"full","className":"is-style-default","style":{"color":{}}} -->
-      <figure class="wp-block-image alignfull is-style-default"><a href="/?p=15125"><img src="/wp-content/uploads/2024/11/PRIDE_6-2024.jpeg" alt="" class="wp-image-16020" /></a>
+      <figure class="wp-block-image alignfull is-style-default"><a href="/?p=15125" aria-label="Celebrating Pride Month: Empowering and Supporting LGBTQ+ Older Adults"><img src="/wp-content/uploads/2024/11/PRIDE_6-2024.jpeg" alt="Celebrating Pride Month: Empowering and Supporting LGBTQ+ Older Adults" class="wp-image-16020" /></a>
         <figcaption class="wp-element-caption"><strong>Celebrating Pride Month: Empowering and Supporting LGBTQ+ Older Adults</strong></figcaption>
       </figure>
       <!-- /wp:image -->
@@ -205,7 +205,7 @@ get_header();
   <!-- wp:column -->
   <div class="wp-block-column"><!-- wp:gallery {"linkTo":"none","align":"full"} -->
     <figure class="wp-block-gallery alignfull has-nested-images columns-default is-cropped"><!-- wp:image {"lightbox":{"enabled":false},"id":16021,"linkDestination":"custom","align":"full","style":{"color":{}}} -->
-      <figure class="wp-block-image alignfull"><a href="/?p=16028"><img src="/wp-content/uploads/2024/11/03-2024-womens-history-2.jpeg" alt="" class="wp-image-16021" /></a>
+      <figure class="wp-block-image alignfull"><a href="/?p=16028" aria-label="Empowering Women: Celebrating Contributions and Dedication"><img src="/wp-content/uploads/2024/11/03-2024-womens-history-2.jpeg" alt="Empowering Women: Celebrating Contributions and Dedication" class="wp-image-16021" /></a>
         <figcaption class="wp-element-caption"><strong>Empowering Women: Celebrating Contributions and Dedication</strong></figcaption>
       </figure>
       <!-- /wp:image -->
@@ -217,7 +217,7 @@ get_header();
   <!-- wp:column -->
   <div class="wp-block-column"><!-- wp:gallery {"linkTo":"none","align":"full"} -->
     <figure class="wp-block-gallery alignfull has-nested-images columns-default is-cropped"><!-- wp:image {"lightbox":{"enabled":false},"id":16022,"linkDestination":"custom","align":"full","style":{"color":{}}} -->
-      <figure class="wp-block-image alignfull"><a href="/?p=14487"><img src="/wp-content/uploads/2024/11/FebEnews_ActsofKindness.webp" alt="" class="wp-image-16022" /></a>
+      <figure class="wp-block-image alignfull"><a href="/?p=14487" aria-label="Month of Random Acts of Kindness: Extend Kindness to Older Neighbors"><img src="/wp-content/uploads/2024/11/FebEnews_ActsofKindness.webp" alt="Month of Random Acts of Kindness: Extend Kindness to Older Neighbors" class="wp-image-16022" /></a>
         <figcaption class="wp-element-caption"><strong>Month of Random Acts of Kindness: Extend Kindness to Older Neighbors</strong></figcaption>
       </figure>
       <!-- /wp:image -->
