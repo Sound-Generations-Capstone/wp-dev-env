@@ -1,13 +1,13 @@
 /// <reference types="cypress" />
 
-describe("Assistant services content", () => {
+describe("Assistance services content", () => {
   beforeEach(() => {
     const url = Cypress.env("SITE_URL");
     cy.visit(url+"assistance-services/");
   });
 
   specify(
-    "Assistance Program Home page has a card tile for Pathways and Information Assistance",
+    "Assistance Services Program Home page has a card tile for Pathways and Information Assistance",
     () => {
 
       cy.get("[class=\"pathways service-card\"]");
@@ -20,7 +20,7 @@ describe("Assistant services content", () => {
   );
 
   specify(
-    "Assistance Program Home page has a card tile for Caregiver Support",
+    "Assistance Services Program Home page has a card tile for Caregiver Support",
     () => {
 
       cy.get("[class=\"caregiver-support service-card strong\"]");
@@ -33,7 +33,7 @@ describe("Assistant services content", () => {
   );
 
   specify(
-    "Assistance Program Home page has a card tile for Legal Assistance",
+    "Assistance ServicesProgram Home page has a card tile for Legal Assistance",
     () => {
 
       cy.get("[class=\"legal service-card\"]");
@@ -46,7 +46,7 @@ describe("Assistant services content", () => {
   );
 
   specify(
-    "Assistance Program Home page has a card tile for Minor Home Repair",
+    "Assistance Services Program Home page has a card tile for Minor Home Repair",
     () => {
 
       cy.get("[class=\"minor-home-repair service-card\"]");
@@ -59,7 +59,7 @@ describe("Assistant services content", () => {
   );
 
   specify(
-    "Assistance Program Home page has a card tile for Elder Education Institute",
+    "Assistance Services Program Home page has a card tile for Elder Education Institute",
     () => {
 
       cy.get("[class=\"elder-education service-card\"]");
@@ -72,7 +72,7 @@ describe("Assistant services content", () => {
   );
 
   specify(
-    "Assistance Program Home page has a card tile for GRAT",
+    "Assistance Services Program Home page has a card tile for GRAT",
     () => {
 
       cy.get("[class=\"grat service-card\"]");
