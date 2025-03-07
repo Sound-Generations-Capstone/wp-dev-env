@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("Homepage content", () => {
+describe("Assistant services content", () => {
   beforeEach(() => {
     const url = Cypress.env("SITE_URL");
     cy.visit(url+"assistance-services/");
