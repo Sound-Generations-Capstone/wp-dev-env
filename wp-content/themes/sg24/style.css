@@ -2426,20 +2426,15 @@ object {
   font-weight: bold;
 }
 
-.service-card a {
+.service-card {
   font-weight: bold;
 }
 
-.service-card a:hover,
-.service-card a:focus {
-  color: #5d0e8b;
+.service-card:visited {
+  color: #D1D1D1;
 }
 
-.service-card a:visited {
-  color: #ffffffd2;
-}
-
-.service-card a:active {
+.service-card:active {
   font-weight: bold;
   color: black;
 }
