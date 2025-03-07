@@ -124,7 +124,7 @@ get_header();
         Alzheimer’s Association Hotline
       </a>
       <a href="<?php echo esc_url("https://soundgenerations.org/wp-content/uploads/sageusa-how-to-prepare-for-lgbt-caregiving-guide-with-aarp.pdf")?>" class="outline-link" data-testid="lgbtq-care">
-        View our LGBTQ+ caregiver guide
+        View our LGBTQ+ caregiver guide (PDF)
       </a>
       <a href="<?php echo esc_url(get_permalink(get_page_by_path('our-programs/caregiver-support/caregiver-self-assessment/')))?>" class="outline-link" data-testid="self-assessment">
         View caregiver self-assessment information
