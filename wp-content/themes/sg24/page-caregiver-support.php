@@ -22,7 +22,7 @@ get_header();
 <main>
   <article class="card-container caregiver-support-menu">
     <section class="caregiver-card" data-testid="caregiver-support-card">
-        <img src="<?php echo esc_url(get_template_directory_uri())() . '/img/caregiver-support.png' ?>" alt="Caregiver and care recipient sitting next to each other on a sofa."/>
+        <img src="<?php echo esc_url(get_template_directory_uri()) . '/img/caregiver-support.png' ?>" alt="Caregiver and care recipient sitting next to each other on a sofa."/>
       <p>
         Whether you do the grocery shopping for your parents, run errands for a neighbor, or are caring for a spouse with a chronic condition, we are here for you. 
       </p>
@@ -31,7 +31,7 @@ get_header();
       </a>
     </section>
     <section class="caregiver-card" data-testid="veteran-caregiver-support-card">
-        <img src="<?php echo esc_url(get_template_directory_uri())() . '/img/veteran-caregiver-support.png' ?>" alt="Veteran care recipient and caregiver look upon a body of water standing side by side."/>
+        <img src="<?php echo esc_url(get_template_directory_uri()) . '/img/veteran-caregiver-support.png' ?>" alt="Veteran care recipient and caregiver look upon a body of water standing side by side."/>
       <p>
         The Veteran Caregiver Support Program focuses on the specific needs of the veteran community in King County.
       </p>
@@ -67,7 +67,7 @@ get_header();
           Email us to schedule a presentation
         </a>
       </section>
-        <img class="presentation-image" src="<?php echo esc_url(get_template_directory_uri())() . '/img/presentation-example-placeholder.jpg'?>"/>
+        <img class="presentation-image" src="<?php echo esc_url(get_template_directory_uri()) . '/img/presentation-example-placeholder.jpg'?>"/>
     </article>
     <h2 class="has-black-color article-header">
       Resources for All Caregivers
