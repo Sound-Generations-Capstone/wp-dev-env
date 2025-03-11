@@ -717,22 +717,79 @@ add_action('init', 'create_sitemap');
 // 	update_post_meta($page->ID, '_wp_page_template', 'page-news-center.php');
 // });
 
-add_action('init', function () {
-	$page = get_page_by_path('/health-wellness');
-	update_post_meta($page->ID, '_wp_page_template', 'page-health-and-wellness.php');
-});
+function create_health_and_wellness() {
+	$health_page = get_page_by_path('/health-wellness');
+	if (!$health_page) { // health and wellness page doesn't exist
+		$health_page_args = [
+			'post_title' => 'Health and Wellness',
+			'post_status' => 'publish',
+			'post_type' => 'page',
+			'page_template' => 'page-health-and-wellness.php'
+		];
 
-add_action('init', function () {
-	$page = get_page_by_path('/assistance-services');
-	update_post_meta($page->ID, '_wp_page_template', 'page-assistance-services.php');
-});
+		error_log( 'HEALTH PAGE: ' . print_r( $health_page, true ) );
+		wp_insert_post($health_page_args);
+	} else {
+		// health and wellness found, updating
+		update_post_meta($health_page->ID, '_wp_page_template', 'page-health-and-wellness.php');
+	}
+}
 
-add_action('init', function () {
-	$page = get_page_by_path('/our-programs/caregiver-support');
-	update_post_meta($page->ID, '_wp_page_template', 'page-caregiver-support.php');
-});
+add_action('init', 'create_health_and_wellness');
 
-add_action('init', function () {
-	$page = get_page_by_path('/get-involved/volunteer');
-	update_post_meta($page->ID, '_wp_page_template', 'page-volunteer.php');
-});
+function create_assistance_services() {
+	$assitance_page = get_page_by_path('/assistance-services');
+	if (!$assitance_page) { // assistance services page doesn't exist
+		$assitance_page_args = [
+			'post_title' => 'Assistance Services',
+			'post_status' => 'publish',
+			'post_type' => 'page',
+			'page_template' => 'page-assistance-services.php',
+			'page_name' => 'assistance-services'
+		];
+		wp_insert_post($assitance_page_args);
+	} else {
+		// assistance services found, updating
+		update_post_meta($assitance_page->ID, '_wp_page_template', 'page-assistance-services.php');
+	}
+}
+
+add_action('init', 'create_assistance_services');
+
+function create_caregiver_support() {
+	$caregiver_page = get_page_by_path('/our-programs/caregiver-support');
+	if (!$caregiver_page) { // caregiver support page doesn't exist
+		$caregiver_page_args = [
+			'post_title' => 'Caregiver Support',
+			'post_status' => 'publish',
+			'post_type' => 'page',
+			'page_template' => 'page-caregiver-support.php',
+			'page_name' => 'caregiver-support'
+		];
+		wp_insert_post($caregiver_page_args);
+	} else {
+		// caregiver support found, updating
+		update_post_meta($caregiver_page->ID, '_wp_page_template', 'page-caregiver-support.php');
+	}
+}
+
+add_action('init', 'create_caregiver_support');
+
+function create_volunteer() {
+	$volunteer_page = get_page_by_path('/get-involved/volunteer');
+	if (!$volunteer_page) { // volunteer page doesn't exist
+		$volunteer_page_args = [
+			'post_title' => 'Volunteer Opportunities',
+			'post_status' => 'publish',
+			'post_type' => 'page',
+			'page_template' => 'page-volunteer.php',
+			'page_name' => 'volunteer'
+		];
+		wp_insert_post($volunteer_page_args);
+	} else {
+		// volunteer page found, updating
+		update_post_meta($volunteer_page->ID, '_wp_page_template', 'page-volunteer.php');
+	}
+}
+
+add_action('init', 'create_volunteer');
