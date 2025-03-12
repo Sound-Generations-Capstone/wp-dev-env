@@ -4,7 +4,7 @@
 <form role="search" method="get" id="global-search-form" action="<?php echo esc_url(home_url('/')); ?>">
   <div class="input-group">
     <label>
-      <span class="screen-reader-text"><?php echo _x('Search for:', 'label', 'sg20'); ?></span>
+      <span class="screen-reader-text"><?php echo _x('Search for:', 'label', 'sg24'); ?></span>
       <input
         type="search"
         class="form-control border-0"
@@ -17,6 +17,6 @@
     <?php if (!empty($_GET['category_name'])) : ?>
       <input type="hidden" name="category_name" value="<?php echo esc_attr($_GET['category_name']); ?>">
     <?php endif; ?>
-    <button type="submit" class="search-submit"><?php echo esc_html_x('Search', 'submit button', 'sg20'); ?></button>
+    <button type="submit" class="search-submit"><?php echo esc_html_x('Search', 'submit button', 'sg24'); ?></button>
   </div>
 </form>

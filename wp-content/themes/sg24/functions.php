@@ -24,7 +24,7 @@ if (! function_exists('sg20_setup')) :
 	 * If you're building a theme based on Sound Generations, use a find and replace
 	 * to change 'sg20' to the name of your theme in all the template files.
 	 */
-		load_theme_textdomain('sg20', get_template_directory() . '/languages');
+		load_theme_textdomain('sg24', get_template_directory() . '/languages');
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support('automatic-feed-links');
@@ -51,8 +51,8 @@ if (! function_exists('sg20_setup')) :
 
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus(array(
-			'primary' => esc_html__('Primary', 'sg20'),
-			'utility' => esc_html__('Utility', 'sg20'),
+			'primary' => esc_html__('Primary', 'sg24'),
+			'utility' => esc_html__('Utility', 'sg24'),
 		));
 
 		/*
@@ -111,22 +111,22 @@ if (! function_exists('sg20_setup')) :
 	*/
 		add_theme_support('editor-font-sizes', array(
 			array(
-				'name' => __('Small', 'sg20'),
+				'name' => __('Small', 'sg24'),
 				'size' => 16,
 				'slug' => 'small'
 			),
 			array(
-				'name' => __('Normal', 'sg20'),
+				'name' => __('Normal', 'sg24'),
 				'size' => 18,
 				'slug' => 'normal'
 			),
 			array(
-				'name' => __('Large', 'sg20'),
+				'name' => __('Large', 'sg24'),
 				'size' => 24,
 				'slug' => 'large'
 			),
 			array(
-				'name' => __('Huge', 'sg20'),
+				'name' => __('Huge', 'sg24'),
 				'size' => 32,
 				'slug' => 'huge'
 			)
@@ -135,47 +135,47 @@ if (! function_exists('sg20_setup')) :
 		// Custom color palette for Gutenberg editor
 		add_theme_support('editor-color-palette', array(
 			array(
-				'name'  => __('Purple Dark', 'sg20'),
+				'name'  => __('Purple Dark', 'sg24'),
 				'slug'  => 'purpledrk',
 				'color'	=> '#5d0e8b',
 			),
 			array(
-				'name'  => __('Purple', 'sg20'),
+				'name'  => __('Purple', 'sg24'),
 				'slug'  => 'purple',
 				'color' => '#880364',
 			),
 			array(
-				'name'  => __('Purple Light', 'sg20'),
+				'name'  => __('Purple Light', 'sg24'),
 				'slug'  => 'purplelt',
 				'color' => '#b00061',
 			),
 			array(
-				'name'  => __('Orange Dark', 'sg20'),
+				'name'  => __('Orange Dark', 'sg24'),
 				'slug'  => 'orangedrk',
 				'color' => '#fa4c06',
 			),
 			array(
-				'name'	=> __('Orange', 'sg20'),
+				'name'	=> __('Orange', 'sg24'),
 				'slug'	=> 'orange',
 				'color'	=> '#fd8204',
 			),
 			array(
-				'name'	=> __('Orange Light', 'sg20'),
+				'name'	=> __('Orange Light', 'sg24'),
 				'slug'	=> 'orangelt',
 				'color'	=> '#ff9e19',
 			),
 			array(
-				'name'	=> __('Red', 'sg20'),
+				'name'	=> __('Red', 'sg24'),
 				'slug'	=> 'red',
 				'color'	=> '#d13138',
 			),
 			array(
-				'name'	=> __('Black', 'sg20'),
+				'name'	=> __('Black', 'sg24'),
 				'slug'	=> 'black',
 				'color'	=> '#000000',
 			),
 			array(
-				'name'	=> __('White', 'sg20'),
+				'name'	=> __('White', 'sg24'),
 				'slug'	=> 'white',
 				'color'	=> '#ffffff',
 			)
@@ -205,7 +205,7 @@ add_action('after_setup_theme', 'sg20_content_width', 0);
 function sg20_widgets_init()
 {
 	register_sidebar(array(
-		'name'          => esc_html__('Sidebar', 'sg20'),
+		'name'          => esc_html__('Sidebar', 'sg24'),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -214,7 +214,7 @@ function sg20_widgets_init()
 		'after_title'   => '</h3>',
 	));
 	register_sidebar(array(
-		'name'          => esc_html__('Footer', 'sg20'),
+		'name'          => esc_html__('Footer', 'sg24'),
 		'id'            => 'sidebar-2',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -223,7 +223,7 @@ function sg20_widgets_init()
 		'after_title'   => '</h3>',
 	));
 	register_sidebar(array(
-		'name'          => esc_html__('Header', 'sg20'),
+		'name'          => esc_html__('Header', 'sg24'),
 		'id'            => 'sidebar-3',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -232,7 +232,7 @@ function sg20_widgets_init()
 		'after_title'   => '</h3>',
 	));
 	register_sidebar(array(
-		'name'          => esc_html__('Calls To Action', 'sg20'),
+		'name'          => esc_html__('Calls To Action', 'sg24'),
 		'id'            => 'sidebar-4',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
