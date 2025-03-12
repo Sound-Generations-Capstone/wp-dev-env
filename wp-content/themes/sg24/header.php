@@ -32,7 +32,7 @@
 
 <body <?php body_class(); ?>>
 
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'sg20'); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'sg24'); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site">

@@ -10,7 +10,7 @@ if (stripos(get_post_meta($content_post -> ID, "_content_block_information")[0],
     echo $before_widget;
     if ( $show_featured_image ) {
         if (get_post_meta($content_post -> ID, "cta_button_link")[0]) {
-            $imagelinkstart = '<a href="../sg20/' . get_post_meta($content_post -&gt; ID, "cta_button_link")[0] . '">';
+            $imagelinkstart = '<a href="../sg24/' . get_post_meta($content_post -&gt; ID, "cta_button_link")[0] . '">';
             $imagelinkend = '</a>';
         }
         echo $imagelinkstart . get_the_post_thumbnail( $content_post -> ID, array( 300, 300), array( 'class' => 'alignleft','alt' => get_post_meta(get_post_thumbnail_id($content_post -> ID) , '_wp_attachment_image_alt', true), 'style' => 'width:300px;' ) ) . $imagelinkend;
@@ -20,7 +20,7 @@ if (stripos(get_post_meta($content_post -> ID, "_content_block_information")[0],
     }
     echo do_shortcode( $content );
     if (get_post_meta($content_post -> ID, "cta_button_text")[0] && get_post_meta($content_post -> ID, "cta_button_link")[0]) {
-        echo "\n<a class=\"button\" href=../sg20//&quot;&quot; . get_post_meta($content_post -> ID, "cta_button_link")[0] . "\">" . get_post_meta($content_post -> ID, "cta_button_text")[0] . "</a>";
+        echo "\n<a class=\"button\" href=../sg24//&quot;&quot; . get_post_meta($content_post -> ID, "cta_button_link")[0] . "\">" . get_post_meta($content_post -> ID, "cta_button_text")[0] . "</a>";
         
     }
     echo $after_widget;
@@ -43,13 +43,13 @@ if (stripos(get_post_meta($content_post -> ID, "_content_block_information")[0],
         if ($link1 = wp_get_attachment_url(get_post_meta($content_post -> ID, "sidebar_newsletter_link")[0])) {
             
             get_post_meta($content_post -> ID, "newsletter_link_text")[0] ? $linktext1 = get_post_meta($content_post -> ID, "newsletter_link_text")[0] : $linktext1 = "Current Newsletter";
-            echo '<strong><a href="../sg20/' . $link1 . '">' . $linktext1 . '</a></strong><br />';
+            echo '<strong><a href="../sg24/' . $link1 . '">' . $linktext1 . '</a></strong><br />';
             
         }
         if ($link2 = wp_get_attachment_url(get_post_meta($content_post -> ID, "newsletter_link_2")[0])) {
             
             get_post_meta($content_post -> ID, "newsletter_link_text_2")[0] ? $linktext2 = get_post_meta($content_post -> ID, "newsletter_link_text_2")[0] : $linktext2 = "Upcoming Newsletter";
-            echo '<strong><a href="../sg20/' . $link2 . '">' . $linktext2 . '</a></strong><br />';
+            echo '<strong><a href="../sg24/' . $link2 . '">' . $linktext2 . '</a></strong><br />';
             
         }
     }
