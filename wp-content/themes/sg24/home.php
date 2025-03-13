@@ -13,7 +13,7 @@ get_header();
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:cover {"url":"/wp-content/uploads/2024/11/iStock-1298301367-1024x681.jpeg","id":15972,"dimRatio":80,"customOverlayColor":"#aa0061","isUserOverlayColor":true,"focalPoint":{"x":1,"y":0},"contentPosition":"center left","align":"full","style":{"color":{"duotone":"unset"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"normal"} -->
-  <div class="wp-block-cover alignfull has-custom-content-position is-position-center-left has-white-color has-text-color has-link-color has-normal-font-size"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-80 has-background-dim" style="background-color:#aa0061"></span><img class="wp-block-cover__image-background wp-image-15972" alt="" src="/wp-content/uploads/2024/11/iStock-1298301367-1024x681.jpeg" style="object-position:100% 0%" data-object-fit="cover" data-object-position="100% 0%" data-testid="welcome-button-container" />
+  <div class="wp-block-cover alignfull has-custom-content-position is-position-center-left has-white-color has-text-color has-link-color has-normal-font-size"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-80 has-background-dim" style="background-color:#aa0061"></span><img class="wp-block-cover__image-background wp-image-15972" alt="" src="<?php echo esc_url(get_template_directory_uri()) . '/img/iStock-1298301367-1024x681.jpeg' ?>" style="object-position:100% 0%" data-object-fit="cover" data-object-position="100% 0%" data-testid="welcome-button-container" />
     <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"huge"} -->
       <p class="has-text-align-left has-white-color has-text-color has-link-color has-huge-font-size"><strong>Your Partner in Positive Aging</strong></p>
       <!-- /wp:paragraph -->
@@ -74,7 +74,8 @@ get_header();
     </div>
     <!-- /wp:buttons -->
   </div>
-  <figure class="wp-block-media-text__media" style="background-image:url(/wp-content/uploads/2024/11/aging-your-way.jpeg);background-position:55% 0%"><img src="/wp-content/uploads/2024/11/aging-your-way.jpeg" alt="Older adults wearing brightly-colored sweaters hugging and smiling." class="wp-image-15983 size-full" /></figure>
+  <figure class="wp-block-media-text__media" style="background-image:url(/wp-content/uploads/2024/11/aging-your-way.jpeg);background-position:55% 0%"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/img/aging-your-way.jpeg'?> " alt="Older adults wearing brightly-colored sweaters hugging and smiling." class="wp-image-15983 size-full" /></figure>
+
 </div>
 <!-- /wp:media-text -->
 
@@ -86,7 +87,7 @@ get_header();
 <div class="wp-block-group alignfull" data-testid="popular-services"><!-- wp:columns {"align":"full"} -->
   <div class="wp-block-columns alignfull"><!-- wp:column {"verticalAlignment":"stretch"} -->
     <div class="wp-block-column is-vertically-aligned-stretch"><!-- wp:cover {"url":"/wp-content/uploads/2024/11/Hyde-Shuttle-Central-Area-SC-2019-2-1.jpg","id":15985,"alt":"Image of a Hyde Shuttle bus waiting outside of a Sound Generations building.","dimRatio":50,"focalPoint":{"x":1,"y":0},"minHeight":315,"minHeightUnit":"px","contentPosition":"bottom center","align":"full"} -->
-      <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:315px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-15985" alt="Image of a Hyde Shuttle bus waiting outside of a Sound Generations building." src="/wp-content/uploads/2024/11/Hyde-Shuttle-Central-Area-SC-2019-2-1.jpg" style="object-position:100% 0%" data-object-fit="cover" data-object-position="100% 0%" />
+      <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:315px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-15985" alt="Image of a Hyde Shuttle bus waiting outside of a Sound Generations building." src="<?php echo esc_url(get_template_directory_uri()) . '/img/Hyde-Shuttle-Central-Area-SC-2019-2-1.jpg' ?>" style="object-position:100% 0%" data-object-fit="cover" data-object-position="100% 0%" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"large"} -->
           <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size "><a class="column-link" href="/?page_id=12312" data-type="page" data-id="12312" data-testid="transportation"><strong>Transportation Assistance</strong></a></p>
           <!-- /wp:paragraph -->
@@ -98,7 +99,7 @@ get_header();
 
     <!-- wp:column {"verticalAlignment":"stretch"} -->
     <div class="wp-block-column is-vertically-aligned-stretch"><!-- wp:cover {"url":"/wp-content/uploads/2024/11/2019-Fai-Delivering-Meals-On-Wheels-During-Slush-credit-Crosscut-News-edited.jpg","id":15989,"dimRatio":50,"minHeight":315,"minHeightUnit":"px","contentPosition":"bottom center","align":"full"} -->
-      <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:315px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-15989" alt="" src="/wp-content/uploads/2024/11/2019-Fai-Delivering-Meals-On-Wheels-During-Slush-credit-Crosscut-News-edited.jpg" data-object-fit="cover" />
+      <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:315px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-15989" alt="" src="<?php echo esc_url(get_template_directory_uri()) . '/img/2019-Fai-Delivering-Meals-On-Wheels-During-Slush-credit-Crosscut-News-edited.jpg' ?>" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"large"} -->
           <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size"><a class="column-link" href="/?page_id=189" data-type="page" data-id="189" data-testid="food-security"><strong>Food Security Support</strong></a></p>
           <!-- /wp:paragraph -->
@@ -110,7 +111,7 @@ get_header();
 
     <!-- wp:column {"verticalAlignment":"stretch"} -->
     <div class="wp-block-column is-vertically-aligned-stretch"><!-- wp:cover {"url":"/wp-content/uploads/2024/11/Enhance-Fitness-2019-13_small-1024x683.jpg","id":15990,"dimRatio":50,"minHeight":315,"minHeightUnit":"px","contentPosition":"bottom center","align":"full"} -->
-      <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:315px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-15990" alt="" src="/wp-content/uploads/2024/11/Enhance-Fitness-2019-13_small-1024x683.jpg" data-object-fit="cover" />
+      <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:315px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-15990" alt="" src= "<?php echo esc_url(get_template_directory_uri()) . '/img/Enhance-Fitness-2019-13_small-1024x683.jpg' ?>" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"large"} -->
           <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size"><a class="column-link" href="/?page_id=23" data-type="page" data-id="23" data-testid="health"><strong>Health &amp; Wellness</strong></a></p>
           <!-- /wp:paragraph -->
@@ -193,7 +194,7 @@ get_header();
 <div class="wp-block-columns alignfull"><!-- wp:column -->
   <div class="wp-block-column"><!-- wp:gallery {"linkTo":"none","align":"full"} -->
     <figure class="wp-block-gallery alignfull has-nested-images columns-default is-cropped"><!-- wp:image {"lightbox":{"enabled":false},"id":16020,"linkDestination":"custom","align":"full","className":"is-style-default","style":{"color":{}}} -->
-      <figure class="wp-block-image alignfull is-style-default"><a href="/?p=15125" aria-label="Celebrating Pride Month: Empowering and Supporting LGBTQ+ Older Adults"><img src="/wp-content/uploads/2024/11/PRIDE_6-2024.jpeg" alt="Celebrating Pride Month: Empowering and Supporting LGBTQ+ Older Adults" class="wp-image-16020" /></a>
+      <figure class="wp-block-image alignfull is-style-default"><a href="/?p=15125" aria-label="Celebrating Pride Month: Empowering and Supporting LGBTQ+ Older Adults"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/PRIDE_6-2024.jpeg' ?>" alt="Celebrating Pride Month: Empowering and Supporting LGBTQ+ Older Adults" class="wp-image-16020" /></a>
         <figcaption class="wp-element-caption"><strong>Celebrating Pride Month: Empowering and Supporting LGBTQ+ Older Adults</strong></figcaption>
       </figure>
       <!-- /wp:image -->
@@ -205,7 +206,7 @@ get_header();
   <!-- wp:column -->
   <div class="wp-block-column"><!-- wp:gallery {"linkTo":"none","align":"full"} -->
     <figure class="wp-block-gallery alignfull has-nested-images columns-default is-cropped"><!-- wp:image {"lightbox":{"enabled":false},"id":16021,"linkDestination":"custom","align":"full","style":{"color":{}}} -->
-      <figure class="wp-block-image alignfull"><a href="/?p=16028" aria-label="Empowering Women: Celebrating Contributions and Dedication"><img src="/wp-content/uploads/2024/11/03-2024-womens-history-2.jpeg" alt="Empowering Women: Celebrating Contributions and Dedication" class="wp-image-16021" /></a>
+      <figure class="wp-block-image alignfull"><a href="/?p=16028" aria-label="Empowering Women: Celebrating Contributions and Dedication"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/03-2024-womens-history-2.jpeg' ?>" alt="Empowering Women: Celebrating Contributions and Dedication" class="wp-image-16021" /></a>
         <figcaption class="wp-element-caption"><strong>Empowering Women: Celebrating Contributions and Dedication</strong></figcaption>
       </figure>
       <!-- /wp:image -->
@@ -217,7 +218,7 @@ get_header();
   <!-- wp:column -->
   <div class="wp-block-column"><!-- wp:gallery {"linkTo":"none","align":"full"} -->
     <figure class="wp-block-gallery alignfull has-nested-images columns-default is-cropped"><!-- wp:image {"lightbox":{"enabled":false},"id":16022,"linkDestination":"custom","align":"full","style":{"color":{}}} -->
-      <figure class="wp-block-image alignfull"><a href="/?p=14487" aria-label="Month of Random Acts of Kindness: Extend Kindness to Older Neighbors"><img src="/wp-content/uploads/2024/11/FebEnews_ActsofKindness.webp" alt="Month of Random Acts of Kindness: Extend Kindness to Older Neighbors" class="wp-image-16022" /></a>
+      <figure class="wp-block-image alignfull"><a href="/?p=14487" aria-label="Month of Random Acts of Kindness: Extend Kindness to Older Neighbors"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/FebEnews_ActsofKindness.webp' ?>" alt="Month of Random Acts of Kindness: Extend Kindness to Older Neighbors" class="wp-image-16022" /></a>
         <figcaption class="wp-element-caption"><strong>Month of Random Acts of Kindness: Extend Kindness to Older Neighbors</strong></figcaption>
       </figure>
       <!-- /wp:image -->
