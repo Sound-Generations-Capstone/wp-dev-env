@@ -4,28 +4,28 @@
 
 <!-- wp:columns -->
 <div class="wp-block-columns has-dark-grey-background-color has-white-color footer"><!-- wp:column {"verticalAlignment":"stretch"} -->
-  <div class="wp-block-column is-vertically-aligned-stretch"><!-- wp:image {"lightbox":{"enabled":false},"id":16032,"width":"216px","height":"auto","sizeSlug":"full","linkDestination":"custom"} -->
-    <a href="https://www.SoundGenerations.org"><img src="/wp-content/uploads/2024/11/logo-sound-generations-rev2019.png" class="wp-image-16032 wp-block-image size-full is-resized" style="width:216px;height:auto" alt="Sound Generations"/></a>
+  <div class="wp-block-column is-vertically-aligned-stretch aligncenter main-footer-links"><!-- wp:image {"lightbox":{"enabled":false},"id":16032,"width":"216px","height":"auto","sizeSlug":"full","linkDestination":"custom"} -->
+    <a href="https://www.SoundGenerations.org"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/logo-sound-generations-rev2019.png'?>" class="wp-image-16032 wp-block-image size-full is-resized" style="width:40%;height:auto" alt="Sound Generations"/></a>
     <!-- /wp:image -->
 
-    <!-- wp:paragraph {"align":"center"} -->
-    <p class="has-text-align-center has-white-color"><a href="/about-us" data-type="page" data-id="29" class="has-white-color" data-testid="footer-about">About</a></p>
+    <!-- wp:paragraph-->
+    <p class="has-white-color"><a href="/about-us" data-type="page" data-id="29" class="has-white-color" data-testid="footer-about">About</a></p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:paragraph {"align":"center"} -->
-    <p class="has-text-align-center has-white-color"><a href="/careers" data-type="page" data-id="1103" class="has-white-color" data-testid="footer-careers">Careers</a></p>
+    <!-- wp:paragraph -->
+    <p class="has-white-color"><a href="/careers" data-type="page" data-id="1103" class="has-white-color" data-testid="footer-careers">Careers</a></p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:paragraph {"align":"center"} -->
-    <p class="has-text-align-center has-white-color"><a href="/media-center/newsletters-annual-reports" data-type="page" data-id="8833" class="has-white-color" data-testid="footer-news-events">News &amp; Events</a></p>
+    <!-- wp:paragraph -->
+    <p class="has-white-color"><a href="/media-center/newsletters-annual-reports" data-type="page" data-id="8833" class="has-white-color" data-testid="footer-news-events">News &amp; Events</a></p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:paragraph {"align":"center"} -->
-    <p class="has-text-align-center has-white-color"><a href="/get-involved/volunteer" data-type="page" data-id="15961" class="has-white-color" data-testid="footer-volunteer">Volunteer</a></p>
+    <!-- wp:paragraph -->
+    <p class="has-white-color"><a href="/get-involved/volunteer" data-type="page" data-id="15961" class="has-white-color" data-testid="footer-volunteer">Volunteer</a></p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:paragraph {"align":"center"} -->
-    <p class="has-text-align-center has-white-color"><a href="/our-programs" class="has-white-color" data-testid="footer-programs">Our Programs</a></p>
+    <!-- wp:paragraph -->
+    <p class="has-white-color"><a href="/our-programs" class="has-white-color" data-testid="footer-programs">Our Programs</a></p>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:column -->
@@ -89,7 +89,7 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:image {"id":13417,"linkDestination":"custom"} -->
-    <figure class="wp-block-image"><a href="https://www.guidestar.org/profile/91-0823767" data-testid="footer-guidestar-profile"><img src="/wp-content/uploads/MicrosoftTeams-image-5.png" alt="Platinum Transparency 2023" class="wp-image-13417" /></a></figure>
+    <figure class="wp-block-image"><a href="https://www.guidestar.org/profile/91-0823767" data-testid="footer-guidestar-profile"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/guidestar-logo.png'?>" class="wp-image-13417" /></a></figure>
     <!-- /wp:image -->
   </div>
   <!-- /wp:column -->

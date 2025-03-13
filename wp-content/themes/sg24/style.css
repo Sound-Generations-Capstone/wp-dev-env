@@ -96,6 +96,26 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   color: #ffffff;
 }
 
+.light-background a {
+  color: black;
+}
+
+.light-background a:visited {
+  color: purple;
+}
+
+.dark-background a {
+  color: white;
+}
+
+.dark-background a:hover {
+  color: white;
+}
+
+.dark-background a:visited {
+  color: #adadad
+}
+
 h1,
 h2,
 h3,
@@ -1793,8 +1813,9 @@ p#breadcrumbs {
 .page-header,
 .entry-footer {
   margin: 1.5em auto 0 auto;
-  max-width: 81.5rem;
+  max-width: 80%;
   padding-right: 1.5rem;
+  padding-bottom: 6rem;
 }
 
 .page-template-page-full .entry-content {
@@ -2353,6 +2374,10 @@ object {
   padding-left: 2rem;
   padding-right: 2rem;
   margin-bottom: 0rem;
+}
+
+.main-footer-links {
+  padding-left: 4rem;
 }
 
 .footer a {
