@@ -59,7 +59,7 @@ get_header();
   <!-- /wp:buttons -->
 </div>
 <div class="display-flex justify-content_center">
-  <a class="wp-block-button__link wp-element-button jump-to has-text-align-center" href="#more-news">View bonus Sound Generations news</a>
+  <a class="wp-block-button__link wp-element-button jump-to has-text-align-center" href="#more-news">View Sound Generations bonus news</a>
 </div>
 <!-- wp:heading {"textAlign":"center","level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|black"}}}},"textColor":"black"} -->
 <h2 class="wp-block-heading has-text-align-center has-text-color featured-news"><strong>Featured News</strong></h2>

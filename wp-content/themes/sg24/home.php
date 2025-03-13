@@ -89,7 +89,7 @@ get_header();
     <div class="wp-block-column is-vertically-aligned-stretch"><!-- wp:cover {"url":"/wp-content/uploads/2024/11/Hyde-Shuttle-Central-Area-SC-2019-2-1.jpg","id":15985,"alt":"Image of a Hyde Shuttle bus waiting outside of a Sound Generations building.","dimRatio":50,"focalPoint":{"x":1,"y":0},"minHeight":315,"minHeightUnit":"px","contentPosition":"bottom center","align":"full"} -->
       <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:315px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-15985" alt="Image of a Hyde Shuttle bus waiting outside of a Sound Generations building." src="<?php echo esc_url(get_template_directory_uri()) . '/img/Hyde-Shuttle-Central-Area-SC-2019-2-1.jpg' ?>" style="object-position:100% 0%" data-object-fit="cover" data-object-position="100% 0%" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"large"} -->
-          <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size "><a class="column-link" href="/?page_id=12312" data-type="page" data-id="12312" data-testid="transportation"><strong>Transportation Assistance</strong></a></p>
+          <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size "><a class="column-link" href="<?php echo esc_url(get_permalink(get_page_by_path('/our-programs/transportation')))?>" data-type="page" data-id="12312" data-testid="transportation"><strong>Transportation Assistance</strong></a></p>
           <!-- /wp:paragraph -->
         </div>
       </div>
@@ -101,7 +101,7 @@ get_header();
     <div class="wp-block-column is-vertically-aligned-stretch"><!-- wp:cover {"url":"/wp-content/uploads/2024/11/2019-Fai-Delivering-Meals-On-Wheels-During-Slush-credit-Crosscut-News-edited.jpg","id":15989,"dimRatio":50,"minHeight":315,"minHeightUnit":"px","contentPosition":"bottom center","align":"full"} -->
       <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:315px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-15989" alt="" src="<?php echo esc_url(get_template_directory_uri()) . '/img/2019-Fai-Delivering-Meals-On-Wheels-During-Slush-credit-Crosscut-News-edited.jpg' ?>" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"large"} -->
-          <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size"><a class="column-link" href="/?page_id=189" data-type="page" data-id="189" data-testid="food-security"><strong>Food Security Support</strong></a></p>
+          <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size"><a class="column-link" href="<?php echo esc_url(get_permalink(get_page_by_path('/our-programs/food-security')))?>" data-type="page" data-id="189" data-testid="food-security"><strong>Food Security Support</strong></a></p>
           <!-- /wp:paragraph -->
         </div>
       </div>
@@ -113,7 +113,7 @@ get_header();
     <div class="wp-block-column is-vertically-aligned-stretch"><!-- wp:cover {"url":"/wp-content/uploads/2024/11/Enhance-Fitness-2019-13_small-1024x683.jpg","id":15990,"dimRatio":50,"minHeight":315,"minHeightUnit":"px","contentPosition":"bottom center","align":"full"} -->
       <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:315px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-15990" alt="" src= "<?php echo esc_url(get_template_directory_uri()) . '/img/Enhance-Fitness-2019-13_small-1024x683.jpg' ?>" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"large"} -->
-          <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size"><a class="column-link" href="/?page_id=23" data-type="page" data-id="23" data-testid="health"><strong>Health &amp; Wellness</strong></a></p>
+          <p class="has-text-align-center has-white-color has-text-color has-link-color has-large-font-size"><a class="column-link" href="<?php echo esc_url(get_permalink(get_page_by_path('/health-wellness')))?>" data-type="page" data-id="23" data-testid="health"><strong>Health &amp; Wellness</strong></a></p>
           <!-- /wp:paragraph -->
         </div>
       </div>
