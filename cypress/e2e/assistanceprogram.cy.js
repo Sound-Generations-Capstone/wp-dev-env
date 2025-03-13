@@ -33,7 +33,7 @@ describe("Assistance services content", () => {
   );
 
   specify(
-    "Assistance ServicesProgram Home page has a card tile for Legal Assistance",
+    "Assistance Services Program Home page has a card tile for Legal Assistance",
     () => {
 
       cy.get("[class=\"legal service-card\"]");
