@@ -41,7 +41,7 @@ get_header();
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://i0.wp.com/soundgenerations.org/wp-content/uploads/Thai-Le-scaled.jpg?resize=982%2C442&amp;ssl=1" alt=""/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/Hyde-Shuttle-Central-Area-SC-2019-2-1.jpg' ?>" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -77,7 +77,7 @@ get_header();
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://soundgenerations.org/wp-content/uploads/VTS_S.Gangolli-and-C.Meyer-11-982x655.jpg" alt=""/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/VTS_S.Gangolli-and-C.Meyer-11-982x655.jpg' ?>" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -113,7 +113,7 @@ get_header();
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://soundgenerations.org/wp-content/uploads/vts3-655x655.jpg" alt=""/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/916961510-Helping-hand-1000x500.' ?>" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
