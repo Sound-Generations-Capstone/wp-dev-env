@@ -27,12 +27,12 @@ get_header();
     <p><strong>Community Dining</strong>&nbsp;is a network of different locations throughout King County, where older adults can enjoy a hot lunch with others. Many locations provide lunch five days a week and give participants the opportunity to engage with their local community.</p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:columns -->
-    <div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
-    <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"scale":"cover","sizeSlug":"large"} -->
-    <figure class="wp-block-image size-large"><img src="<?php echo get_template_directory_uri() . '/img/Community-Dining-Lake-City-2019-5_small-982x655.jpg'?>" alt="" style="object-fit:cover"/></figure>
-    <!-- /wp:image --></div>
-    <!-- /wp:column -->
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
+<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"scale":"cover","sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/Community-Dining-Lake-City-2019-5_small-982x655.jpg' ?>" alt="" style="object-fit:cover"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
 
     <!-- wp:column {"width":"66.66%"} -->
     <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:paragraph -->
@@ -59,12 +59,12 @@ get_header();
     <p><strong>Meals on Wheels&nbsp;</strong>brings nutritious, frozen meals directly to the homes of qualifying older adults who have difficulty shopping or preparing food. Our friendly staff and volunteers pack and deliver the meals, ensuring their food needs are met.</p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:columns -->
-    <div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
-    <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"scale":"cover","sizeSlug":"large"} -->
-    <figure class="wp-block-image size-large"><img src="<?php echo get_template_directory_uri() . '/img/Fai-with-Meals-On-Wheels-1-rectangle-982x655.jpg'?>" alt="" style="object-fit:cover"/></figure>
-    <!-- /wp:image --></div>
-    <!-- /wp:column -->
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
+<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"scale":"cover","sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/Fai-with-Meals-On-Wheels-1-rectangle-982x655.jpg' ?>" alt="" style="object-fit:cover"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
 
     <!-- wp:column {"width":"66.66%"} -->
     <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:paragraph -->
