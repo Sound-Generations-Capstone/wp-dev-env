@@ -51,7 +51,7 @@ get_header();
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-    <p class="has-white-color has-text-color has-link-color"><a href="https://soundgenerations.org/our-programs/transportation/hyde-shuttle/"><strong>Go to Hyde Shuttle</strong></a></p>
+    <p class="has-white-color has-text-color has-link-color dark-background"><a href="https://soundgenerations.org/our-programs/transportation/hyde-shuttle/"><strong>Go to Hyde Shuttle</strong></a></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
@@ -87,7 +87,7 @@ get_header();
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-    <p class="has-white-color has-text-color has-link-color"><a href="https://soundgenerations.org/our-programs/transportation/volunteer-transportation/"><strong>Go to</strong> <strong>Volunteer Transportation</strong></a></p>
+    <p class="has-white-color has-text-color has-link-color light-background"><a href="https://soundgenerations.org/our-programs/transportation/volunteer-transportation/"><strong>Go to</strong> <strong>Volunteer Transportation</strong></a></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
@@ -123,7 +123,7 @@ get_header();
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-    <p class="has-white-color has-text-color has-link-color"><a href="https://soundgenerations.org/our-programs/transportation/volunteer-with-volunteer-transportation/"><strong>Visit our volunteer driver page for more information.</strong></a></p>
+    <p class="has-white-color has-text-color has-link-color dark-background"><a href="https://soundgenerations.org/our-programs/transportation/volunteer-with-volunteer-transportation/"><strong>Visit our volunteer driver page for more information.</strong></a></p>
     <!-- /wp:paragraph --></div>
     <!-- /wp:column --></div>
     <!-- /wp:columns --></div></div>

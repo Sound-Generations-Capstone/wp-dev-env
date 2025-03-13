@@ -96,6 +96,26 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   color: #ffffff;
 }
 
+.light-background a {
+  color: black;
+}
+
+.light-background a:visited {
+  color: purple;
+}
+
+.dark-background a {
+  color: white;
+}
+
+.dark-background a:hover {
+  color: white;
+}
+
+.dark-background a:visited {
+  color: #adadad
+}
+
 h1,
 h2,
 h3,

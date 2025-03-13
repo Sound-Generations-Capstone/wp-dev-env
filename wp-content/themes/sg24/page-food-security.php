@@ -40,7 +40,7 @@ get_header();
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-    <p class="has-white-color has-text-color has-link-color"><a href="https://soundgenerations.org/our-programs/food-security/community-dining/">Visit our <strong>Community Dining</strong> page for more information.</a></p>
+    <p class="has-white-color has-text-color has-link-color dark-background"><a href="https://soundgenerations.org/our-programs/food-security/community-dining/">Visit our <strong>Community Dining</strong> page for more information.</a></p>
     <!-- /wp:paragraph --></div>
     <!-- /wp:column --></div>
     <!-- /wp:columns --></div></div>
@@ -72,7 +72,7 @@ get_header();
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-    <p class="has-white-color has-text-color has-link-color"><a href="https://soundgenerations.org/our-programs/food-security/meals-on-wheels/">Visit our<strong> Meals on Wheel</strong>s page for more information.</a></p>
+    <p class="has-white-color has-text-color has-link-color light-background"><a href="https://soundgenerations.org/our-programs/food-security/meals-on-wheels/">Visit our<strong> Meals on Wheel</strong>s page for more information.</a></p>
     <!-- /wp:paragraph --></div>
     <!-- /wp:column --></div>
     <!-- /wp:columns --></div></div>
