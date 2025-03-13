@@ -694,6 +694,26 @@ function ivycat_remove_filters()
 	remove_filter('mc_to_date', 'ivycat_set_to', 10, 1);
 }
 
+function create_or_update_page($path, $title, $template, $name = '')
+{
+	$page = get_page_by_path($path);
+	if (!$page) { // page doesn't exist
+		$page_args = [
+			'post_title' => $title,
+			'post_status' => 'publish',
+			'post_type' => 'page',
+			'page_template' => $template
+		];
+		if ($name) {
+			$page_args['page_name'] = $name;
+		}
+		wp_insert_post($page_args);
+	} else {
+		// page found, updating template
+		update_post_meta($page->ID, '_wp_page_template', $template);
+	}
+}
+
 function create_sitemap()
 {
 	$page = get_page_by_path('/sitemap');
@@ -717,7 +737,8 @@ add_action('init', 'create_sitemap');
 // 	update_post_meta($page->ID, '_wp_page_template', 'page-news-center.php');
 // });
 
-function create_health_and_wellness() {
+function create_health_and_wellness()
+{
 	$health_page = get_page_by_path('/health-wellness');
 	if (!$health_page) { // health and wellness page doesn't exist
 		$health_page_args = [
@@ -727,7 +748,7 @@ function create_health_and_wellness() {
 			'page_template' => 'page-health-and-wellness.php'
 		];
 
-		error_log( 'HEALTH PAGE: ' . print_r( $health_page, true ) );
+		error_log('HEALTH PAGE: ' . print_r($health_page, true));
 		wp_insert_post($health_page_args);
 	} else {
 		// health and wellness found, updating
@@ -737,7 +758,8 @@ function create_health_and_wellness() {
 
 add_action('init', 'create_health_and_wellness');
 
-function create_assistance_services() {
+function create_assistance_services()
+{
 	$assitance_page = get_page_by_path('/assistance-services');
 	if (!$assitance_page) { // assistance services page doesn't exist
 		$assitance_page_args = [
@@ -756,7 +778,8 @@ function create_assistance_services() {
 
 add_action('init', 'create_assistance_services');
 
-function create_caregiver_support() {
+function create_caregiver_support()
+{
 	$caregiver_page = get_page_by_path('/our-programs/caregiver-support');
 	if (!$caregiver_page) { // caregiver support page doesn't exist
 		$caregiver_page_args = [
@@ -775,7 +798,8 @@ function create_caregiver_support() {
 
 add_action('init', 'create_caregiver_support');
 
-function create_volunteer() {
+function create_volunteer()
+{
 	$volunteer_page = get_page_by_path('/get-involved/volunteer');
 	if (!$volunteer_page) { // volunteer page doesn't exist
 		$volunteer_page_args = [
@@ -793,3 +817,7 @@ function create_volunteer() {
 }
 
 add_action('init', 'create_volunteer');
+
+add_action('init', function () {
+	create_or_update_page('/about-us/contact-us', 'Contact Us', 'page-contact-us.php');
+});
