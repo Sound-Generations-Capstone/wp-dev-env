@@ -46,9 +46,6 @@ get_header();
   add_shortcode('recent_bonus_news', 'recent_bonus_news');
 ?>
 
-<div class="display-flex justify-content_center">
-  <a class="wp-block-button__link wp-element-button jump-to has-text-align-center" href="#more-news">See more news</a>
-</div>
 <div class="e-news-signup has-wide-width has-text-align-center display-flex flex-column justify-content_center">
   <h2 class="">Sign up for E-News</h2>
   <p> 
@@ -60,6 +57,9 @@ get_header();
   <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="has-background subscribe" href="http://eepurl.com/dIh9Xf" data-testid="subscribe-enews">Subscribe</a></div>
   <!-- /wp:button --></div>
   <!-- /wp:buttons -->
+</div>
+<div class="display-flex justify-content_center">
+  <a class="wp-block-button__link wp-element-button jump-to has-text-align-center" href="#more-news">View bonus Sound Generations news</a>
 </div>
 <!-- wp:heading {"textAlign":"center","level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|black"}}}},"textColor":"black"} -->
 <h2 class="wp-block-heading has-text-align-center has-text-color featured-news"><strong>Featured News</strong></h2>
