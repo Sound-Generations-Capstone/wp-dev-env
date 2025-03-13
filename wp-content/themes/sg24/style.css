@@ -1793,7 +1793,8 @@ p#breadcrumbs {
 .page-header,
 .entry-footer {
   margin: 1.5em auto 0 auto;
-  max-width: 90%;
+  max-width: 81.5rem;
+  padding-right: 1.5rem;
 }
 
 .page-template-page-full .entry-content {
@@ -2352,7 +2353,10 @@ object {
   padding-left: 2rem;
   padding-right: 2rem;
   margin-bottom: 0rem;
-  margin-top: 2rem;
+}
+
+.main-footer-links {
+  padding-left: 4rem;
 }
 
 .footer a {
