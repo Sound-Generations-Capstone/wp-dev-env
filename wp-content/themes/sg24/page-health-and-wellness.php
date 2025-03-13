@@ -43,7 +43,7 @@ get_header();
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-    <p class="has-white-color has-text-color has-link-color light-background"><a href="<?echo esc_url(get_page_by_path('health-wellness/fitness/'))?>"><strong>Learn more about EnhanceFitness and other fitness programs.</strong></a></p>
+    <p class="has-white-color has-text-color has-link-color light-background"><a href="<?echo esc_url(get_permalink(get_page_by_path('health-wellness/fitness/')))?>"><strong>Learn more about EnhanceFitness and other fitness programs.</strong></a></p>
     <!-- /wp:paragraph --></div>
     <!-- /wp:column --></div>
     <!-- /wp:columns --></div></div>
@@ -75,7 +75,7 @@ get_header();
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-    <p class="has-white-color has-text-color has-link-color dark-background"><a href="<?phpo echo esc_url(get_page_by_path('health-wellness/fall-prevention/'))?>"><strong>Learn about EnhanceFitness and A Matter of Balance.</strong></a></p>
+    <p class="has-white-color has-text-color has-link-color dark-background"><a href="<?php echo esc_url(get_permalink(get_page_by_path('health-wellness/fall-prevention/')))?>"><strong>Learn about EnhanceFitness and A Matter of Balance.</strong></a></p>
     <!-- /wp:paragraph --></div>
     <!-- /wp:column --></div>
     <!-- /wp:columns --></div></div>
@@ -107,7 +107,7 @@ get_header();
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-    <p class="has-white-color has-text-color has-link-color dark-background"><a href="<?php echo esc_url(get_page_by_path('health-wellness/health-management/'))?>"><strong>Learn about EnhanceWellness and PEARLS.</strong></a></p>
+    <p class="has-white-color has-text-color has-link-color dark-background"><a href="<?php echo esc_url(get_permalink(get_page_by_path('health-wellness/health-management/')))?>"><strong>Learn about EnhanceWellness and PEARLS.</strong></a></p>
     <!-- /wp:paragraph --></div>
     <!-- /wp:column --></div>
     <!-- /wp:columns --></div></div>
