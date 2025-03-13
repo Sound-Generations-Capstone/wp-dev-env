@@ -113,7 +113,7 @@ get_header();
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/916961510-Helping-hand-1000x500.' ?>" alt=""/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/916961510-Helping-hand-1000x500.jpg' ?>" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
