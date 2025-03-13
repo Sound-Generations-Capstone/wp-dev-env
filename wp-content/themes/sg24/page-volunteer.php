@@ -24,7 +24,7 @@ get_header(); ?>
     <div class="wp-block-column is-vertically-aligned-center"><!-- wp:embed {"url":"https://youtu.be/dZMjbrAd3LQ","type":"video","providerNameSlug":"youtube","responsive":true,"align":"center","className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
       <figure class="wp-block-embed aligncenter is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
         <div class="wp-block-embed__wrapper">
-          https://youtu.be/dZMjbrAd3LQ
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dZMjbrAd3LQ?si=Qo8mvK9wvnH4HJ93" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </figure>
       <!-- /wp:embed -->
@@ -139,18 +139,18 @@ get_header(); ?>
   <!-- wp:paragraph -->
   <p>
   <p id="navToVolunteerOpportunities">We’re excited to have you join our volunteer network!&nbsp;Just simply fill out your basic contact information and your areas of interest, and we’ll reach out when relevant volunteer opportunities become available. Sign up here to get started and help make a difference in our community!</p>
-  <a href="#" onclick="toggleForm(event)" class="signup-button"><strong>Sign up to Volunteer</strong></a></p>
-  <!-- /wp:paragraph -->
 
-  <p>
-    <script>
-      function toggleForm(event) {
-        event.preventDefault();
-        var form = document.getElementById("volunteerForm");
-        form.style.display = form.style.display === "none" ? "block" : "none";
-      }
-    </script>
-  </p>
+  <!-- <a href="#" onclick="toggleForm(event)" class="signup-button"><strong>Sign up to Volunteer</strong></a></p>
+
+  <script>
+    function toggleForm(event) {
+      event.preventDefault();
+      var form = document.getElementById("volunteerForm");
+      form.style.display = form.style.display === "none" ? "block" : "none";
+    }
+  </script> -->
+
+  <?php echo do_shortcode('[gravityform id="2" title="true"]') ?>
 
   <!-- wp:paragraph -->
   <p></p>
@@ -187,16 +187,9 @@ get_header(); ?>
   <!-- wp:details -->
   <details class="wp-block-details">
     <summary>How do I sign up to become a volunteer?</summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
-    <p>
-    <p>To get started, simply fill out our <a href="#" onclick="toggleForm(event)"><strong>Volunteer Signup Form</strong></a>.</p>
-    <script>
-      function toggleForm(event) {
-        event.preventDefault();
-        var form = document.getElementById("volunteerForm");
-        form.style.display = form.style.display === "none" ? "block" : "none";
-      }
-    </script>
-    </p>
+
+    <p>To get started, simply fill out our <a href="#gform_wrapper_2"><strong>Volunteer Signup Form</strong></a>.</p>
+
     <!-- /wp:paragraph -->
   </details>
   <!-- /wp:details -->

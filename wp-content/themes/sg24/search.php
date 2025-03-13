@@ -27,7 +27,7 @@ get_header(); ?>
 						<button type="submit">Search</button>
 					</form>
 				<?php else : ?>
-					<h1 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'sg20'), '<span>' . get_search_query() . '</span>'); ?></h1>
+					<h1 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'sg24'), '<span>' . get_search_query() . '</span>'); ?></h1>
 				<?php endif; ?>
 			</header><!-- .page-header -->
 
