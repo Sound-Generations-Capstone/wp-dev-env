@@ -1793,8 +1793,9 @@ p#breadcrumbs {
 .page-header,
 .entry-footer {
   margin: 1.5em auto 0 auto;
-  max-width: 81.5rem;
+  max-width: 80%;
   padding-right: 1.5rem;
+  padding-bottom: 6rem;
 }
 
 .page-template-page-full .entry-content {
