@@ -5,7 +5,7 @@
 <!-- wp:columns -->
 <div class="wp-block-columns has-dark-grey-background-color has-white-color footer"><!-- wp:column {"verticalAlignment":"stretch"} -->
   <div class="wp-block-column is-vertically-aligned-stretch aligncenter main-footer-links"><!-- wp:image {"lightbox":{"enabled":false},"id":16032,"width":"216px","height":"auto","sizeSlug":"full","linkDestination":"custom"} -->
-    <a href="https://www.SoundGenerations.org"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/logo-sound-generations-rev2019.png'?>" class="wp-image-16032 wp-block-image size-full is-resized" style="width:40%;height:auto" alt="Sound Generations"/></a>
+    <a href="https://www.SoundGenerations.org"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/logo-sound-generations-rev2019.png' ?>" class="wp-image-16032 wp-block-image size-full is-resized" style="width:40%;height:auto" alt="Sound Generations" /></a>
     <!-- /wp:image -->
 
     <!-- wp:paragraph-->
@@ -89,7 +89,7 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:image {"id":13417,"linkDestination":"custom"} -->
-    <figure class="wp-block-image"><a href="https://www.guidestar.org/profile/91-0823767" data-testid="footer-guidestar-profile"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/guidestar-logo.png'?>" class="wp-image-13417" /></a></figure>
+    <figure class="wp-block-image"><a href="https://www.guidestar.org/profile/91-0823767" data-testid="footer-guidestar-profile" aria-label="Guidestar Profile"><img src="<?php echo esc_url(get_template_directory_uri()) . '/img/guidestar-logo.png' ?>" class="wp-image-13417" alt="Guidestar Profile" /></a></figure>
     <!-- /wp:image -->
   </div>
   <!-- /wp:column -->
