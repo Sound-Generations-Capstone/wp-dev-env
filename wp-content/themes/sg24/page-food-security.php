@@ -30,7 +30,7 @@ get_header();
     <!-- wp:columns -->
     <div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
     <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"scale":"cover","sizeSlug":"large"} -->
-    <figure class="wp-block-image size-large"><img src="https://soundgenerations.org/wp-content/uploads/Community-Dining-Lake-City-2019-5_small-982x655.jpg" alt="" style="object-fit:cover"/></figure>
+    <figure class="wp-block-image size-large"><img src="<?php echo get_template_directory_uri() . '/img/Community-Dining-Lake-City-2019-5_small-982x655.jpg'?>" alt="" style="object-fit:cover"/></figure>
     <!-- /wp:image --></div>
     <!-- /wp:column -->
 
@@ -62,7 +62,7 @@ get_header();
     <!-- wp:columns -->
     <div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
     <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"scale":"cover","sizeSlug":"large"} -->
-    <figure class="wp-block-image size-large"><img src="https://soundgenerations.org/wp-content/uploads/Fai-with-Meals-On-Wheels-1-rectangle-982x655.jpg" alt="" style="object-fit:cover"/></figure>
+    <figure class="wp-block-image size-large"><img src="<?php echo get_template_directory_uri() . '/img/Fai-with-Meals-On-Wheels-1-rectangle-982x655.jpg'?>" alt="" style="object-fit:cover"/></figure>
     <!-- /wp:image --></div>
     <!-- /wp:column -->
 
