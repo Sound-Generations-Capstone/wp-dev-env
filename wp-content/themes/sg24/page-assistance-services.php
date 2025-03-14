@@ -6,6 +6,14 @@
  * Usage: select this template when working in the WordPress block editor to load it as
  * the appearance, structure, and content for a page.
  * 
+ * Requires the following pages to exist in the WordPress database:
+ * our-programs/pathways-information-assistance
+ * our-programs/caregiver-support
+ * our-programs/senior-rights-assistance
+ * our-programs/minor-home-repair
+ * eldereducationinstitute
+ * our-programs/grat
+ * 
  * @package Sound_Generations
  */
 

@@ -6,6 +6,11 @@
  * Usage: select this template when working in the WordPress block editor to load it as
  * the appearance, structure, and content for a page.
  * 
+ * Requires the following pages to exist in the WordPress database:
+ * our-programs/transportation
+ * our-programs/food-security
+ * health-wellness
+ * 
  * @package Sound_Generations
  */
 

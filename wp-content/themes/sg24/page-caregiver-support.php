@@ -6,6 +6,14 @@
  * Usage: select this template when working in the WordPress block editor to load it as
  * the appearance, structure, and content for a page.
  * 
+ * Requires the following pages to exist in the WordPress database:
+ * caregiver-support/respite-services
+ * caregiver-support/support-groups-workshops-caregivers
+ * caregiver-support/caregiver-self-assessment
+ * 
+ * Requires the following tags to exist in the WordPress database:
+ * the-heart-of-caregiving
+ * 
  * @package Sound_Generations
  */
 

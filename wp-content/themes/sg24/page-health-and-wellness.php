@@ -6,6 +6,11 @@
  * Usage: select this template when working in the WordPress block editor to load it as
  * the appearance, structure, and content for a page.
  * 
+ * Requires the following pages to exist in the WordPress database:
+ * health-wellness/fitness
+ * health-wellness/fall-prevention
+ * health-wellness/health-management
+ * 
  * @package Sound_Generations
  */
 
