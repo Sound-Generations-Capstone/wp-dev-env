@@ -116,7 +116,7 @@ get_header();
       <?php 
         $caregiver_story_tag = get_term_by('name', 'The Heart of Caregiving', 'post_tag');
         $caregiver_story_url = get_term_link($caregiver_story_tag);
-        if (!$caregover_story_tag) {
+        if (!$caregiver_story_tag) {
           $caregiver_story_url = "";
         }
         
