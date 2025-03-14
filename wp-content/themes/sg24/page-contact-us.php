@@ -3,6 +3,9 @@
 /**
  * Template Name: Contact Us
  * 
+ * Usage: select this template when working in the WordPress block editor to load it as
+ * the appearance, structure, and content for a page.
+ * 
  * @package Sound_Generations
  */
 
@@ -436,7 +439,7 @@ get_header();
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:details -->
-<details class="wp-block-details"><summary>Son-Valley Senior Center</summary><!-- wp:list -->
+<details class="wp-block-details"><summary>Sno-Valley Senior Center</summary><!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li>Address: <a href="https://www.google.com/maps/place/Sno-Valley+Senior+Center/@47.6488829,-121.9172725,981m/data=!3m1!1e3!4m15!1m8!3m7!1s0x549076990b05d653:0x9fdadb96be4edbce!2s4610+Stephens+Ave,+Carnation,+WA+98014!3b1!8m2!3d47.6488793!4d-121.9146976!16s%2Fg%2F11b8zf1vhf!3m5!1s0x549076990a4768f1:0x35eb45a05ccd03a8!8m2!3d47.6488621!4d-121.9147122!16s%2Fg%2F1v6qhb0f?entry=ttu&amp;g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">4610 Stephens Ave, Carnation, WA 98014</a></li>
 <!-- /wp:list-item -->

@@ -3,6 +3,9 @@
 /**
  * Template Name: Volunteer Page
  * 
+ * Usage: select this template when working in the WordPress block editor to load it as
+ * the appearance, structure, and content for a page.
+ * 
  * @package Sound_Generations
  */
 

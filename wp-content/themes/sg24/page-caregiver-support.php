@@ -3,8 +3,8 @@
 /**
  * Template Name: Caregiver Support
  *
- * Usage: Copy this code into a WordPress block editor
- * to preserve desired styles.
+ * Usage: select this template when working in the WordPress block editor to load it as
+ * the appearance, structure, and content for a page.
  * 
  * @package Sound_Generations
  */
@@ -116,6 +116,10 @@ get_header();
       <?php 
         $caregiver_story_tag = get_term_by('name', 'The Heart of Caregiving', 'post_tag');
         $caregiver_story_url = get_term_link($caregiver_story_tag);
+        if (!$caregover_story_tag) {
+          $caregiver_story_url = "";
+        }
+        
       ?>
       <a href="<?php echo esc_url($caregiver_story_url) ?>" class="outline-link" data-testid="caregiver-stories">
         Read caregiver stories and insights
