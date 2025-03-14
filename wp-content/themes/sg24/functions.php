@@ -718,22 +718,30 @@ add_action('init', function () {
 	create_or_update_page('/sitemap', 'Sitemap', 'page-sitemap.php');
 });
 
-add_action('init', function () {
-	create_or_update_page('/about-us/contact-us', 'Contact Us', 'page-contact-us.php');
-});
+/* Note to future developers: leave the function calls below 
+commented out until a page with the corresponding path has been created and added to the 
+WordPress database via the administrator user interface.
 
-add_action('init', function () {
-	create_or_update_page('/our-programs/caregiver-support', 'Caregiver Support', 'page-caregiver-support.php');
-});
+Uncommenting these function calls before following the instructions above will
+cause critical errors and crash the WordPress instance.
+*/
 
-add_action('init', function () {
-	create_or_update_page('/get-involved/volunteer', 'Volunteer', 'page-volunteer.php');
-});
+// add_action('init', function () {
+// 	create_or_update_page('/about-us/contact-us', 'Contact Us', 'page-contact-us.php');
+// });
 
-add_action('init', function () {
-	create_or_update_page('/assistance-services', 'Assistance Services', 'page-assistance-services.php');
-});
+// add_action('init', function () {
+// 	create_or_update_page('/our-programs/caregiver-support', 'Caregiver Support', 'page-caregiver-support.php');
+// });
 
-add_action('init', function () {
-	create_or_update_page('/health-wellness', 'Health & Wellness', 'page-health-and-wellness.php');
-});
+// add_action('init', function () {
+// 	create_or_update_page('/get-involved/volunteer', 'Volunteer', 'page-volunteer.php');
+// });
+
+// add_action('init', function () {
+// 	create_or_update_page('/assistance-services', 'Assistance Services', 'page-assistance-services.php');
+// });
+
+// add_action('init', function () {
+// 	create_or_update_page('/health-wellness', 'Health & Wellness', 'page-health-and-wellness.php');
+// });
